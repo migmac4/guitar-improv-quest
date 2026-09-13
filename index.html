@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Plano interativo de improvisação para guitarra: pentatônica, CAGED e 3NPS.">
+  <title>Guitar Improv Quest — V2</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><p class="eyebrow">8 SEMANAS · 56 MISSÕES</p><h1>Guitar Improv Quest <span>V2</span></h1><p class="muted">Pentatônica → CAGED → 3NPS · 30 min/dia</p></div><div class="stats"><b id="level">Nível 1</b><span><strong id="xp">0</strong> XP</span><span>🔥 <strong id="streak">0</strong> dias</span></div></header>
+<main>
+<section class="overview panel"><div class="progress-head"><b>Seu progresso</b><span id="progressText">0 / 56 aulas</span></div><div class="progress"><i id="progressBar"></i></div><div id="weekTabs" class="week-tabs"></div></section>
+<div class="layout"><aside class="panel sidebar"><h2>Roteiro</h2><div id="lessonList"></div><div class="tools"><h3>Prática</h3><label>BPM <input id="bpm" type="number" min="30" max="240" value="80"></label><button id="metro">▶ Metrônomo</button><button id="timer">⏱ 30:00</button></div></aside>
+<section id="lesson" class="panel lesson-detail"></section></div>
+<section class="grid"><article class="panel lab"><h2>Fretboard Lab</h2><p class="muted">Clique em uma nota para treiná-la. Selecione uma camada:</p><div class="controls"><button data-layer="roots">Tônicas A</button><button data-layer="penta">Pentatônica Am</button><button data-layer="minor">Menor natural A</button><button data-layer="all">Todas</button></div><div id="fretboard" aria-label="Braço de guitarra interativo"></div></article>
+<article class="panel quiz"><h2>Quiz relâmpago</h2><p id="quizQuestion">Qual grau dá o som “blue” na escala blues?</p><div id="quizChoices"></div><p id="quizFeedback" aria-live="polite"></p></article></section>
+</main><footer>Progresso salvo apenas neste navegador. Vídeos e backing tracks pertencem aos seus respectivos autores.</footer><script src="app.js"></script>
+</body></html>
