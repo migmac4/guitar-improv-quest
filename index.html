@@ -1,17 +1,104 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Plano interativo de improvisação para guitarra: pentatônica, CAGED e 3NPS.">
-  <title>Guitar Improv Quest — V2</title><link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guitar Improvisation Quest — Fase 1: Domínio da Pentatônica Menor e Mapa de Intervalos no braço da guitarra.">
+  <title>Guitar Improvisation Quest — Fase 1</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<header><div><p class="eyebrow">8 SEMANAS · 56 MISSÕES</p><h1>Guitar Improv Quest <span>V2</span></h1><p class="muted">Pentatônica → CAGED → 3NPS · 30 min/dia</p></div><div class="stats"><b id="level">Nível 1</b><span><strong id="xp">0</strong> XP</span><span>🔥 <strong id="streak">0</strong> dias</span></div></header>
+<header>
+  <div>
+    <p class="eyebrow">60 AULAS · PENTATÔNICA, CHORD TONES, NAVEGAÇÃO, 3NPS &amp; FINAL BOSS</p>
+    <h1>Guitar Improvisation Quest <span>V3</span></h1>
+    <p class="muted">Mapa de Intervalos → Repouso & Tensão → 5 Shapes · 60 min/dia (30 min Teoria/Improviso + 30 min Técnica)</p>
+  </div>
+  <div class="stats">
+    <div class="stat-box"><b id="level">Nível 1</b><small id="levelProgress">0 / 350 XP</small></div>
+    <div class="stat-box"><span><strong id="xp">0</strong> XP</span></div>
+    <div class="stat-box"><span>🔥 <strong id="streak">0</strong> dias</span></div>
+  </div>
+</header>
+
 <main>
-<section class="overview panel"><div class="progress-head"><b>Seu progresso</b><span id="progressText">0 / 56 aulas</span></div><div class="progress"><i id="progressBar"></i></div><div id="weekTabs" class="week-tabs"></div></section>
-<div class="layout"><aside class="panel sidebar"><h2>Roteiro</h2><div id="lessonList"></div><div class="tools"><h3>Prática</h3><label>BPM <input id="bpm" type="number" min="30" max="240" value="80"></label><button id="metro">▶ Metrônomo</button><button id="timer">⏱ 30:00</button></div></aside>
-<section id="lesson" class="panel lesson-detail"></section></div>
-<section class="grid"><article class="panel lab"><h2>Fretboard Lab</h2><p class="muted">Clique em uma nota para treiná-la. Selecione uma camada:</p><div class="controls"><button data-layer="roots">Tônicas A</button><button data-layer="penta">Pentatônica Am</button><button data-layer="minor">Menor natural A</button><button data-layer="all">Todas</button></div><div id="fretboard" aria-label="Braço de guitarra interativo"></div></article>
-<article class="panel quiz"><h2>Quiz relâmpago</h2><p id="quizQuestion">Qual grau dá o som “blue” na escala blues?</p><div id="quizChoices"></div><p id="quizFeedback" aria-live="polite"></p></article></section>
-</main><footer>Progresso salvo apenas neste navegador. Vídeos e backing tracks pertencem aos seus respectivos autores.</footer><script src="app.js"></script>
-</body></html>
+  <section class="overview panel">
+    <div class="progress-head">
+      <div>
+        <b>Progresso do Curso</b>
+        <p class="muted small" id="masteryStats">0 dominadas (Consigo usar) · 0 em progresso</p>
+      </div>
+      <span id="progressText">0 / 60 aulas</span>
+    </div>
+    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <i id="progressBar"></i>
+    </div>
+    <div id="weekTabs" class="week-tabs"></div>
+  </section>
+
+  <div class="layout">
+    <aside class="panel sidebar">
+      <div class="sidebar-header">
+        <h2>Roteiro de Aulas</h2>
+        <span class="badge phase-badge" id="currentWeekTitle">Semana 1</span>
+      </div>
+      <div id="lessonList" class="lesson-list"></div>
+
+      <div class="tools">
+        <h3>Ferramentas de Estudo</h3>
+        <div class="tool-row">
+          <label for="bpm">BPM:
+            <input id="bpm" type="number" min="30" max="240" value="75" aria-label="Batimentos por minuto">
+          </label>
+          <button id="metro" class="tool-btn">▶ Metrônomo</button>
+        </div>
+        <div class="tool-row timer-row">
+          <button id="timer" class="tool-btn timer-btn">⏱ 30:00</button>
+          <button id="timerReset" class="tool-btn reset-btn" title="Resetar Timer">↺</button>
+        </div>
+      </div>
+    </aside>
+
+    <section id="lesson" class="panel lesson-detail" aria-live="polite">
+      <!-- Conteúdo da aula renderizado dinamicamente pelo app.js -->
+    </section>
+  </div>
+
+  <section class="grid">
+    <article class="panel lab">
+      <h2>Fretboard Lab</h2>
+      <p class="muted">Explore as notas e intervalos da escala no braço da guitarra (afinação padrão E-A-D-G-B-e):</p>
+      <div class="controls" id="fretboardControls">
+        <button data-layer="roots" class="active">Tônicas 1 (A)</button>
+        <button data-layer="triad">Tríade Am (1, b3, 5)</button>
+        <button data-layer="penta">Pentatônica Am (1, b3, 4, 5, b7)</button>
+        <button data-layer="minor">Menor Natural Am</button>
+        <button data-layer="all">Todas as notas</button>
+      </div>
+      <div id="fretboard" aria-label="Braço de guitarra interativo"></div>
+      <div class="fretboard-legend">
+        <span><i class="legend-dot root-dot"></i> Tônica (1 = A)</span>
+        <span><i class="legend-dot third-dot"></i> Terça menor (b3 = C)</span>
+        <span><i class="legend-dot fifth-dot"></i> Quinta justa (5 = E)</span>
+        <span><i class="legend-dot tension-dot"></i> Tensões (4 = D, b7 = G)</span>
+      </div>
+    </article>
+
+    <article class="panel quiz">
+      <h2>Quiz Relâmpago · Fase 1</h2>
+      <p class="muted">Teste seus conhecimentos teóricos para consolidar os intervalos e ganhar XP extra:</p>
+      <p id="quizQuestion" class="quiz-q"></p>
+      <div id="quizChoices" class="quiz-choices"></div>
+      <p id="quizFeedback" aria-live="polite" class="quiz-feedback"></p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>Guitar Improvisation Quest V3 · Progresso salvo localmente neste navegador.</p>
+  <p class="muted">Vídeos e recursos externos pertencem aos seus respectivos criadores.</p>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
