@@ -399,6 +399,72 @@
     }
   };
 
+  // --- Banco de Formatos de Acordes CAGED (Am) ancorados em cada Shape ---
+  // Voicings matematicamente verificados: apenas notas do acorde Am (A, C, E = 1, b3, 5).
+  const CHORD_SHAPES = {
+    1: {
+      cagedForm: 'Forma E (Em)',
+      startFret: 5,
+      endFret: 8,
+      notes: [
+        { string: 6, fret: 5, note: 'A', interval: '1', role: 'root' },
+        { string: 5, fret: 7, note: 'E', interval: '5', role: 'fifth' },
+        { string: 4, fret: 7, note: 'A', interval: '1', role: 'root' },
+        { string: 3, fret: 5, note: 'C', interval: 'b3', role: 'third' },
+        { string: 2, fret: 5, note: 'E', interval: '5', role: 'fifth' },
+        { string: 1, fret: 5, note: 'A', interval: '1', role: 'root' }
+      ]
+    },
+    2: {
+      cagedForm: 'Forma D (Dm)',
+      startFret: 7,
+      endFret: 10,
+      notes: [
+        { string: 4, fret: 7, note: 'A', interval: '1', role: 'root' },
+        { string: 3, fret: 9, note: 'E', interval: '5', role: 'fifth' },
+        { string: 2, fret: 10, note: 'A', interval: '1', role: 'root' },
+        { string: 1, fret: 8, note: 'C', interval: 'b3', role: 'third' }
+      ]
+    },
+    3: {
+      cagedForm: 'Forma C (Cm)',
+      startFret: 9,
+      endFret: 13,
+      notes: [
+        { string: 5, fret: 12, note: 'A', interval: '1', role: 'root' },
+        { string: 4, fret: 10, note: 'C', interval: 'b3', role: 'third' },
+        { string: 3, fret: 9, note: 'E', interval: '5', role: 'fifth' },
+        { string: 2, fret: 10, note: 'A', interval: '1', role: 'root' },
+        { string: 1, fret: 12, note: 'E', interval: '5', role: 'fifth' }
+      ]
+    },
+    4: {
+      cagedForm: 'Forma A (Am)',
+      startFret: 12,
+      endFret: 15,
+      notes: [
+        { string: 5, fret: 12, note: 'A', interval: '1', role: 'root' },
+        { string: 4, fret: 14, note: 'E', interval: '5', role: 'fifth' },
+        { string: 3, fret: 14, note: 'A', interval: '1', role: 'root' },
+        { string: 2, fret: 13, note: 'C', interval: 'b3', role: 'third' },
+        { string: 1, fret: 12, note: 'E', interval: '5', role: 'fifth' }
+      ]
+    },
+    5: {
+      cagedForm: 'Forma G (Gm)',
+      startFret: 14,
+      endFret: 17,
+      notes: [
+        { string: 6, fret: 17, note: 'A', interval: '1', role: 'root' },
+        { string: 5, fret: 15, note: 'C', interval: 'b3', role: 'third' },
+        { string: 4, fret: 14, note: 'E', interval: '5', role: 'fifth' },
+        { string: 3, fret: 14, note: 'A', interval: '1', role: 'root' },
+        { string: 2, fret: 17, note: 'E', interval: '5', role: 'fifth' },
+        { string: 1, fret: 17, note: 'A', interval: '1', role: 'root' }
+      ]
+    }
+  };
+
   // Frequências para sintetizador de áudio de notas da guitarra
   const OPEN_STRING_FREQS = [329.63, 246.94, 196.00, 146.83, 110.00, 82.41]; // Cordas 1 (e) a 6 (E)
 
@@ -443,10 +509,14 @@
     // Usa as notas customizadas da aula se fornecidas; caso contrário, usa o SHAPE_DEFINITIONS
     const baseNotes = lessonObj.fretboard?.notes || shapeDef.notes;
 
-    // Ajusta destaques específicos de acordo com o tema da aula
+    // Ajusta destaques específicos de acordo com o tema da aula.
+    // Prioriza o destaque declarativo (fretboard.highlight); caso ausente, usa regras legadas por id.
+    const highlightIntervals = lessonObj.fretboard?.highlight;
     const notes = baseNotes.map(n => {
       let isFeatured = true;
-      if (lessonId === 2) {
+      if (Array.isArray(highlightIntervals)) {
+        isFeatured = highlightIntervals.includes(n.interval);
+      } else if (lessonId === 2) {
         // Aula 2: 1, b3 e 5
         isFeatured = ['1', 'b3', '5'].includes(n.interval);
       } else if (lessonId === 3) {
@@ -561,6 +631,99 @@
             <span class="legend-item"><i class="legend-circle role-${item.role}"></i> ${esc(item.label)}</span>
           `).join('')}
           <span class="legend-hint">💡 Dica: Clique nas notas para ouvir o som na guitarra!</span>
+        </div>
+      </div>
+    `;
+
+    return html;
+  }
+
+  // Renderizador gráfico do diagrama de acorde CAGED (chord tones sobrepostos ao shape)
+  function renderChordDiagram(shapeNum, lesson) {
+    const lessonObj = typeof lesson === 'object' && lesson !== null ? lesson : {};
+    const shapeDef = CHORD_SHAPES[shapeNum] || CHORD_SHAPES[1];
+    const startFret = lessonObj.chord?.startFret || shapeDef.startFret;
+    const endFret = lessonObj.chord?.endFret || shapeDef.endFret;
+    const fretCount = endFret - startFret + 1;
+    const frets = Array.from({ length: fretCount }, (_, i) => startFret + i);
+    const chordNotes = shapeDef.notes;
+
+    const stringGauges = [1.5, 2.0, 2.6, 3.2, 3.8, 4.6]; // e até E
+    const stringNames = ['e (1ª)', 'B (2ª)', 'G (3ª)', 'D (4ª)', 'A (5ª)', 'E (6ª)'];
+
+    let html = `
+      <div class="fretboard-graphical-box chord-box">
+        <div class="fretboard-fret-header" style="grid-template-columns: 80px repeat(${fretCount}, 1fr);">
+          <div class="fret-num-label string-head-col">Corda</div>
+          ${frets.map(f => {
+            const hasInlay = [3, 5, 7, 9, 15, 17, 19, 21].includes(f);
+            const isDouble = f === 12;
+            let inlayHtml = '';
+            if (isDouble) inlayHtml = '<span class="fret-inlay-dot double"></span><span class="fret-inlay-dot double"></span>';
+            else if (hasInlay) inlayHtml = '<span class="fret-inlay-dot"></span>';
+            return `
+              <div class="fret-num-label">
+                <span class="fret-num">${f}ª</span>
+                ${inlayHtml}
+              </div>
+            `;
+          }).join('')}
+        </div>
+
+        <div class="fretboard-strings-grid">
+    `;
+
+    for (let sIdx = 0; sIdx < 6; sIdx++) {
+      const stringNum = sIdx + 1;
+      const sName = stringNames[sIdx];
+      const gauge = stringGauges[sIdx];
+
+      html += `
+        <div class="fretboard-string-row" style="grid-template-columns: 80px repeat(${fretCount}, 1fr);">
+          <div class="string-indicator">${sName}</div>
+      `;
+
+      for (let fIdx = 0; fIdx < fretCount; fIdx++) {
+        const fret = frets[fIdx];
+        const noteFound = chordNotes.find(n => n.string === stringNum && n.fret === fret);
+
+        let noteHtml = '';
+        if (noteFound) {
+          noteHtml = `
+            <button class="fret-note-dot role-${noteFound.role}"
+                    data-string="${stringNum}"
+                    data-fret="${fret}"
+                    title="Corda ${stringNum}, Casa ${fret}: ${noteFound.note} (Grau ${noteFound.interval}) - Chord tone">
+              <span class="note-interval">${noteFound.interval}</span>
+              <span class="note-name">${noteFound.note}</span>
+            </button>
+          `;
+        }
+
+        html += `
+          <div class="fret-cell">
+            <div class="guitar-wire" style="height: ${gauge}px;"></div>
+            ${noteHtml}
+          </div>
+        `;
+      }
+
+      html += `</div>`;
+    }
+
+    const legendItems = [
+      { role: 'root', label: '1 = Tônica (A)' },
+      { role: 'third', label: 'b3 = Terça Menor (C)' },
+      { role: 'fifth', label: '5 = Quinta Justa (E)' }
+    ];
+
+    html += `
+        </div>
+        <div class="fret-box-legend">
+          ${legendItems.map(item => `
+            <span class="legend-item"><i class="legend-circle role-${item.role}"></i> ${esc(item.label)}</span>
+          `).join('')}
+          <span class="legend-hint">💡 Estes são os <strong>chord tones</strong> do acorde de Am (1, b3 e 5).</span>
         </div>
       </div>
     `;
@@ -751,7 +914,8 @@
           <div>
             <p class="eyebrow">RECURSO DE VÍDEO SELECIONADO</p>
             <h4>${esc(lesson.video.title)}</h4>
-            <p class="muted small">${esc(lesson.video.source || 'Vídeo de apoio pedagógico.')}</p>
+            <p class="muted small">${esc(lesson.video.channel || lesson.video.source || 'Vídeo de apoio pedagógico.')}</p>
+            ${lesson.video.reason ? `<p class="muted small"><b>Por que este vídeo:</b> ${esc(lesson.video.reason)}</p>` : ''}
             <a href="${esc(lesson.video.url)}" target="_blank" rel="noopener noreferrer">Abrir vídeo de apoio ↗</a>
           </div>
         </div>
@@ -809,6 +973,7 @@
     // Renderização do Diagrama Gráfico do Braço e Tablatura
     const shapeNum = lesson.fretboard?.shape || 1;
     const graphicalFretboardHtml = renderGraphicalFretboard(shapeNum, lesson);
+    const chordDiagramHtml = renderChordDiagram(shapeNum, lesson);
     const graphicalTabHtml = renderGraphicalTab(lesson.fretboard?.tab || '', lesson);
 
     // Cálculo do XP acumulado na aula ativa
@@ -819,8 +984,8 @@
     const weekTotal = lessons.filter(l => l.week === lesson.week).length || 5;
 
     container.innerHTML = `
-      <!-- 1. Semana / Aula kicker -->
-      <p class="lesson-kicker">Semana ${lesson.week || 1} · Aula ${lesson.day || 1} de ${weekTotal}</p>
+      <!-- 1. Fase / Semana / Aula kicker -->
+      <p class="lesson-kicker">Fase ${lesson.phase || 1} · Semana ${lesson.week || 1} · Aula ${lesson.day || 1} de ${weekTotal}</p>
 
       <!-- 2. Título e Subtítulo -->
       <h2 class="lesson-title-main">${lesson.id}. ${esc(lesson.title)}</h2>
@@ -846,6 +1011,31 @@
         <article class="section wide">
           <h3>Conceito Fundamental</h3>
           <p>${esc(lesson.concept)}</p>
+        </article>
+
+        <!-- 5b. Acorde CAGED de referência -->
+        <article class="section wide">
+          <div class="section-title-bar">
+            <h3>
+              <span>Acorde CAGED de Referência</span>
+              <span class="badge phase-badge">${esc(lesson.cagedForm || `Shape ${shapeNum} · CAGED`)}</span>
+            </h3>
+          </div>
+          ${lesson.chord ? `
+            <p class="muted small">
+              <b>Acorde:</b> ${esc(lesson.chord.name || 'Am')}
+              — notas ${esc((lesson.chord.notes || []).join(' · '))}
+              (${esc((lesson.chord.formula || []).join(' · '))}).
+            </p>
+          ` : ''}
+          <div>${chordDiagramHtml}</div>
+          ${lesson.chordScaleRelation ? `<p class="muted small" style="margin-top: 0.75rem;"><b>Acorde ↔ escala:</b> ${esc(lesson.chordScaleRelation)}</p>` : ''}
+          ${Array.isArray(lesson.whatToSee) && lesson.whatToSee.length ? `
+            <div style="margin-top: 0.75rem;">
+              <b>O que enxergar no braço:</b>
+              <ul>${lesson.whatToSee.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
+            </div>
+          ` : ''}
         </article>
 
         <!-- 6. Mapa do braço & Shape info (GRÁFICO + TOGGLE ASCII) -->
@@ -927,6 +1117,17 @@
           <p>${esc(lesson.improvisation?.instruction || '')}</p>
         </article>
 
+        <!-- 10b. Rotina de 30 min — Teoria / Intervalos / Improvisação -->
+        ${Array.isArray(lesson.theoryRoutine) && lesson.theoryRoutine.length ? `
+        <article class="section wide routine-block">
+          <h3>
+            <span>Rotina de 30 min — Teoria / Intervalos / Improvisação</span>
+            <span class="routine-split-tag">Bloco 1</span>
+          </h3>
+          <ol>${lesson.theoryRoutine.map(i => `<li>${esc(i)}</li>`).join('')}</ol>
+        </article>
+        ` : ''}
+
         <!-- 11. Backing track -->
         <article class="section">
           <h3>Backing Track</h3>
@@ -943,6 +1144,14 @@
 
         <!-- 12. Rotina de Técnica (30 min) -->
         ${techRoutineHtml}
+
+        <!-- 12b. Revisão de aulas anteriores -->
+        ${Array.isArray(lesson.review) && lesson.review.length ? `
+        <article class="section wide">
+          <h3>Revisão de Aulas Anteriores</h3>
+          <ul>${lesson.review.map(i => `<li>${esc(i)}</li>`).join('')}</ul>
+        </article>
+        ` : ''}
 
         <!-- 14. Critério de domínio -->
         <article class="section wide">
@@ -1023,6 +1232,14 @@
           <h3 style="color: var(--cyan);">Missão da Aula</h3>
           <p style="font-size: 1.05rem; font-weight: 500;">${esc(lesson.mission)}</p>
         </article>
+
+        <!-- 16b. Desafio -->
+        ${lesson.challenge ? `
+        <article class="section wide" style="border-left-color: var(--hot); background: #241119;">
+          <h3 style="color: var(--hot);">Desafio da Aula</h3>
+          <p style="font-size: 1.02rem; font-weight: 500;">${esc(lesson.challenge)}</p>
+        </article>
+        ` : ''}
       </div>
 
       <!-- 17. Navegação entre aulas -->
