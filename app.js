@@ -550,6 +550,28 @@
         { string: 1, fret: 5, note: 'A', interval: '2', role: 'neutral' },
         { string: 1, fret: 7, note: 'B', interval: '3', role: 'third' }
       ]
+    },
+    3: {
+      startFret: 7,
+      endFret: 10,
+      notes: [
+        { string: 6, fret: 7, note: 'B', interval: '3', role: 'third' },
+        { string: 6, fret: 8, note: 'C', interval: '4', role: 'four' },
+        { string: 6, fret: 10, note: 'D', interval: '5', role: 'fifth' },
+        { string: 5, fret: 7, note: 'E', interval: '6', role: 'neutral' },
+        { string: 5, fret: 9, note: 'F#', interval: '7', role: 'seven' },
+        { string: 5, fret: 10, note: 'G', interval: '1', role: 'root' },
+        { string: 4, fret: 7, note: 'A', interval: '2', role: 'neutral' },
+        { string: 4, fret: 9, note: 'B', interval: '3', role: 'third' },
+        { string: 4, fret: 10, note: 'C', interval: '4', role: 'four' },
+        { string: 3, fret: 7, note: 'D', interval: '5', role: 'fifth' },
+        { string: 3, fret: 9, note: 'E', interval: '6', role: 'neutral' },
+        { string: 2, fret: 8, note: 'G', interval: '1', role: 'root' },
+        { string: 2, fret: 10, note: 'A', interval: '2', role: 'neutral' },
+        { string: 1, fret: 7, note: 'B', interval: '3', role: 'third' },
+        { string: 1, fret: 8, note: 'C', interval: '4', role: 'four' },
+        { string: 1, fret: 10, note: 'D', interval: '5', role: 'fifth' }
+      ]
     }
   };
 

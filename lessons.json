@@ -4,11 +4,11 @@
     "title": "Guitar Improvisation Quest",
     "version": "3.0",
     "language": "pt-BR",
-    "phase": 5,
-    "phaseTitle": "Fase 5: Chord Tones + CAGED + Progressões",
+    "phase": 6,
+    "phaseTitle": "Fase 6: Navegação Horizontal no Braço",
     "totalLessons": 80,
     "totalPhases": 8,
-    "implementedLessons": 55
+    "implementedLessons": 64
   },
   "lessons": [
     {
@@ -7043,6 +7043,1399 @@
         "CAGED como mapa harmônico."
       ],
       "challenge": "Grave o Boss Battle completo e avalie, de 1 a 5, seu domínio de targeting, voice leading e orientação.",
+      "mission": "Concluir o Boss Battle e registrar sua autoavaliação.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 56,
+      "week": 12,
+      "day": 4,
+      "phase": 6,
+      "title": "A mesma nota em várias regiões",
+      "subtitle": "G é sempre G, em qualquer corda",
+      "objective": "Perceber que uma mesma nota (G = 1) existe em vários lugares do braço e continua sendo a mesma função harmônica.",
+      "prerequisite": "Fases 1–5: pentatônicas, escala maior e chord tones em G maior.",
+      "concept": "A nota G (1 de G maior) aparece em vários lugares: 6ª corda casa 3, 4ª corda casa 5, 2ª corda casa 8, 1ª corda casa 3. Todas são a tônica — a mesma função. Quando você percebe isso, o braço deixa de ser um conjunto de desenhos e vira um mapa onde a mesma nota aparece em pontos diferentes. Voltar ao acorde G ajuda a confirmar: não importa em que oitava ou corda você toque o G, ele continua sendo o '1' — a casa.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "Todas as tônicas G na região (casa 2–8): 6ª casa 3, 4ª casa 5, 2ª casa 8 e 1ª casa 3.",
+        "Que cada G está em uma oitava diferente.",
+        "Que o acorde G (forma E) usa o G da 6ª, 4ª e 1ª cordas.",
+        "Que todos esses G têm a mesma função: 1 (tônica)."
+      ],
+      "chordScaleRelation": "G = 1 em qualquer região. O acorde G usa alguns desses G; a escala os distribui pelo braço. Localizar todos os G é localizar todas as 'casas' do território.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Todas as tônicas G (1)",
+        "shapes": [
+          1
+        ],
+        "startFret": 2,
+        "endFret": 8,
+        "highlight": [
+          "1"
+        ],
+        "legend": [
+          {
+            "role": "root",
+            "label": "1 = Tônica (G) em todas as cordas"
+          }
+        ],
+        "notes": [
+          {
+            "string": 6,
+            "fret": 3,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          },
+          {
+            "string": 4,
+            "fret": 5,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          },
+          {
+            "string": 2,
+            "fret": 8,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          },
+          {
+            "string": 1,
+            "fret": 3,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          }
+        ],
+        "intervalMap": "e|--1(3)----------\nB|----------1(8)--\nG|----------------\nD|-------1(5)-----\nA|----------------\nE|--1(3)----------",
+        "tab": "e|--------3-|\nB|------8---|\nG|----------|\nD|----5-----|\nA|----------|\nE|--3-------|"
+      },
+      "exercises": [
+        "Localizar os quatro G da região (6ª casa 3, 4ª casa 5, 2ª casa 8, 1ª casa 3).",
+        "Tocar cada G e cantar 'Um', confirmando a mesma função.",
+        "Tocar G em oitavas diferentes e comparar o som.",
+        "Voltar ao acorde G e identificar quais G pertencem ao acorde.",
+        "Desafio aleatório: o app (ou um parceiro) pede uma nota-alvo (G, B, D, A, E) e você encontra todas as ocorrências na região."
+      ],
+      "earTraining": {
+        "instruction": "Toque G na 6ª corda casa 3, depois na 4ª casa 5, depois na 1ª casa 3. Perceba que a altura muda, mas a sensação de 'casa' (tônica) é a mesma."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise por 5 minutos terminando sempre em um G (qualquer oitava). Alterne entre os G agudo e grave para sentir o mesmo '1' em registros diferentes."
+      },
+      "theoryRoutine": [
+        "00–05 min: Localizar todos os G da região.",
+        "05–15 min: Tocar G em oitavas diferentes e cantar 'Um'.",
+        "15–20 min: Ouvido — tônica em registros diferentes.",
+        "20–30 min: Improvisar terminando sempre em G."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Mudança de oitava e precisão no salto de cordas",
+        "routine": [
+          "00–10 min: Escala de G maior a 80 BPM.",
+          "10–20 min: Tocar os quatro G com palhetada alternada.",
+          "20–25 min: Salto de oitava (G grave → G agudo) com sincronização.",
+          "25–30 min: Frases terminando em G."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Notes In The First Five Frets",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/notes-in-the-first-five-frets-mt-201",
+        "reason": "Ensina a localizar as mesmas notas em diferentes cordas, base da navegação horizontal."
+      },
+      "commonMistakes": [
+        "Achar que cada G é uma nota diferente.",
+        "Memorizar apenas um G e ignorar os outros.",
+        "Não relacionar os G ao acorde G."
+      ],
+      "mastery": {
+        "know": "Sei que a mesma nota aparece em vários lugares do braço.",
+        "play": "Consigo localizar todos os G da região sem hesitar.",
+        "use": "Consigo usar G em diferentes oitavas como destino harmônico na improvisação."
+      },
+      "review": [
+        "Escala maior de G (Fase 4).",
+        "Chord tones 1, 3, 5 (Fase 5)."
+      ],
+      "challenge": "Encontre todos os G do braço que você conseguir (além da região), sem decorar — usando o conhecimento de cordas e oitavas.",
+      "mission": "Gravar os quatro G da região nomeando a corda e a casa.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 57,
+      "week": 12,
+      "day": 5,
+      "phase": 6,
+      "title": "O mesmo intervalo em diferentes regiões",
+      "subtitle": "Nota é identidade, intervalo é função",
+      "objective": "Separar 'nota' de 'função': localizar 1, 3, 5 e 7 em diferentes regiões do braço, independentemente da forma.",
+      "prerequisite": "Aula 56 e o domínio de intervalos da escala maior.",
+      "concept": "Em G maior: G = 1, B = 3, D = 5, F# = 7. Essas funções aparecem em várias regiões. A pergunta deixa de ser 'onde está o shape?' e passa a ser 'qual é a função desta nota?'. Localizar todas as 3as, 5as e 7as pelo braço é o primeiro passo para enxergar o mapa funcional, não geométrico.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "As tônicas G (1): 6ª casa 3, 4ª casa 5, 2ª casa 8, 1ª casa 3.",
+        "As terças B (3): 5ª casa 2, 3ª casa 4, 6ª casa 7, 1ª casa 7.",
+        "As quintas D (5): 5ª casa 5, 2ª casa 3, 3ª casa 7, 6ª casa 10.",
+        "As sétimas F# (7): 6ª casa 2, 4ª casa 4, 1ª casa 2, 5ª casa 9."
+      ],
+      "chordScaleRelation": "Cada grau (1, 3, 5, 7) tem várias casas no braço. A forma muda, mas a função harmônica permanece: 1 = casa, 3 = identidade maior, 5 = estabilidade, 7 = leading tone.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Graus 1, 3, 5 e 7 (casa 2–8)",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)--\nB|--5(3)---6(5)---1(8)---------\nG|--2(2)---3(4)---4(5)---5(7)--\nD|--6(2)---7(4)---1(5)---2(7)--\nA|--3(2)---4(3)---5(5)---6(7)--\nE|--7(2)---1(3)---2(5)---3(7)--",
+        "tab": "e|--------------7-|\nB|------3-5-8-----|\nG|--2-4-5-7-------|\nD|--2-4-5-7-------|\nA|--2-3-5-7-------|\nE|--2-3-5-7-------|"
+      },
+      "exercises": [
+        "Localizar todas as tônicas (1) da região.",
+        "Localizar todas as terças maiores (3) da região.",
+        "Localizar todas as quintas (5) da região.",
+        "Localizar todas as sétimas (7) da região.",
+        "Pergunta funcional: apontar uma nota aleatória e responder 'qual é a função desta nota?'."
+      ],
+      "earTraining": {
+        "instruction": "Toque G (1), B (3), D (5) e F# (7) em sequência e cante cada grau. Depois toque a mesma função em outra região e confirme que a sensação é a mesma."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise alternando regiões, mas sempre sabendo a função da nota que está tocando. Termine frases em 1, 3 ou 5."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar 1, 3, 5 e 7 na região.",
+        "05–15 min: Localizar cada grau em diferentes regiões.",
+        "15–20 min: Ouvido — mesma função, outra oitava.",
+        "20–30 min: Improvisar com consciência funcional."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Salto entre cordas para o mesmo grau",
+        "routine": [
+          "00–10 min: Escala de G maior a 80 BPM.",
+          "10–20 min: Localizar e tocar 1, 3, 5 e 7 em cordas diferentes.",
+          "20–25 min: String crossing entre as ocorrências do mesmo grau.",
+          "25–30 min: Frases funcionais."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Use Visualisation",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/use-visualisation-pc-108",
+        "reason": "Técnica de visualização do braço para enxergar funções (intervalos) além das formas."
+      },
+      "commonMistakes": [
+        "Confundir a nota com a função.",
+        "Decorar só a forma, sem saber o grau de cada nota.",
+        "Não conseguir encontrar o mesmo grau em outra região."
+      ],
+      "mastery": {
+        "know": "Sei a diferença entre nota (identidade) e intervalo (função).",
+        "play": "Consigo localizar 1, 3, 5 e 7 em diferentes regiões.",
+        "use": "Consigo nomear a função da nota enquanto improviso."
+      },
+      "review": [
+        "Aula 56: mesma nota em regiões.",
+        "Escala maior e intervalos (Fase 4)."
+      ],
+      "challenge": "Peça a alguém para apontar notas aleatórias no braço e responda a função de cada uma em 2 segundos.",
+      "mission": "Gravar 1, 3, 5 e 7 em duas regiões diferentes, nomeando os graus.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 58,
+      "week": 13,
+      "day": 1,
+      "phase": 6,
+      "title": "Movimento horizontal em uma corda",
+      "subtitle": "A escala em linha reta",
+      "objective": "Visualizar e tocar a escala de G maior horizontalmente em uma única corda (B), antecipando cada nota.",
+      "prerequisite": "Aula 57: intervalos em diferentes regiões.",
+      "concept": "Na corda B, a escala de G maior caminha em linha reta: G (casa 8) → A (10) → B (12) → C (13) → D (15) → E (17) → F# (19) → G (20). Você não está 'pulando de shape' — está deslizando pelo mesmo território. O objetivo não é velocidade, mas visualizar o intervalo, ouvir o movimento e antecipar a próxima nota antes de tocá-la.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "A escala de G maior na corda B, da casa 8 à 20.",
+        "A sequência 1 → 2 → 3 → 5 → 6 → 1 (pentatônica) na corda.",
+        "A sequência 1 → 3 → 5 → 7 → 1 (graus estruturais) na corda.",
+        "Que cada casa corresponde a um semitom (ou tom inteiro quando pula uma casa)."
+      ],
+      "chordScaleRelation": "Na horizontal, os intervalos ficam explícitos como distâncias: 1 → 3 = 4 casas (2 tons), 1 → 5 = 7 casas, 1 → 7 = 11 casas. A corda B vira uma régua de intervalos.",
+      "fretboard": {
+        "shape": 1,
+        "position": 7,
+        "label": "G major · Horizontal na corda B",
+        "shapes": [
+          1
+        ],
+        "startFret": 7,
+        "endFret": 20,
+        "highlight": [
+          "1",
+          "3",
+          "5",
+          "7"
+        ],
+        "notes": [
+          {
+            "string": 2,
+            "fret": 8,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          },
+          {
+            "string": 2,
+            "fret": 10,
+            "note": "A",
+            "interval": "2",
+            "role": "neutral"
+          },
+          {
+            "string": 2,
+            "fret": 12,
+            "note": "B",
+            "interval": "3",
+            "role": "third"
+          },
+          {
+            "string": 2,
+            "fret": 13,
+            "note": "C",
+            "interval": "4",
+            "role": "four"
+          },
+          {
+            "string": 2,
+            "fret": 15,
+            "note": "D",
+            "interval": "5",
+            "role": "fifth"
+          },
+          {
+            "string": 2,
+            "fret": 17,
+            "note": "E",
+            "interval": "6",
+            "role": "neutral"
+          },
+          {
+            "string": 2,
+            "fret": 19,
+            "note": "F#",
+            "interval": "7",
+            "role": "seven"
+          },
+          {
+            "string": 2,
+            "fret": 20,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          }
+        ],
+        "intervalMap": "B|--1(8)--2(10)--3(12)--4(13)--5(15)--6(17)--7(19)--1(20)--",
+        "tab": "e|-------------------------|\nB|--8--10--12--15--17--20--|\nG|-------------------------|\nD|-------------------------|\nA|-------------------------|\nE|-------------------------|"
+      },
+      "exercises": [
+        "Tocar a pentatônica horizontal: G → A → B → D → E → G (8, 10, 12, 15, 17, 20).",
+        "Tocar a sequência estrutural: 1 → 3 → 5 → 7 → 1 (8, 12, 15, 19, 20).",
+        "Cantar o grau antes de tocar cada nota.",
+        "Descer a mesma sequência (20 → 19 → 17 → 15 → 13 → 12 → 10 → 8).",
+        "Antecipar: dizer o nome da próxima nota antes de tocar."
+      ],
+      "earTraining": {
+        "instruction": "Toque 1 → 2 → 3 → 5 → 6 → 1 na corda B e cante cada grau. Depois toque 1 → 3 → 5 → 7 → 1 e sinta como o 7 puxa para o 1."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise usando apenas a corda B, deslizando horizontalmente e terminando frases em chord tones (1, 3 ou 5)."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar a escala na corda B.",
+        "05–15 min: Pentatônica horizontal e sequência estrutural.",
+        "15–20 min: Ouvido — graus na horizontal.",
+        "20–30 min: Improvisar em uma corda."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Deslizamento horizontal e palhetada em uma corda",
+        "routine": [
+          "00–10 min: Escala horizontal na corda B a 70 BPM.",
+          "10–20 min: Slides entre graus adjacentes.",
+          "20–25 min: Alternate picking em uma corda com sincronização.",
+          "25–30 min: Frases horizontais curtas."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "The Mental Fretboard Development",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/the-mental-fretboard-development-et-303",
+        "reason": "Desenvolve a visualização mental do braço, essencial para enxergar a escala em linha reta."
+      },
+      "commonMistakes": [
+        "Confundir as casas e tocar notas erradas na corda.",
+        "Tocar rápido sem antecipar a próxima nota.",
+        "Achar que navegação horizontal é só deslizar sem saber o intervalo."
+      ],
+      "mastery": {
+        "know": "Sei a sequência da escala maior na corda B.",
+        "play": "Consigo tocar 1 → 3 → 5 → 7 → 1 na corda B.",
+        "use": "Consigo improvisar horizontalmente em uma corda com consciência de grau."
+      },
+      "review": [
+        "Aula 57: intervalos em regiões.",
+        "Pentatônica maior (Fase 3)."
+      ],
+      "challenge": "Tocar a escala completa na corda B de olhos fechados, cantando os graus.",
+      "mission": "Gravar a pentatônica e a sequência estrutural na corda B.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 59,
+      "week": 13,
+      "day": 2,
+      "phase": 6,
+      "title": "Conectando duas regiões horizontalmente",
+      "subtitle": "Atravessar sem teletransportar a mão",
+      "objective": "Atravessar a fronteira entre duas regiões (Shape 1 → Shape 2) sem interromper a frase, terminando em chord tone.",
+      "prerequisite": "Aula 58: movimento horizontal em uma corda.",
+      "concept": "Para conectar duas regiões sem 'teletransportar' a mão: 1) comece em uma nota; 2) escolha uma nota-alvo na região seguinte; 3) encontre um caminho musical (por nota vizinha ou slide); 4) atravesse a fronteira; 5) termine em chord tone. O segredo é nunca parar a frase — o deslocamento é parte da melodia, não uma correção de posição.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "A região 1 (casa 2–5) e a região 2 (casa 4–8) juntas.",
+        "As notas compartilhadas entre as duas regiões (a sobreposição).",
+        "O caminho G → A → B subindo a 6ª corda (3 → 5 → 7).",
+        "A nota-alvo B (3) na região 2."
+      ],
+      "chordScaleRelation": "As duas regiões se sobrepõem nas casas 4–5. A conexão usa notas compartilhadas como ponte: começar em um chord tone e terminar em outro, atravessando a sobreposição.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Região 1 + Região 2 (casa 2–8)",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)--\nB|--5(3)---6(5)---1(8)---------\nG|--2(2)---3(4)---4(5)---5(7)--\nD|--6(2)---7(4)---1(5)---2(7)--\nA|--3(2)---4(3)---5(5)---6(7)--\nE|--7(2)---1(3)---2(5)---3(7)--",
+        "tab": "e|----------------|\nB|----------------|\nG|----------------|\nD|----------------|\nA|----------------|\nE|--3---5---7-----|"
+      },
+      "exercises": [
+        "Comece em G (6ª casa 3) e termine em B (6ª casa 7), subindo a 6ª corda.",
+        "Comece em D (5ª casa 5) e termine em G (4ª casa 5), cruzando para a região 2.",
+        "Comece em F# (4ª casa 4) e resolva em G (4ª casa 5).",
+        "Escolher uma nota-alvo na região 2 e construir um caminho até ela.",
+        "Atravessar a fronteira sem parar a frase."
+      ],
+      "earTraining": {
+        "instruction": "Toque G → A → B na 6ª corda e cante 1 → 2 → 3. Sinta como a frase se move para a região seguinte e repousa em B (3)."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise começando na região 1 e deslocando-se até a região 2. O objetivo não é velocidade, mas não perder a orientação ao cruzar a fronteira."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar as duas regiões e a sobreposição.",
+        "05–15 min: Caminhos de conexão (nota vizinha e slide).",
+        "15–20 min: Ouvido — frase atravessando regiões.",
+        "20–30 min: Improvisar conectando as duas regiões."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Deslocamento de mão e slides entre regiões",
+        "routine": [
+          "00–10 min: Escala de G maior nas duas regiões a 75 BPM.",
+          "10–20 min: Slides entre as notas compartilhadas.",
+          "20–25 min: Frase atravessando a fronteira com sincronização.",
+          "25–30 min: Frases de conexão com target note."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Moving Between Scale Patterns",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/moving-between-scale-patterns-mm-006",
+        "reason": "Ensina a transição suave entre posições, o coração da navegação horizontal."
+      },
+      "commonMistakes": [
+        "Parar a frase ao trocar de posição.",
+        "Teletransportar a mão sem um caminho musical.",
+        "Perder a nota-alvo ao cruzar a fronteira."
+      ],
+      "mastery": {
+        "know": "Sei que as regiões se sobrepõem e compartilham notas.",
+        "play": "Consigo conectar duas regiões sem parar a frase.",
+        "use": "Consigo atravessar regiões terminando em chord tone na improvisação."
+      },
+      "review": [
+        "Aula 58: horizontal em uma corda.",
+        "Conexão de shapes (Fase 2)."
+      ],
+      "challenge": "Conectar Shape 1 → Shape 2 em 4 frases diferentes, cada uma com um target note diferente.",
+      "mission": "Gravar uma frase que atravesse as duas regiões e resolva em chord tone.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 60,
+      "week": 13,
+      "day": 3,
+      "phase": 6,
+      "title": "Conectando chord tones pelo braço",
+      "subtitle": "Procurando destinos harmônicos",
+      "objective": "Visualizar e conectar os chord tones de G, C e D em diferentes regiões, movendo o braço conforme a harmonia.",
+      "prerequisite": "Aula 59 e o domínio de chord tones (Fase 5).",
+      "concept": "Sobre G → C → D → G, os destinos mudam: G = G/B/D, C = C/E/G, D = D/F#/A. Em vez de simplesmente subir a escala, você procura destinos harmônicos: sobre G, encontre B; sobre C, encontre E; sobre D, encontre F#; de volta a G, volte para G. O movimento pelo braço acompanha o pensamento harmônico — não é uma escala mecânica, é uma caça a chord tones.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "Chord tones de G: G (1), B (3), D (5).",
+        "Chord tones de C: C (4), E (6), G (1) — graus 4, 6 e 1 da escala de G.",
+        "Chord tones de D: D (5), F# (7), A (2) — graus 5, 7 e 2 da escala de G.",
+        "A linha G → B → C → E → F# → G conectando os destinos."
+      ],
+      "chordScaleRelation": "Cada acorde tem seus 1/3/5. No mapa de G maior, eles aparecem como graus diferentes (C = 4/6/1, D = 5/7/2). Conectar esses pontos é conectar a harmonia pelo braço.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Chord tones de G, C e D (casa 2–8)",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)--\nB|--5(3)---6(5)---1(8)---------\nG|--2(2)---3(4)---4(5)---5(7)--\nD|--6(2)---7(4)---1(5)---2(7)--\nA|--3(2)---4(3)---5(5)---6(7)--\nE|--7(2)---1(3)---2(5)---3(7)--",
+        "tab": "e|----------------|\nB|----------------|\nG|----------------|\nD|----2---4---5---|\nA|--2---3---------|\nE|--3-------------|"
+      },
+      "exercises": [
+        "Sobre G, encontrar B (3) e D (5) em regiões diferentes.",
+        "Sobre C, encontrar E (6) e G (1).",
+        "Sobre D, encontrar F# (7) e A (2).",
+        "Tocar a linha G → B → C → E → F# → G (voice leading dos chord tones).",
+        "Improvisar procurando um destino harmônico diferente a cada acorde."
+      ],
+      "earTraining": {
+        "instruction": "Toque G (1) → B (3) → C (4) → E (6) → F# (7) → G (1) e cante cada grau. Sinta como cada mudança de acorde redireciona o destino harmônico."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track G → C → D → G, improvise deslocando-se pelo braço para alcançar um chord tone diferente a cada acorde. Frase-chave: 'Não estou subindo a escala, estou procurando destinos harmônicos.'"
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar os chord tones de G, C e D.",
+        "05–15 min: Localizar cada chord tone em regiões diferentes.",
+        "15–20 min: Ouvido — linha de voice leading dos chord tones.",
+        "20–30 min: Improvisar caçando destinos harmônicos."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Arpejos conectados pelo braço",
+        "routine": [
+          "00–10 min: Escala de G maior a 80 BPM.",
+          "10–20 min: Arpejos G, C e D conectados por voice leading.",
+          "20–25 min: Slides entre os chord tones.",
+          "25–30 min: Frases harmônicas atravessando regiões."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Chords, Scales & Arpeggios",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/chords-scales-arpeggios-mt-206",
+        "reason": "Mostra acordes, escalas e arpejos como uma só estrutura — base para caçar chord tones pelo braço."
+      },
+      "commonMistakes": [
+        "Subir a escala sem pensar nos chord tones.",
+        "Perder de vista qual acorde está soando.",
+        "Fazer saltos grandes em vez de voice leading."
+      ],
+      "mastery": {
+        "know": "Sei os chord tones de G, C e D e seus graus na escala de G.",
+        "play": "Consigo conectar G → B → C → E → F# → G pelo braço.",
+        "use": "Consigo improvisar caçando destinos harmônicos a cada acorde."
+      },
+      "review": [
+        "Aula 59: conectar regiões.",
+        "Chord tones e progressões (Fase 5)."
+      ],
+      "challenge": "Improvisar sobre G → C → D → G caçando um chord tone diferente a cada acorde, em 3 regiões.",
+      "mission": "Gravar a linha de voice leading G → B → C → E → F# → G nomeando os graus.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 61,
+      "week": 13,
+      "day": 4,
+      "phase": 6,
+      "title": "Frases horizontais",
+      "subtitle": "Transformando o deslocamento em música",
+      "objective": "Transformar a navegação horizontal em frases musicais que percorrem o braço e terminam em chord tone.",
+      "prerequisite": "Aulas 58–60: movimento horizontal e conexão.",
+      "concept": "Uma frase horizontal começa em uma região, percorre o braço (mudando de corda quando necessário), atravessa posições e termina em chord tone. Pratique 4 licks progressivos lentamente, priorizando som, direção, fraseado, precisão e consciência do intervalo — não velocidade.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "Lick 1: movimento horizontal simples (G → A → B → D).",
+        "Lick 2: movimento horizontal + bend (B → C).",
+        "Lick 3: movimento horizontal + slide (B → D).",
+        "Lick 4: movimento horizontal + target note (terminando em G)."
+      ],
+      "chordScaleRelation": "A frase horizontal conecta o território (escala) à estrutura (chord tones). Terminar em G, B ou D ancora a frase no acorde, mesmo depois de percorrer várias casas.",
+      "fretboard": {
+        "shape": 1,
+        "position": 7,
+        "label": "G major · Frase horizontal (corda B)",
+        "shapes": [
+          1
+        ],
+        "startFret": 7,
+        "endFret": 20,
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "notes": [
+          {
+            "string": 2,
+            "fret": 8,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          },
+          {
+            "string": 2,
+            "fret": 10,
+            "note": "A",
+            "interval": "2",
+            "role": "neutral"
+          },
+          {
+            "string": 2,
+            "fret": 12,
+            "note": "B",
+            "interval": "3",
+            "role": "third"
+          },
+          {
+            "string": 2,
+            "fret": 13,
+            "note": "C",
+            "interval": "4",
+            "role": "four"
+          },
+          {
+            "string": 2,
+            "fret": 15,
+            "note": "D",
+            "interval": "5",
+            "role": "fifth"
+          },
+          {
+            "string": 2,
+            "fret": 17,
+            "note": "E",
+            "interval": "6",
+            "role": "neutral"
+          },
+          {
+            "string": 2,
+            "fret": 20,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          }
+        ],
+        "intervalMap": "B|--1(8)--2(10)--3(12)--4(13)--5(15)--6(17)--1(20)--",
+        "tab": "e|---------------------------|\nB|--8--10--12b13--15--17--20-|\nG|---------------------------|\nD|---------------------------|\nA|---------------------------|\nE|---------------------------|"
+      },
+      "exercises": [
+        "Lick 1 (horizontal simples): B 8 → 10 → 12 → 15 (G → A → B → D).",
+        "Lick 2 (horizontal + bend): B 8 → 10 → 12b13 (G → A → B com bend para C).",
+        "Lick 3 (horizontal + slide): B 8 → 10 → 12, slide para 15 (G → A → B → D).",
+        "Lick 4 (horizontal + target note): B 8 → 10 → 12 → 15 → 17 → 20 (terminando em G).",
+        "Praticar cada lick lentamente, cantando o grau de cada nota."
+      ],
+      "earTraining": {
+        "instruction": "Toque o Lick 1 e cante 1 → 2 → 3 → 5. Depois o Lick 2 e ouça o bend B → C (3 → 4). Sinta a direção de cada frase."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise frases horizontais que percorram o braço e terminem em chord tone (G, B ou D). Alterne entre frases com bend, slide e target note."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar a escala horizontal na corda B.",
+        "05–15 min: Praticar os 4 licks lentamente.",
+        "15–20 min: Ouvido — direção das frases.",
+        "20–30 min: Improvisar frases horizontais."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Frases horizontais com bends e slides",
+        "routine": [
+          "00–10 min: Escala horizontal na corda B a 70 BPM.",
+          "10–20 min: Os 4 licks com palhetada limpa.",
+          "20–25 min: Bend 12→13 com afinação e vibrato.",
+          "25–30 min: Frases horizontais completas."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Slide To The Same",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/slide-to-the-same-lk-008",
+        "reason": "Técnica de slide para conectar notas e posições de forma musical."
+      },
+      "commonMistakes": [
+        "Tocar os licks rápido e sem direção.",
+        "Perder a consciência do grau durante o deslocamento.",
+        "Não terminar em chord tone."
+      ],
+      "mastery": {
+        "know": "Sei o que é uma frase horizontal e seus elementos.",
+        "play": "Consigo tocar os 4 licks com precisão.",
+        "use": "Consigo criar frases horizontais com bends, slides e target notes."
+      },
+      "review": [
+        "Aula 58: horizontal em uma corda.",
+        "Aula 60: chord tones pelo braço."
+      ],
+      "challenge": "Criar 3 frases horizontais próprias, cada uma terminando em um chord tone diferente.",
+      "mission": "Gravar os 4 licks nomeando os graus.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 62,
+      "week": 13,
+      "day": 5,
+      "phase": 6,
+      "title": "Mudança de posição como recurso musical",
+      "subtitle": "A posição muda porque a música pede",
+      "objective": "Entender que mudar de posição é uma escolha musical (não uma obrigação técnica) e aplicá-la como recurso expressivo.",
+      "prerequisite": "Aulas 59–61: conexão de regiões e frases horizontais.",
+      "concept": "Você pode tocar a mesma frase em uma posição, repeti-la em outra região, conectar as duas, usar slide para mudar, saltar uma oitava ou mudar de posição antes de um target note. A posição muda porque a música pede — não porque você esqueceu o shape. Compare as opções e escolha conscientemente.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "A frase curta 1 → 3 → 5 (G → B → D) na região grave.",
+        "A mesma frase uma oitava acima (G → B → D).",
+        "O salto de oitava e o slide como formas de mudar de posição.",
+        "Que mudar antes de um target note dá ênfase à chegada."
+      ],
+      "chordScaleRelation": "O mesmo motivo (1, 3, 5) existe em várias oitavas. Escolher onde tocar é escolher o registro e a ênfase — a estrutura harmônica continua a mesma.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Mapa completo (casa 2–10)",
+        "shapes": [
+          1,
+          2,
+          3
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)---4(8)---5(10)--\nB|--5(3)---6(5)---1(8)---2(10)----------------\nG|--2(2)---3(4)---4(5)---5(7)---6(9)----------\nD|--6(2)---7(4)---1(5)---2(7)---3(9)---4(10)--\nA|--3(2)---4(3)---5(5)---6(7)---7(9)---1(10)--\nE|--7(2)---1(3)---2(5)---3(7)---4(8)---5(10)--",
+        "tab": "e|----------------|\nB|----------------|\nG|----------------|\nD|----------------|\nA|----2---5-------|\nE|--3-------------|"
+      },
+      "exercises": [
+        "Criar a frase curta 1 → 3 → 5 (G → B → D) na região grave.",
+        "Tocar a mesma frase em uma única posição.",
+        "Repetir a frase uma oitava acima (D 5, G 4, G 7).",
+        "Conectar as duas regiões com slide.",
+        "Usar salto de oitava e mudança antes de um target note.",
+        "Improvisar escolhendo conscientemente quando mudar de posição."
+      ],
+      "earTraining": {
+        "instruction": "Toque o motivo 1 → 3 → 5 no grave e depois no agudo. Sinta que a função é a mesma, mas o registro e a ênfase mudam. Compare: tocar tudo em uma posição × deslocar."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise escolhendo quando mudar de posição. Use slide e salto de oitava como recursos, sempre mantendo a orientação e terminando em target note."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar o motivo 1 → 3 → 5.",
+        "05–15 min: Tocar o motivo em uma posição e em duas.",
+        "15–20 min: Ouvido — registro e ênfase.",
+        "20–30 min: Improvisar com mudança de posição consciente."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Slide, salto de oitava e deslocamento",
+        "routine": [
+          "00–10 min: Escala de G maior a 80 BPM.",
+          "10–20 min: Slide entre oitavas do mesmo motivo.",
+          "20–25 min: Salto de oitava com sincronização.",
+          "25–30 min: Frases com mudança de posição antes do target."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Playing Melodies & Moving Chords Up",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/modules/playing-melodies-moving-chords-up",
+        "reason": "Mostra como mover melodias e ideias pelo braço, tratando a posição como escolha musical."
+      },
+      "commonMistakes": [
+        "Mudar de posição por obrigação ou por ter esquecido o shape.",
+        "Não planejar o destino antes de mudar.",
+        "Usar salto de oitava sem intenção musical."
+      ],
+      "mastery": {
+        "know": "Sei que posição é uma escolha musical.",
+        "play": "Consigo tocar um motivo em duas oitavas.",
+        "use": "Consigo improvisar escolhendo quando mudar de posição."
+      },
+      "review": [
+        "Aula 61: frases horizontais.",
+        "Conexão de regiões (Aula 59)."
+      ],
+      "challenge": "Improvisar 3 minutos usando pelo menos 2 slides e 1 salto de oitava, terminando em target notes.",
+      "mission": "Gravar o mesmo motivo em duas oitavas com slide entre elas.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 63,
+      "week": 14,
+      "day": 1,
+      "phase": 6,
+      "title": "Improvisação horizontal sobre progressão",
+      "subtitle": "G → C → D → G em movimento",
+      "objective": "Improvisar sobre G → C → D → G deslocando-se horizontalmente e alcançando target notes diferentes a cada acorde.",
+      "prerequisite": "Aulas 60–62: chord tones pelo braço e mudança de posição.",
+      "concept": "Sobre G → C → D → G, o aluno deve permanecer na escala, deslocar-se horizontalmente, encontrar chord tones e não voltar automaticamente para a primeira posição. Progressão de níveis: Nível 1 (uma região), Nível 2 (duas regiões), Nível 3 (todo o braço), Nível 4 (movimento horizontal livre). A cada acorde, tente chegar a uma target note diferente.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "G → target G/B/D.",
+        "C → target C/E/G.",
+        "D → target D/F#/A.",
+        "G → target G/B/D.",
+        "A escala horizontal completa para se deslocar entre os alvos."
+      ],
+      "chordScaleRelation": "A cada acorde, mude o alvo: G (1/3/5), C (4/6/1 na escala de G), D (5/7/2 na escala de G). A escala horizontal é o caminho entre os destinos.",
+      "fretboard": {
+        "shape": 1,
+        "position": 7,
+        "label": "G major · Escala horizontal completa",
+        "shapes": [
+          1
+        ],
+        "startFret": 7,
+        "endFret": 20,
+        "highlight": [
+          "1",
+          "3",
+          "5",
+          "7"
+        ],
+        "notes": [
+          {
+            "string": 2,
+            "fret": 8,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          },
+          {
+            "string": 2,
+            "fret": 10,
+            "note": "A",
+            "interval": "2",
+            "role": "neutral"
+          },
+          {
+            "string": 2,
+            "fret": 12,
+            "note": "B",
+            "interval": "3",
+            "role": "third"
+          },
+          {
+            "string": 2,
+            "fret": 15,
+            "note": "D",
+            "interval": "5",
+            "role": "fifth"
+          },
+          {
+            "string": 2,
+            "fret": 17,
+            "note": "E",
+            "interval": "6",
+            "role": "neutral"
+          },
+          {
+            "string": 2,
+            "fret": 19,
+            "note": "F#",
+            "interval": "7",
+            "role": "seven"
+          },
+          {
+            "string": 2,
+            "fret": 20,
+            "note": "G",
+            "interval": "1",
+            "role": "root"
+          }
+        ],
+        "intervalMap": "B|--1(8)--2(10)--3(12)--5(15)--6(17)--7(19)--1(20)--",
+        "tab": "e|-------------------------------|\nB|--8--10--12--15--17--19--20----|\nG|-------------------------------|\nD|-------------------------------|\nA|-------------------------------|\nE|-------------------------------|"
+      },
+      "exercises": [
+        "Nível 1: improvisar em uma única região sobre G → C → D → G.",
+        "Nível 2: improvisar em duas regiões.",
+        "Nível 3: usar todo o braço disponível.",
+        "Nível 4: movimento horizontal livre.",
+        "A cada acorde, chegar a pelo menos uma target note diferente (G/B/D, C/E/G, D/F#/A)."
+      ],
+      "earTraining": {
+        "instruction": "Ouça a progressão G → C → D → G e cante os alvos de cada acorde antes de tocar. Depois improvise cantando e toque o que cantou."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track G | C | D | G, improvise deslocando-se horizontalmente pelo braço. Não volte automaticamente para a primeira posição; mude os alvos a cada acorde."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar os alvos de G, C e D.",
+        "05–15 min: Níveis 1 e 2 de improvisação.",
+        "15–20 min: Ouvido — cantar os alvos da progressão.",
+        "20–30 min: Níveis 3 e 4 (todo o braço, livre)."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Fluência horizontal sobre a progressão",
+        "routine": [
+          "00–10 min: Escala horizontal na corda B a 75 BPM.",
+          "10–20 min: Slides e deslocamentos entre regiões.",
+          "20–25 min: String crossing entre os alvos.",
+          "25–30 min: Frases horizontais sobre a progressão."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Scale Basic Improvisation",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-scale-basic-improvisation-im-123",
+        "reason": "Revisão da improvisação na escala maior, útil para aplicar deslocamento horizontal sobre a progressão."
+      },
+      "commonMistakes": [
+        "Voltar sempre para a primeira posição.",
+        "Não mudar os alvos quando o acorde muda.",
+        "Deslocar-se sem manter a orientação harmônica."
+      ],
+      "mastery": {
+        "know": "Sei os alvos de G, C e D na progressão.",
+        "play": "Consigo improvisar em duas regiões sobre a progressão.",
+        "use": "Consigo improvisar horizontalmente mudando alvos a cada acorde."
+      },
+      "review": [
+        "Aula 60: chord tones pelo braço.",
+        "Progressão G → C → D → G (Fase 5)."
+      ],
+      "challenge": "Improvisar 3 minutos sobre G → C → D → G usando pelo menos 3 regiões e mudando o alvo a cada acorde.",
+      "mission": "Gravar a improvisação horizontal sobre a progressão, nomeando os alvos.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 64,
+      "week": 14,
+      "day": 2,
+      "phase": 6,
+      "title": "Boss Battle — Mapa horizontal completo",
+      "subtitle": "Avaliação da Fase 6",
+      "objective": "Avaliar o domínio da navegação horizontal: localizar notas e intervalos em várias regiões, conectar posições e improvisar sobre G → C → D → G em todo o braço.",
+      "prerequisite": "Aulas 56 a 63 concluídas.",
+      "concept": "Prova da Fase 6. O objetivo é verificar se você enxerga o braço como um mapa contínuo — não como cinco desenhos. Você deve localizar uma nota em diferentes regiões, tocar escalas horizontalmente, conectar posições, encontrar chord tones e improvisar com mudança de posição consciente.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — avaliação",
+      "whatToSee": [
+        "O mapa completo de G maior (casa 2–10).",
+        "Tônicas, terças, quintas e sétimas em várias regiões.",
+        "Os chord tones de G, C e D.",
+        "O caminho horizontal entre as regiões."
+      ],
+      "chordScaleRelation": "Escala = território contínuo; regiões = janelas; chord tones = destinos; movimento horizontal = caminho. Tudo integrado no mapa.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Mapa horizontal completo (casa 2–10)",
+        "shapes": [
+          1,
+          2,
+          3
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)---4(8)---5(10)--\nB|--5(3)---6(5)---1(8)---2(10)----------------\nG|--2(2)---3(4)---4(5)---5(7)---6(9)----------\nD|--6(2)---7(4)---1(5)---2(7)---3(9)---4(10)--\nA|--3(2)---4(3)---5(5)---6(7)---7(9)---1(10)--\nE|--7(2)---1(3)---2(5)---3(7)---4(8)---5(10)--",
+        "tab": "e|------------------------------3-|\nB|--------------------5---8-------|\nG|--------------4---5-------------|\nD|--------5---7-------------------|\nA|--2---3-------------------------|\nE|--3-----------------------------|"
+      },
+      "exercises": [
+        "Encontre todas as tônicas de G (1).",
+        "Toque três terças maiores (3) diferentes.",
+        "Comece no Shape 1 e termine no Shape 3.",
+        "Comece em G e termine em B.",
+        "Toque G → C → D → G sem permanecer na mesma posição.",
+        "Faça uma frase horizontal terminando na 3ª do acorde.",
+        "Improvisar por 2 minutos usando pelo menos 3 regiões.",
+        "Conectar três ou mais regiões com slides.",
+        "Terminar frases em target notes (G/B/D, C/E/G, D/F#/A)."
+      ],
+      "earTraining": {
+        "instruction": "Ouça a progressão G → C → D → G e cante os alvos antes de tocar. Depois improvise por 2 minutos usando 3 regiões, cantando mentalmente a função de cada nota."
+      },
+      "improvisation": {
+        "instruction": "Improvisação final: sobre G → C → D → G, use pelo menos 3 regiões, 2 slides, terminando frases em 1, 3 ou 5 e mudando de posição conscientemente."
+      },
+      "theoryRoutine": [
+        "00–05 min: Localizar 1, 3, 5 e 7 no mapa completo.",
+        "05–10 min: Conectar regiões 1 → 2 → 3.",
+        "10–15 min: Chord tones de G, C e D em várias regiões.",
+        "15–25 min: Frases horizontais.",
+        "25–30 min: Improvisação livre (2 min, 3 regiões)."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Resistência e fluência horizontal",
+        "routine": [
+          "00–10 min: Escala de G maior em 3 regiões a 75 BPM.",
+          "10–20 min: Slides e deslocamentos entre as regiões.",
+          "20–25 min: String crossing e salto de oitava.",
+          "25–30 min: Improviso horizontal sobre a progressão."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Mixing Major & Minor Pentatonics",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/mixing-major-minor-pentatonics-bl-804",
+        "reason": "Revisão geral de vocabulário para a avaliação final da Fase 6."
+      },
+      "commonMistakes": [
+        "Enxergar o braço como desenhos separados.",
+        "Perder a orientação ao conectar regiões.",
+        "Improvisar sem mudar os alvos a cada acorde."
+      ],
+      "mastery": {
+        "know": "Consigo explicar o braço como um mapa contínuo.",
+        "play": "Consigo conectar três ou mais regiões com slides.",
+        "use": "Consigo improvisar horizontalmente sobre G → C → D → G mudando alvos."
+      },
+      "review": [
+        "Mesma nota em várias regiões (Aula 56).",
+        "Mesmo intervalo em regiões (Aula 57).",
+        "Movimento horizontal (Aula 58).",
+        "Chord tones pelo braço (Aula 60).",
+        "Improvisação horizontal (Aula 63)."
+      ],
+      "challenge": "Grave o Boss Battle completo e avalie, de 1 a 5, sua orientação horizontal, conexão de regiões e targeting.",
       "mission": "Concluir o Boss Battle e registrar sua autoavaliação.",
       "xp": {
         "know": 25,
