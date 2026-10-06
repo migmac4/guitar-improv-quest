@@ -612,6 +612,22 @@
     }
   };
 
+  // D major (D F# A) — forma A barre na 5ª casa.
+  const CHORD_SHAPES_DMAJOR = {
+    1: {
+      cagedForm: 'Forma A (D major)',
+      startFret: 5,
+      endFret: 7,
+      notes: [
+        { string: 5, fret: 5, note: 'D', interval: '1', role: 'root' },
+        { string: 4, fret: 7, note: 'A', interval: '5', role: 'fifth' },
+        { string: 3, fret: 7, note: 'D', interval: '1', role: 'root' },
+        { string: 2, fret: 7, note: 'F#', interval: '3', role: 'third' },
+        { string: 1, fret: 5, note: 'A', interval: '5', role: 'fifth' }
+      ]
+    }
+  };
+
   function getShapeBank(lessonObj) {
     const key = (lessonObj?.key || '').toLowerCase();
     const scaleName = (lessonObj?.scale?.name || '').toLowerCase();
@@ -626,6 +642,9 @@
   }
 
   function getChordBank(lessonObj) {
+    const chordName = (lessonObj?.chord?.name || '').toLowerCase();
+    if (chordName === 'd') return CHORD_SHAPES_DMAJOR;
+    if (chordName === 'c') return CHORD_SHAPES_CMAJOR;
     const key = (lessonObj?.key || '').toLowerCase();
     if (key.includes('g major')) return CHORD_SHAPES_GMAJOR;
     if (key.includes('c major') && !key.includes('a minor')) return CHORD_SHAPES_CMAJOR;

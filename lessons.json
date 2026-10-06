@@ -4,11 +4,11 @@
     "title": "Guitar Improvisation Quest",
     "version": "3.0",
     "language": "pt-BR",
-    "phase": 4,
-    "phaseTitle": "Fase 4: Pentatônica Maior → Escala Maior",
+    "phase": 5,
+    "phaseTitle": "Fase 5: Chord Tones + CAGED + Progressões",
     "totalLessons": 80,
     "totalPhases": 8,
-    "implementedLessons": 43
+    "implementedLessons": 55
   },
   "lessons": [
     {
@@ -5479,6 +5479,1570 @@
         "Chord tones 1, 3, 5 como target notes."
       ],
       "challenge": "Grave o Boss Battle completo e avalie, de 1 a 5, seu domínio em escala, intervalos, tensão e resolução.",
+      "mission": "Concluir o Boss Battle e registrar sua autoavaliação.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 44,
+      "week": 10,
+      "day": 2,
+      "phase": 5,
+      "title": "O acorde dentro da escala",
+      "subtitle": "G, B e D já estão no mapa de G maior",
+      "objective": "Entender que o acorde G (G, B, D) não está separado da escala — ele é a estrutura (1, 3, 5) dentro do território de G maior.",
+      "prerequisite": "Fases 1–4: pentatônicas, escala maior (1–7) e localização de intervalos em G maior.",
+      "concept": "A escala de G maior é G A B C D E F# (1 2 3 4 5 6 7). O acorde G usa apenas três dessas notas: G (1), B (3) e D (5). Esses são os chord tones — o esqueleto harmônico. O acorde não é um objeto à parte: ele é uma parte estrutural da escala. Quando você toca o acorde G e depois a escala ao redor, está vendo duas camadas do mesmo mapa, não dois mundos diferentes.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "O acorde G (forma E) barrado na 3ª casa.",
+        "As tônicas G: 6ª corda casa 3, 4ª corda casa 5 e 1ª corda casa 3.",
+        "As terças maiores B: 5ª corda casa 2 e 3ª corda casa 4.",
+        "As quintas D: 5ª corda casa 5 e 2ª corda casa 3.",
+        "Que 1, 3 e 5 (G, B, D) são as mesmas notas do acorde."
+      ],
+      "chordScaleRelation": "ESCALA = TERRITÓRIO (G A B C D E F#). CHORD TONES = ESTRUTURA (G B D = 1 3 5). O acorde G é a coluna vertebral da escala de G maior nesta região.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Chord Tones (1, 3, 5)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------3-|\nB|--------------3---|\nG|------------4-----|\nD|----------5-------|\nA|--------5---------|\nE|------3-----------|"
+      },
+      "exercises": [
+        "Tocar o acorde G (forma E, 3ª casa) e nomear cada nota: G, D, G, B, D, G.",
+        "Tocar somente G, B e D (1, 3, 5) em qualquer ordem.",
+        "Tocar a escala completa G A B C D E F# ascendente e descendente.",
+        "Alternar: acorde G → arpejo G B D → escala completa.",
+        "Localizar os três G, os dois B e os dois D na região."
+      ],
+      "earTraining": {
+        "instruction": "Toque G (6ª corda casa 3) e cante Um. Toque B (5ª corda casa 2) e cante Terça maior — sinta a cor clara do maior. Toque D (5ª corda casa 5) e cante Quinta — sinta a estabilidade. Repita 1 → 3 → 5 até reconhecer cada sensação."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G maior, improvise usando toda a escala, mas toda frase deve terminar em G, B ou D (chord tones). Se terminar fora desses três, a frase fica no ar — recomece."
+      },
+      "theoryRoutine": [
+        "00–05 min: Tocar o acorde G e verbalizar G, B, D como 1, 3 e 5.",
+        "05–15 min: Localizar 1, 3 e 5 na região (casa 2–5).",
+        "15–20 min: Treino de ouvido 1 → 3 → 5 com canto.",
+        "20–30 min: Improvisar terminando todas as frases em chord tone."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Alternate picking e arpejo limpo de G",
+        "routine": [
+          "00–10 min: Escala de G maior em colcheias a 70 BPM.",
+          "10–20 min: Arpejo G B D com palhetada alternada a 70 BPM.",
+          "20–25 min: Sincronização ao alternar acorde → arpejo.",
+          "25–30 min: Frases curtas terminando em chord tone."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Chords, Scales & Arpeggios",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/chords-scales-arpeggios-mt-206",
+        "reason": "Mostra como acordes, escalas e arpejos são três visões do mesmo material harmônico."
+      },
+      "commonMistakes": [
+        "Achar que o acorde e a escala são coisas separadas.",
+        "Tocar a escala sem saber onde estão os chord tones.",
+        "Não verbalizar 1, 3 e 5 ao tocar."
+      ],
+      "mastery": {
+        "know": "Sei que G = G, B, D e que essas são as notas 1, 3 e 5 da escala maior.",
+        "play": "Consigo localizar G, B e D na região (casa 2–5) sem hesitar.",
+        "use": "Consigo improvisar terminando frases conscientemente em G, B ou D."
+      },
+      "review": [
+        "Escala maior 1–7 (Fase 4).",
+        "Pentatônica maior 1 2 3 5 6."
+      ],
+      "challenge": "Grave 1 minuto e conte: quantas frases terminaram em G, B ou D? Meta: 80% ou mais.",
+      "mission": "Gravar o acorde G seguido do arpejo G B D, nomeando cada intervalo.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 45,
+      "week": 10,
+      "day": 3,
+      "phase": 5,
+      "title": "Chord tones como destinos",
+      "subtitle": "Não basta tocar a escala",
+      "objective": "Perceber a diferença entre correr a escala e mirar conscientemente os chord tones (1, 3, 5).",
+      "prerequisite": "Aula 44: localizar G, B e D dentro da escala.",
+      "concept": "Tocar a escala de G maior dá um som correto, mas sem direção. Tocar mirando chord tones dá direção musical. A diferença está em onde você decide parar a frase. Quando você termina em G, B ou D, a frase soa apoiada no acorde. Quando termina em outra nota, soa suspensa. Comece a tratar 1, 3 e 5 como destinos (target notes).",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "Os destinos G (1), B (3) e D (5) destacados.",
+        "Como as outras notas (2, 4, 6, 7) circundam os destinos.",
+        "A aproximação A → B (2 → 3) e C → B (4 → 3).",
+        "A aproximação F# → G (7 → 1) e E → D (6 → 5)."
+      ],
+      "chordScaleRelation": "CHORD TONES = DESTINO. As notas 2, 4, 6 e 7 são o caminho; 1, 3 e 5 são onde você quer chegar.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Target Notes (1, 3, 5)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------3-|\nB|--------------3---|\nG|----------4-------|\nD|----2---5---------|\nA|--5---------------|\nE|--3---------------|"
+      },
+      "exercises": [
+        "Frase terminando em G (1): F# → G (7 → 1).",
+        "Frase terminando em B (3): C → B (4 → 3).",
+        "Frase terminando em D (5): E → D (6 → 5).",
+        "Começar em qualquer nota da escala e chegar a um chord tone.",
+        "Alternar aleatoriamente os destinos G, B e D."
+      ],
+      "earTraining": {
+        "instruction": "Cante mentalmente o destino antes de tocá-lo: escolha terminar em 3, cante Terça, e só então toque B. Repita para 1 e 5. Isso liga o ouvido à intenção."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise por 5 minutos. Regra: toda frase deve terminar em 1, 3 ou 5. As notas intermediárias são livres."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar G, B, D como 1, 3, 5.",
+        "05–15 min: Frases terminando em G, depois B, depois D.",
+        "15–20 min: Ouvido — cantar o destino antes de tocar.",
+        "20–30 min: Improvisar com target notes obrigatórias."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Controle de fraseado até a nota de chegada",
+        "routine": [
+          "00–10 min: Escala de G maior a 75 BPM.",
+          "10–20 min: Células 7 → 1, 4 → 3 e 6 → 5 com acento na chegada.",
+          "20–25 min: Bends e vibrato somente na nota de chegada.",
+          "25–30 min: Frases curtas mirando chord tones."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Arpeggios: Why? How? Which? When?",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/arpeggios-why-how-which-when-ar-101",
+        "reason": "Explica por que arpejos (chord tones) dão direção melódica à improvisação."
+      },
+      "commonMistakes": [
+        "Correr a escala sem escolher onde parar.",
+        "Terminar frases em notas de passagem sem perceber.",
+        "Não cantar o destino antes de tocar."
+      ],
+      "mastery": {
+        "know": "Entendo a diferença entre tocar a escala e mirar chord tones.",
+        "play": "Consigo criar frases que terminam em G, B ou D.",
+        "use": "Consigo improvisar com intenção, usando 1, 3 e 5 como destinos."
+      },
+      "review": [
+        "Aula 44: acorde dentro da escala.",
+        "4 → 3 e 7 → 1 (Fase 4)."
+      ],
+      "challenge": "Improvisar 2 minutos e marcar a nota final de cada frase. Meta: 90% em chord tone.",
+      "mission": "Gravar três frases, cada uma terminando em um chord tone diferente.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 46,
+      "week": 10,
+      "day": 4,
+      "phase": 5,
+      "title": "Escala como caminho",
+      "subtitle": "Território, estrutura e destino",
+      "objective": "Internalizar os três papéis: escala = território, chord tones = estrutura, target note = destino — e usar as notas intermediárias como caminho.",
+      "prerequisite": "Aula 45: mirar chord tones.",
+      "concept": "ESCALA = TERRITÓRIO: todas as notas disponíveis. CHORD TONES = ESTRUTURA: G, B, D. TARGET NOTE = DESTINO: a nota que você escolhe alcançar. OUTRAS NOTAS = CAMINHOS: A, C, E e F# conduzem até os destinos. Exemplo: para chegar em B (3), você pode passar por A (2) ou C (4). Para chegar em G (1), pode passar por F# (7). As notas intermediárias pertencem à escala e criam movimento.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "O território completo (1–7) na região.",
+        "A estrutura G, B, D (1, 3, 5) em destaque.",
+        "Os caminhos: A (2), C (4), E (6) e F# (7).",
+        "Exemplos de aproximação: A → G, B → A → G, F# → G."
+      ],
+      "chordScaleRelation": "Escala = território; chord tones = estrutura; target note = destino; outras notas da escala = caminhos.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Território + Estrutura (1, 3, 5)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------|\nB|----------------|\nG|------2---4-----|\nD|----------------|\nA|----------------|\nE|--3-------------|"
+      },
+      "exercises": [
+        "Escolher o destino G (1) e aproximar usando A (2) e F# (7): A → G e F# → G.",
+        "Escolher o destino B (3) e aproximar usando A (2) e C (4): A → B e C → B.",
+        "Escolher o destino D (5) e aproximar usando E (6): E → D.",
+        "Criar uma frase com três notas: caminho → caminho → destino.",
+        "Explicar em voz alta, para cada frase, qual nota é território, estrutura e destino."
+      ],
+      "earTraining": {
+        "instruction": "Toque A → G (2 → 1) e sinta a descida para casa. Toque F# → G (7 → 1) e sinta a resolução de semitom. Toque C → B (4 → 3) e sinta a descida para a terça. Identifique de ouvido qual resolução está soando."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise criando frases com caminho → target note. Cada frase deve ter uma intenção clara de chegada em G, B ou D."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar os três papéis (território, estrutura, destino).",
+        "05–15 min: Aproximações para G, B e D.",
+        "15–20 min: Ouvido — identificar resoluções de ouvido.",
+        "20–30 min: Improvisar com caminho → target note."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Legato e slides nas aproximações",
+        "routine": [
+          "00–10 min: Escala de G maior a 75 BPM.",
+          "10–20 min: Legato (hammer-on/pull-off) em 2 → 1 e 4 → 3.",
+          "20–25 min: Slides entre notas do caminho e o destino.",
+          "25–30 min: Frases com aproximação → target note."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "How to Link Guitar Chords using Scales",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/how-to-link-guitar-chords-using-scales-bg-1504",
+        "reason": "Mostra como usar a escala para conectar e conduzir até as notas dos acordes."
+      },
+      "commonMistakes": [
+        "Tocar a escala inteira como se fosse a frase.",
+        "Não ter uma nota de chegada clara.",
+        "Confundir nota de passagem com nota de destino."
+      ],
+      "mastery": {
+        "know": "Consigo explicar território, estrutura, destino e caminho.",
+        "play": "Consigo criar aproximações (caminho → target note).",
+        "use": "Consigo improvisar frases com direção clara até os chord tones."
+      },
+      "review": [
+        "Aula 45: chord tones como destinos.",
+        "4 → 3 e 7 → 1."
+      ],
+      "challenge": "Improvisar 2 minutos em que toda frase tenha caminho → target note explícito.",
+      "mission": "Gravar uma frase com aproximação para cada chord tone (G, B, D).",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 47,
+      "week": 10,
+      "day": 5,
+      "phase": 5,
+      "title": "Quando o acorde muda (G → C)",
+      "subtitle": "A escala continua, os alvos mudam",
+      "objective": "Introduzir a primeira mudança harmônica: sobre C, mirar C, E e G em vez de G, B e D.",
+      "prerequisite": "Aulas 44–46: chord tones de G como destinos.",
+      "concept": "Na progressão G → C, a escala pode continuar sendo G maior (G A B C D E F#), mas os chord tones mudam. Sobre G, os alvos são G, B, D. Sobre C, os alvos são C, E, G. Você não precisa mudar de posição — precisa mudar de alvo. Ouvir o acorde mudar e redirecionar a intenção harmônica é o coração desta fase.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "C",
+        "notes": [
+          "C",
+          "E",
+          "G"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma A (C major) — 3ª casa",
+      "whatToSee": [
+        "O acorde C (forma A) na 3ª casa: C (5ª casa 3), G (4ª casa 5), C (3ª casa 5), E (2ª casa 5), G (1ª casa 3).",
+        "Os chord tones de G: G, B, D.",
+        "Os chord tones de C: C, E, G.",
+        "A nota comum G, que funciona como ponte entre os dois acordes."
+      ],
+      "chordScaleRelation": "G = G B D (1 3 5). C = C E G — que dentro da escala de G maior são os graus 4, 6 e 1. A escala G maior permanece; apenas os chord tones que você enfatiza mudam.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · C = C(4), E(6), G(1)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "4",
+          "6"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------|\nB|----------------|\nG|----------------|\nD|----------------|\nA|--2---3---------|\nE|----------------|"
+      },
+      "exercises": [
+        "Tocar o acorde G e depois o acorde C na 3ª casa.",
+        "Localizar os chord tones de C: C (5ª casa 3 e 3ª casa 5), E (4ª casa 2 e 2ª casa 5), G (6ª casa 3, 4ª casa 5, 1ª casa 3).",
+        "Ver no mapa: dentro de G maior, C = 4, E = 6 e G = 1 (os graus destacados).",
+        "Improvisar durante G mirando G, B, D; ao chegar em C, mirar C, E, G.",
+        "Usar a nota comum G como ponte entre os dois acordes.",
+        "Perceber que você não precisa trocar de posição — só de alvo."
+      ],
+      "earTraining": {
+        "instruction": "Toque o acorde G e depois C, ouvindo a mudança de centro. Sobre G, cante a nota B (3); sobre C, cante a nota E (3). Sinta como a terça se desloca de B para E."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track G → C (alternando), improvise na mesma região. Durante G, termine frases em G, B ou D. Durante C, termine em C, E ou G. O objetivo é ouvir a mudança e mudar o alvo."
+      },
+      "theoryRoutine": [
+        "00–05 min: Tocar G e C, comparando os chord tones.",
+        "05–15 min: Localizar chord tones de C na região.",
+        "15–20 min: Ouvido — sentir a terça B → E.",
+        "20–30 min: Improvisar sobre G → C mudando os alvos."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Troca limpa entre acordes e arpejos",
+        "routine": [
+          "00–10 min: Escala de G maior a 75 BPM.",
+          "10–20 min: Arpejos de G e C alternados (G B D / C E G).",
+          "20–25 min: Voice leading B → C e D → E.",
+          "25–30 min: Frases sobre G → C."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Re-harmonising melody notes",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/re-harmonising-melody-notes-ja-034",
+        "reason": "Mostra como uma mesma melodia pode ser percebida de forma diferente conforme o acorde muda."
+      },
+      "commonMistakes": [
+        "Trocar de posição achando que precisa quando o acorde muda.",
+        "Continuar mirando os alvos de G sobre o acorde C.",
+        "Não ouvir a mudança harmônica."
+      ],
+      "mastery": {
+        "know": "Sei que sobre C os chord tones são C, E e G.",
+        "play": "Consigo localizar C, E e G na mesma região do acorde G.",
+        "use": "Consigo mudar os alvos (de G/B/D para C/E/G) quando o acorde muda."
+      },
+      "review": [
+        "Aula 46: escala como caminho.",
+        "Chord tones de G."
+      ],
+      "challenge": "Improvisar sobre G → C por 3 minutos sem trocar de posição, mudando apenas os alvos.",
+      "mission": "Gravar G → C, mostrando os alvos de cada acorde em voz alta.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 48,
+      "week": 11,
+      "day": 1,
+      "phase": 5,
+      "title": "Voltar para casa (G → C → G)",
+      "subtitle": "A nota comum como ponte",
+      "objective": "Entender o ciclo G → C → G e usar a nota comum G como ponte harmônica.",
+      "prerequisite": "Aula 47: chord tones de C.",
+      "concept": "Na progressão G → C → G, os alvos vão de G B D, para C E G, e de volta para G B D. A nota G é comum aos dois acordes — ela pode funcionar como ponte quando o acorde muda. Escolher o chord tone mais próximo da nota atual (voice leading) mantém a linha melódica suave e conectada.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "Os alvos de G: G, B, D.",
+        "Os alvos de C: C, E, G.",
+        "A nota comum G entre os dois acordes.",
+        "Voice leading: B → C, E → D, C → B."
+      ],
+      "chordScaleRelation": "G → C → G alterna entre G B D e C E G. G é a ponte; B → C e E → D são os movimentos de semitom que suavizam a mudança.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · G → C → G (1, 3, 5)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------3-|\nB|--------------3---|\nG|------------4-----|\nD|----------5-------|\nA|----2---3---------|\nE|--3---------------|"
+      },
+      "exercises": [
+        "Improvisar sobre G → C → G mantendo-se em uma única região.",
+        "Usar G como ponte quando o acorde muda de G para C.",
+        "Executar voice leading: B → C (5ª casa 2 → 3) e E → D (4ª casa 2 → 5ª casa 5).",
+        "C → B (3ª casa 5 → 4) na volta de C para G.",
+        "Escolher o chord tone mais próximo da nota atual a cada mudança."
+      ],
+      "earTraining": {
+        "instruction": "Ouça a progressão G → C → G. Sobre G, cante a quinta D; sobre C, cante a terça E; de volta a G, cante a tônica G. Sinta a volta para casa."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track G → C → G, improvise em uma única região. Não troque de shape por obrigação — deixe os alvos mudarem conforme o acorde."
+      },
+      "theoryRoutine": [
+        "00–05 min: Tocar G → C → G e verbalizar os alvos.",
+        "05–15 min: Voice leading B → C, E → D, C → B.",
+        "15–20 min: Ouvido — sentir a volta para G.",
+        "20–30 min: Improvisar sobre G → C → G."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Continuidade de linha no voice leading",
+        "routine": [
+          "00–10 min: Escala de G maior a 75 BPM.",
+          "10–20 min: Células B → C e E → D com legato.",
+          "20–25 min: Arpejos de G e C alternados.",
+          "25–30 min: Frases sobre G → C → G."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Scale Improvisation",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-scale-improvisation-bg-1006",
+        "reason": "Revisão da improvisação na escala maior, útil para aplicar sobre a progressão."
+      },
+      "commonMistakes": [
+        "Trocar de posição por obrigação a cada mudança de acorde.",
+        "Ignorar a nota comum G como ponte.",
+        "Fazer saltos grandes quando há um chord tone mais próximo."
+      ],
+      "mastery": {
+        "know": "Sei que G é a nota comum entre G e C.",
+        "play": "Consigo executar voice leading B → C e E → D.",
+        "use": "Consigo improvisar sobre G → C → G mudando alvos sem trocar de posição."
+      },
+      "review": [
+        "Aula 47: G → C.",
+        "Voice leading básico."
+      ],
+      "challenge": "Improvisar sobre G → C → G usando apenas chord tones como pontos de chegada.",
+      "mission": "Gravar G → C → G mostrando a ponte G e o voice leading.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 49,
+      "week": 11,
+      "day": 2,
+      "phase": 5,
+      "title": "Três acordes, uma escala (G → C → D)",
+      "subtitle": "A harmonia em movimento",
+      "objective": "Improvisar sobre G → C → D mantendo a mesma região e mudando os alvos para cada acorde.",
+      "prerequisite": "Aulas 47–48: G → C e G → C → G.",
+      "concept": "Na progressão G → C → D, a escala continua sendo G maior. Os chord tones mudam: G = G B D, C = C E G, D = D F# A. Durante cada acorde, destaque os três chord tones correspondentes e escolha um único target note. A escala é a mesma; o que muda é qual parte dela você enfatiza.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "D",
+        "notes": [
+          "D",
+          "F#",
+          "A"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma A (D major) — 5ª casa",
+      "whatToSee": [
+        "Os chord tones de G: G, B, D.",
+        "Os chord tones de C: C, E, G.",
+        "Os chord tones de D: D, F#, A.",
+        "O acorde D (forma A) na 5ª casa: D (5ª casa 5), A (4ª casa 7), D (3ª casa 7), F# (2ª casa 7), A (1ª casa 5)."
+      ],
+      "chordScaleRelation": "G = G B D, C = C E G, D = D F# A — que dentro da escala de G maior são os graus 1/3/5, 4/6/1 e 5/7/2. Todos no mesmo território; a intenção harmônica muda a cada acorde.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · D = D(5), F#(7), A(2)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "2",
+          "5",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|------------------|\nB|--------------3---|\nG|------2-----------|\nD|------------4-----|\nA|------5-----------|\nE|------------------|"
+      },
+      "exercises": [
+        "Durante G, destacar G, B, D; durante C, C, E, G; durante D, D, F#, A.",
+        "Escolher um único target note para cada acorde.",
+        "Localizar os chord tones de D: D (5ª casa 5 e 2ª casa 3), F# (6ª casa 2, 4ª casa 4, 1ª casa 2), A (6ª casa 5, 3ª casa 2, 1ª casa 5).",
+        "Ver no mapa: dentro de G maior, D = 5, F# = 7 e A = 2 (os graus destacados).",
+        "Improvisar sobre G | C | D | G mudando a intenção a cada acorde.",
+        "Manter-se em uma única região do braço."
+      ],
+      "earTraining": {
+        "instruction": "Ouça G → C → D. Sobre cada acorde, cante a tônica: G, depois C, depois D. Depois cante as terças: B, E, F#. Sinta como a harmonia se move por baixo da mesma escala."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track G | C | D | G, improvise na mesma região. A cada mudança de acorde, redirecione seus alvos para os chord tones do novo acorde."
+      },
+      "theoryRoutine": [
+        "00–05 min: Tocar G, C e D e comparar os chord tones.",
+        "05–15 min: Localizar chord tones de D na região.",
+        "15–20 min: Ouvido — cantar tônicas e terças de cada acorde.",
+        "20–30 min: Improvisar sobre G → C → D → G."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Arpejos dos três acordes em sequência",
+        "routine": [
+          "00–10 min: Escala de G maior a 75 BPM.",
+          "10–20 min: Arpejos G, C e D alternados.",
+          "20–25 min: Voice leading entre os três acordes.",
+          "25–30 min: Frases sobre G → C → D → G."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Making The Blues Changes",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/making-the-blues-changes-gt-283",
+        "reason": "Ensina a acompanhar mudanças de acorde mantendo a coerência melódica."
+      },
+      "commonMistakes": [
+        "Tocar a escala inteira sem diferenciar os três acordes.",
+        "Esquecer que D tem F# (7 da escala) como terça.",
+        "Trocar de posição desnecessariamente."
+      ],
+      "mastery": {
+        "know": "Sei os chord tones de G, C e D.",
+        "play": "Consigo localizar D, F# e A na região.",
+        "use": "Consigo mudar a intenção harmônica a cada acorde de G → C → D."
+      },
+      "review": [
+        "Aula 48: G → C → G.",
+        "Chord tones de G e C."
+      ],
+      "challenge": "Improvisar sobre G → C → D → G usando um target note diferente para cada acorde.",
+      "mission": "Gravar os arpejos G, C e D em sequência, nomeando os intervalos.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 50,
+      "week": 11,
+      "day": 3,
+      "phase": 5,
+      "title": "O chord tone mais próximo",
+      "subtitle": "Voice leading básico",
+      "objective": "Aprender a escolher o chord tone mais próximo da nota atual quando o acorde muda.",
+      "prerequisite": "Aula 49: G → C → D.",
+      "concept": "Voice leading é mover-se para a nota mais próxima quando a harmonia muda. Exemplos: de G para C, B → C (sobe um semitom) e D → E (sobe um tom). De C para G, C → B (desce um semitom) e E → D (desce um tom). De G para D, G → F# (desce um semitom) ou G → A (sobe um tom). Minimizar saltos mantém a linha melódica natural e conectada.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "Os chord tones de G, C e D na região.",
+        "Os movimentos de semitom: B → C, C → B, F# → G.",
+        "Os movimentos de tom: D → E, E → D, G → A.",
+        "Como escolher o alvo mais próximo da nota atual."
+      ],
+      "chordScaleRelation": "Voice leading: de G → C, B → C e D → E; de C → G, C → B e E → D; de G → D, G → F#. São os caminhos de menor movimento entre os chord tones.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Voice Leading (1, 3, 5)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------|\nB|----------------|\nG|------2---4-----|\nD|----------------|\nA|----------------|\nE|--2---3---------|"
+      },
+      "exercises": [
+        "Você está em B (5ª casa 2); o acorde mudou para C. Encontre o chord tone mais próximo: C (5ª casa 3).",
+        "Você está em E (4ª casa 2); o acorde mudou para C. Mais próximo: E já é chord tone de C.",
+        "Você está em C (3ª casa 5); o acorde mudou para G. Mais próximo: B (3ª casa 4).",
+        "Você está em G (6ª casa 3); o acorde mudou para D. Mais próximo: F# (6ª casa 2) ou A (6ª casa 5).",
+        "Improvisar minimizando saltos desnecessários a cada mudança."
+      ],
+      "earTraining": {
+        "instruction": "Toque B → C (semitom) e depois D → E (tom). Ouça a diferença entre os dois tamanhos de movimento. Identifique, de ouvido, se uma transição sobe ou desce e se é de semitom ou de tom."
+      },
+      "improvisation": {
+        "instruction": "Sobre G → C → D → G, improvise tentando sempre escolher o chord tone mais próximo da nota em que você está. Não exija perfeição — o objetivo é pensar em movimento mínimo."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar os chord tones de G, C e D.",
+        "05–15 min: Exercícios de voice leading (nota atual → acorde novo).",
+        "15–20 min: Ouvido — semitom × tom.",
+        "20–30 min: Improvisar com movimento mínimo."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Precisão no voice leading",
+        "routine": [
+          "00–10 min: Escala de G maior a 80 BPM.",
+          "10–20 min: Células B → C, C → B, E → D, F# → G.",
+          "20–25 min: Legato nas transições de semitom.",
+          "25–30 min: Frases com voice leading sobre a progressão."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Jazz Blues With Voice Leading",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/jazz-blues-with-voice-leading-ja-205",
+        "reason": "Demonstra voice leading prático — mover-se para a nota mais próxima na mudança de acorde."
+      },
+      "commonMistakes": [
+        "Fazer saltos grandes quando há um chord tone próximo.",
+        "Não saber qual acorde está soando no momento.",
+        "Confundir semitom com tom."
+      ],
+      "mastery": {
+        "know": "Entendo o conceito de voice leading (movimento mínimo).",
+        "play": "Consigo encontrar o chord tone mais próximo da nota atual.",
+        "use": "Consigo improvisar com voice leading sobre G → C → D → G."
+      },
+      "review": [
+        "Aula 49: G → C → D.",
+        "Approach notes (aula seguinte)."
+      ],
+      "challenge": "Improvisar 3 minutos movendo-se sempre para o chord tone mais próximo.",
+      "mission": "Gravar três transições de voice leading (G→C, C→G, G→D) em voz alta.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 51,
+      "week": 11,
+      "day": 4,
+      "phase": 5,
+      "title": "Approach notes",
+      "subtitle": "Chegando ao destino",
+      "objective": "Introduzir notas de aproximação (approach notes) que conduzem ao chord tone.",
+      "prerequisite": "Aula 50: voice leading.",
+      "concept": "Uma approach note é uma nota que conduz ao destino — ela não é o destino. Exemplos: F# → G (7 → 1), C → B (4 → 3), A → G (2 → 1), E → D (6 → 5). A nota de aproximação pertence à escala e cria uma pequena tensão que resolve no chord tone. Combinada com voice leading, ela transforma frases simples em melodias com direção.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "As approach notes: F#, C, A e E conduzindo a chord tones.",
+        "F# → G (7 → 1), C → B (4 → 3), A → G (2 → 1), E → D (6 → 5).",
+        "Como a approach note cria tensão antes do destino."
+      ],
+      "chordScaleRelation": "Approach note = nota da escala que conduz ao chord tone. As notas 2, 4, 6 e 7 são as approach notes naturais para 1, 3 e 5.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Approach → Target",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------3-|\nB|------------------|\nG|------------------|\nD|----------4---5---|\nA|------------------|\nE|--2---3-----------|"
+      },
+      "exercises": [
+        "F# → G (7 → 1): F# (6ª casa 2) → G (6ª casa 3).",
+        "C → B (4 → 3): C (3ª casa 5) → B (3ª casa 4).",
+        "A → G (2 → 1): A (3ª casa 2) → G (4ª casa 5).",
+        "E → D (6 → 5): E (4ª casa 2) → D (5ª casa 5).",
+        "Criar frases approach → target sobre a progressão."
+      ],
+      "earTraining": {
+        "instruction": "Toque F# → G e sinta a resolução de semitom para a tônica. Toque C → B e sinta a descida para a terça. Cante a approach note como uma pergunta e o destino como a resposta."
+      },
+      "improvisation": {
+        "instruction": "Sobre G → C → D → G, improvise garantindo que cada mudança de acorde tenha pelo menos uma frase com approach note → chord tone."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar approach notes e chord tones.",
+        "05–15 min: Células 7 → 1, 4 → 3, 2 → 1, 6 → 5.",
+        "15–20 min: Ouvido — pergunta (approach) e resposta (target).",
+        "20–30 min: Improvisar com approach notes sobre a progressão."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Ataque claro das approach notes",
+        "routine": [
+          "00–10 min: Escala de G maior a 80 BPM.",
+          "10–20 min: Células approach → target com palhetada alternada.",
+          "20–25 min: Hammer-on/pull-off nas approach notes.",
+          "25–30 min: Frases com approach notes sobre a progressão."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Starting Arpeggios In The Blues",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/starting-arpeggios-in-the-blues-bl-805",
+        "reason": "Mostra como usar notas de aproximação para chegar aos alvos (chord tones) no contexto."
+      },
+      "commonMistakes": [
+        "Tratar a approach note como se fosse o destino.",
+        "Pular direto para o chord tone sem movimento.",
+        "Não ouvir a resolução approach → target."
+      ],
+      "mastery": {
+        "know": "Entendo o que é uma approach note e seu papel de condução.",
+        "play": "Consigo executar 7 → 1, 4 → 3, 2 → 1 e 6 → 5.",
+        "use": "Consigo improvisar com approach → chord tone a cada mudança de acorde."
+      },
+      "review": [
+        "Aula 50: voice leading.",
+        "4 → 3 e 7 → 1 (Fase 4)."
+      ],
+      "challenge": "Improvisar 3 minutos em que toda mudança de acorde tenha uma approach note.",
+      "mission": "Gravar quatro células approach → target, nomeando cada intervalo.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 52,
+      "week": 11,
+      "day": 5,
+      "phase": 5,
+      "title": "Pentatônica + chord tones",
+      "subtitle": "Usando o vocabulário que você já conhece",
+      "objective": "Reintegrar a pentatônica maior de G com direção harmônica (chord tones como destinos).",
+      "prerequisite": "Aulas 44–51 e a pentatônica maior (Fase 3).",
+      "concept": "Você não precisa abandonar a pentatônica. A pentatônica maior de G (G A B D E = 1 2 3 5 6) continua sendo seu vocabulário principal. Agora ela ganha direção: G, B e D (1, 3, 5) são os chord tones — os destinos. A e E (2 e 6) são as cores. Improvise com a pentatônica, mas termine frases em chord tones, comece em chord tones e use approach → chord tone.",
+      "key": "G major",
+      "scale": {
+        "name": "G major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "A pentatônica maior de G: G A B D E (1 2 3 5 6).",
+        "Os chord tones G, B, D (1, 3, 5) em destaque.",
+        "As cores A (2) e E (6).",
+        "Que a pentatônica já contém os três chord tones."
+      ],
+      "chordScaleRelation": "A pentatônica maior já contém 1, 3 e 5 (chord tones) mais 2 e 6 (cores). Ela é a ponte natural entre o vocabulário antigo e o targeting harmônico.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major pentatonic · Chord Tones (1, 3, 5)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--1(3)---2(5)--\nB|--5(3)---6(5)--\nG|--2(2)---3(4)--\nD|--6(2)---1(5)--\nA|--3(2)---5(5)--\nE|--1(3)---2(5)--",
+        "tab": "e|----------------3-|\nB|--------------3---|\nG|----------4-------|\nD|----------5-------|\nA|------5-----------|\nE|--3---------------|"
+      },
+      "exercises": [
+        "Improvisar apenas com a pentatônica maior de G.",
+        "Depois obrigar: terminar toda frase em chord tone (G, B, D).",
+        "Depois: começar toda frase em chord tone.",
+        "Depois: usar approach → chord tone dentro da pentatônica (A → G, A → B).",
+        "Alternar livremente entre pentatônica e direção harmônica."
+      ],
+      "earTraining": {
+        "instruction": "Toque a pentatônica maior de G e cante os graus. Destaque de ouvido os chord tones: cante 1 (G), 3 (B) e 5 (D) como repouso; cante 2 (A) e 6 (E) como cor."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track G → C → D → G, improvise com a pentatônica maior de G. Use G, B e D como destinos e A/E como cores, mudando os alvos conforme o acorde."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar a pentatônica maior de G.",
+        "05–15 min: Localizar chord tones dentro da pentatônica.",
+        "15–20 min: Ouvido — chord tone × cor.",
+        "20–30 min: Improvisar com a pentatônica + direção harmônica."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Fluência na pentatônica com targeting",
+        "routine": [
+          "00–10 min: Pentatônica maior de G a 80 BPM.",
+          "10–20 min: Células approach → chord tone na pentatônica.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Frases pentatônicas com targeting."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Pentatonic In The Blues",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-pentatonic-in-the-blues-bl-801",
+        "reason": "Aplica a pentatônica maior com intenção harmônica no contexto do blues/rock."
+      },
+      "commonMistakes": [
+        "Abandonar a pentatônica achando que agora só vale a escala completa.",
+        "Tocar a pentatônica sem mirar os chord tones.",
+        "Esquecer que A e E são cores, não destinos."
+      ],
+      "mastery": {
+        "know": "Sei que a pentatônica maior contém 1, 3, 5 (chord tones) e 2, 6 (cores).",
+        "play": "Consigo localizar G, B, D dentro da pentatônica.",
+        "use": "Consigo improvisar com a pentatônica usando direção harmônica."
+      },
+      "review": [
+        "Pentatônica maior (Fase 3).",
+        "Aula 51: approach notes."
+      ],
+      "challenge": "Improvisar 3 minutos só com a pentatônica, mas toda frase termina em chord tone.",
+      "mission": "Gravar a pentatônica de G com os chord tones destacados em voz alta.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 53,
+      "week": 12,
+      "day": 1,
+      "phase": 5,
+      "title": "CAGED como mapa harmônico",
+      "subtitle": "Usando o CAGED que você já conhece",
+      "objective": "Usar o shape CAGED do acorde como âncora para revelar 1, 3 e 5 e a escala ao redor.",
+      "prerequisite": "Aulas 44–52 e conhecimento prévio de CAGED.",
+      "concept": "Você já conhece CAGED. Agora ele responde: onde está o acorde nesta região? O shape do acorde G (forma E, 3ª casa) revela imediatamente 1, 3 e 5 (G, B, D). A escala de G maior ocupa o espaço ao redor dessas notas. O procedimento é sempre: 1) localizar o shape CAGED; 2) localizar 1; 3) localizar 3; 4) localizar 5; 5) localizar as outras notas da escala; 6) escolher target notes.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "O shape CAGED de G (forma E) na 3ª casa.",
+        "1 (G), 3 (B) e 5 (D) revelados pelo acorde.",
+        "A escala de G maior ao redor do acorde.",
+        "Como o acorde é o esqueleto e a escala é o território ao redor."
+      ],
+      "chordScaleRelation": "O shape CAGED responde 'onde está o acorde?'; a escala responde 'quais notas posso usar ao redor?'; os chord tones respondem 'quais notas soam mais fortes?'.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · CAGED + Escala (1, 3, 5)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------3-|\nB|--------------3---|\nG|------------4-----|\nD|----------5-------|\nA|--------5---------|\nE|------3-----------|"
+      },
+      "exercises": [
+        "Para o acorde G: localizar o shape CAGED (forma E, 3ª casa).",
+        "Localizar 1 (G), 3 (B) e 5 (D) dentro do acorde.",
+        "Localizar as outras notas da escala ao redor (2, 4, 6, 7).",
+        "Escolher target notes a partir do shape CAGED.",
+        "Repetir o mesmo procedimento para C (forma A, 3ª casa) e D (forma A, 5ª casa)."
+      ],
+      "earTraining": {
+        "instruction": "Toque o acorde G e depois arpeje 1, 3 e 5, cantando cada grau. Depois toque a escala ao redor e identifique, de ouvido, onde os chord tones se destacam."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track G → C → D → G, use o shape CAGED de cada acorde como âncora visual e harmônica, escolhendo target notes a partir de 1, 3 e 5."
+      },
+      "theoryRoutine": [
+        "00–05 min: Tocar o shape CAGED de G e identificar 1, 3, 5.",
+        "05–15 min: Procedimento completo para G, C e D.",
+        "15–20 min: Ouvido — chord tones × escala.",
+        "20–30 min: Improvisar usando CAGED como mapa."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Transição entre acordes e escala",
+        "routine": [
+          "00–10 min: Escala de G maior a 80 BPM.",
+          "10–20 min: Arpejos de G, C e D a partir dos shapes CAGED.",
+          "20–25 min: Voice leading entre os shapes.",
+          "25–30 min: Frases com CAGED + target notes."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "The CAGED System",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/modules/caged-system",
+        "reason": "Revisão dos shapes de acorde que servem de âncora harmônica para localizar chord tones."
+      },
+      "commonMistakes": [
+        "Ver o CAGED apenas como acordes, sem ligá-lo à escala.",
+        "Não usar 1, 3 e 5 como target notes.",
+        "Decorar shapes sem entender o conteúdo harmônico."
+      ],
+      "mastery": {
+        "know": "Entendo como o CAGED revela 1, 3 e 5 de cada acorde.",
+        "play": "Consigo localizar chord tones a partir dos shapes CAGED.",
+        "use": "Consigo improvisar usando CAGED como mapa harmônico."
+      },
+      "review": [
+        "Aula 52: pentatônica + chord tones.",
+        "Chord tones de G, C e D."
+      ],
+      "challenge": "Para cada acorde (G, C, D), nomear 1, 3 e 5 a partir do shape CAGED sem olhar o diagrama.",
+      "mission": "Gravar o procedimento CAGED completo para os três acordes.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 54,
+      "week": 12,
+      "day": 2,
+      "phase": 5,
+      "title": "A harmonia aparece na improvisação (G → C → D → G)",
+      "subtitle": "Integrando tudo em uma região",
+      "objective": "Improvisar sobre G → C → D → G permanecendo em uma região e mudando os alvos a cada acorde.",
+      "prerequisite": "Aulas 47–53.",
+      "concept": "Agora a progressão completa: G → C → D → G. Em uma única região, você alterna os alvos: G B D → C E G → D F# A → G B D. Não troque de posição só porque o acorde mudou. Primeiro aprenda a fazer a harmonia mudar dentro da mesma região. Exercite em quatro camadas: 1) só chord tones; 2) chord tones + passagem; 3) pentatônica + target notes; 4) escala completa + target notes.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "A progressão G → C → D → G na mesma região.",
+        "Os alvos de G: G, B, D.",
+        "Os alvos de C: C, E, G.",
+        "Os alvos de D: D, F#, A.",
+        "Que você permanece na região e muda apenas a intenção harmônica."
+      ],
+      "chordScaleRelation": "Uma escala (G maior), quatro acordes. A intenção harmônica muda a cada acorde, mas o território é o mesmo.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · G → C → D → G (1, 3, 5)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------3-|\nB|--------------3---|\nG|------------4-----|\nD|----------5-------|\nA|------3---5-------|\nE|--3---------------|"
+      },
+      "exercises": [
+        "EXERCÍCIO 1 — Improvisar apenas com chord tones (G B D / C E G / D F# A).",
+        "EXERCÍCIO 2 — Chord tones + notas de passagem.",
+        "EXERCÍCIO 3 — Pentatônica maior + target notes.",
+        "EXERCÍCIO 4 — Escala completa + target notes.",
+        "Regra: não trocar de posição apenas porque o acorde mudou."
+      ],
+      "earTraining": {
+        "instruction": "Ouça a progressão G → C → D → G e cante os alvos de cada acorde: G-B-D, C-E-G, D-F#-A, G-B-D. Depois improvise cantando e toque o que cantou."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track G | C | D | G, improvise permanecendo em uma região. A cada acorde, mude os alvos para os chord tones correspondentes, integrando pentatônica, escala e target notes."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar os chord tones dos quatro acordes.",
+        "05–15 min: As quatro camadas de improvisação.",
+        "15–20 min: Ouvido — cantar os alvos da progressão.",
+        "20–30 min: Improvisar sobre G → C → D → G."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Resistência e fluência na progressão",
+        "routine": [
+          "00–10 min: Escala de G maior a 80 BPM.",
+          "10–20 min: Arpejos dos quatro acordes em sequência.",
+          "20–25 min: Voice leading e approach notes.",
+          "25–30 min: Frases sobre a progressão completa."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Beginner Blues Solo",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/beginner-blues-solo-bg-1304",
+        "reason": "Exemplo prático de como aplicar targeting de chord tones em uma progressão de blues/rock."
+      },
+      "commonMistakes": [
+        "Trocar de posição a cada mudança de acorde.",
+        "Tocar a escala inteira sem diferenciar os acordes.",
+        "Perder a orientação da região."
+      ],
+      "mastery": {
+        "know": "Sei os alvos de G, C e D na progressão completa.",
+        "play": "Consigo improvisar sobre G → C → D → G em uma região.",
+        "use": "Consigo mudar os alvos a cada acorde mantendo a região."
+      },
+      "review": [
+        "Aulas 47–53: progressões e targeting.",
+        "Chord tones de G, C e D."
+      ],
+      "challenge": "Improvisar 3 minutos sobre G → C → D → G usando apenas chord tones como chegada.",
+      "mission": "Gravar a progressão completa com target notes nomeadas em voz alta.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 55,
+      "week": 12,
+      "day": 3,
+      "phase": 5,
+      "title": "Harmonic Boss Battle (G → C → D → G)",
+      "subtitle": "Avaliação da Fase 5",
+      "objective": "Avaliar o domínio de chord tones, target notes, voice leading, approach notes e improvisação sobre a progressão G → C → D → G.",
+      "prerequisite": "Aulas 44 a 54 concluídas.",
+      "concept": "Prova da Fase 5. O objetivo é verificar se você consegue fazer a harmonia influenciar suas escolhas: ouvir a mudança de acorde, usar target notes, criar frases musicais e manter consciência da região. Não precisa de perfeição — o critério é que a harmonia comece a guiar seu fraseado.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — avaliação",
+      "whatToSee": [
+        "Os chord tones de G, C e D.",
+        "Os movimentos de voice leading (B → C, C → B, F# → G).",
+        "As approach notes conduzindo aos destinos.",
+        "O mapa completo da escala maior como território."
+      ],
+      "chordScaleRelation": "Escala = território; chord tones = estrutura; target note = destino; approach notes = caminhos. Tudo integrado sobre G → C → D → G.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Boss Battle (1, 3, 5)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------3-5-|\nB|--------------3-5---|\nG|----------2-4-5-----|\nD|------2-4-5---------|\nA|--2-3-5-------------|\nE|--2-3-5-------------|"
+      },
+      "exercises": [
+        "PARTE 1 — Chord tones: para G, C e D (aleatórios), localizar 1, 3 e 5.",
+        "PARTE 2 — Target note: escolher conscientemente um alvo para cada acorde da progressão.",
+        "PARTE 3 — Voice leading: encontrar chord tones próximos a cada mudança.",
+        "PARTE 4 — Approach notes: usar pelo menos três aproximações.",
+        "PARTE 5 — Pentatônica: improvisar com pentatônica maior e target notes obrigatórias.",
+        "PARTE 6 — Escala completa: usar a escala maior com chord tones como destinos.",
+        "PARTE 7 — Improvisação livre: 3 minutos, ouvindo as mudanças e usando target notes."
+      ],
+      "earTraining": {
+        "instruction": "Ouça a progressão G → C → D → G e cante os alvos de cada acorde antes de tocar. Depois improvise cantando e toque o que cantou, validando a orientação harmônica."
+      },
+      "improvisation": {
+        "instruction": "Improvisação final de 3 minutos sobre G → C → D → G, sem regras além de: ouvir a mudança de acorde, usar target notes, criar frases musicais e manter a consciência da região."
+      },
+      "theoryRoutine": [
+        "00–05 min: Chord tones de G, C e D.",
+        "05–10 min: Target notes e voice leading.",
+        "10–15 min: Approach notes.",
+        "15–25 min: Pentatônica + escala completa.",
+        "25–30 min: Improvisação livre."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Integração técnica e musical na progressão",
+        "routine": [
+          "00–10 min: Escala de G maior a 80 BPM.",
+          "10–20 min: Arpejos G, C e D com voice leading.",
+          "20–25 min: Approach notes e bends nas notas-alvo.",
+          "25–30 min: Improviso técnico sobre a progressão."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Mixing Major & Minor Pentatonics",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/mixing-major-minor-pentatonics-bl-804",
+        "reason": "Revisão geral de vocabulário para a avaliação final da Fase 5."
+      },
+      "commonMistakes": [
+        "Perder a orientação da região durante a progressão.",
+        "Não diferenciar os alvos de G, C e D.",
+        "Improvisar sem ouvir as mudanças harmônicas."
+      ],
+      "mastery": {
+        "know": "Consigo explicar território, estrutura, destino e caminho.",
+        "play": "Consigo localizar 1, 3 e 5 de G, C e D em uma região.",
+        "use": "Consigo improvisar sobre G → C → D → G mudando os alvos e mantendo a região."
+      },
+      "review": [
+        "Chord tones de G, C e D.",
+        "Voice leading e approach notes.",
+        "Pentatônica + chord tones.",
+        "CAGED como mapa harmônico."
+      ],
+      "challenge": "Grave o Boss Battle completo e avalie, de 1 a 5, seu domínio de targeting, voice leading e orientação.",
       "mission": "Concluir o Boss Battle e registrar sua autoavaliação.",
       "xp": {
         "know": 25,
