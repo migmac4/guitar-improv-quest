@@ -907,6 +907,11 @@ button.active {
   transform: scale(0.85);
 }
 
+.fret-note-dot.shared-note {
+  outline: 2px solid #ffffff;
+  outline-offset: 1px;
+}
+
 .fret-box-legend {
   display: flex;
   gap: 16px;

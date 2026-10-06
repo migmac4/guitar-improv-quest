@@ -465,6 +465,119 @@
     }
   };
 
+  // --- Banco de Formatos da Pentatônica Maior (G major: G A B D E = 1 2 3 5 6) ---
+  const SHAPE_DEFINITIONS_GMAJOR = {
+    1: {
+      startFret: 2,
+      endFret: 5,
+      notes: [
+        { string: 6, fret: 3, note: 'G', interval: '1', role: 'root' },
+        { string: 6, fret: 5, note: 'A', interval: '2', role: 'neutral' },
+        { string: 5, fret: 2, note: 'B', interval: '3', role: 'third' },
+        { string: 5, fret: 5, note: 'D', interval: '5', role: 'fifth' },
+        { string: 4, fret: 2, note: 'E', interval: '6', role: 'neutral' },
+        { string: 4, fret: 5, note: 'G', interval: '1', role: 'root' },
+        { string: 3, fret: 2, note: 'A', interval: '2', role: 'neutral' },
+        { string: 3, fret: 4, note: 'B', interval: '3', role: 'third' },
+        { string: 2, fret: 3, note: 'D', interval: '5', role: 'fifth' },
+        { string: 2, fret: 5, note: 'E', interval: '6', role: 'neutral' },
+        { string: 1, fret: 3, note: 'G', interval: '1', role: 'root' },
+        { string: 1, fret: 5, note: 'A', interval: '2', role: 'neutral' }
+      ]
+    },
+    2: {
+      startFret: 4,
+      endFret: 8,
+      notes: [
+        { string: 6, fret: 5, note: 'A', interval: '2', role: 'neutral' },
+        { string: 6, fret: 7, note: 'B', interval: '3', role: 'third' },
+        { string: 5, fret: 5, note: 'D', interval: '5', role: 'fifth' },
+        { string: 5, fret: 7, note: 'E', interval: '6', role: 'neutral' },
+        { string: 4, fret: 5, note: 'G', interval: '1', role: 'root' },
+        { string: 4, fret: 7, note: 'A', interval: '2', role: 'neutral' },
+        { string: 3, fret: 4, note: 'B', interval: '3', role: 'third' },
+        { string: 3, fret: 7, note: 'D', interval: '5', role: 'fifth' },
+        { string: 2, fret: 5, note: 'E', interval: '6', role: 'neutral' },
+        { string: 2, fret: 8, note: 'G', interval: '1', role: 'root' },
+        { string: 1, fret: 5, note: 'A', interval: '2', role: 'neutral' },
+        { string: 1, fret: 7, note: 'B', interval: '3', role: 'third' }
+      ]
+    }
+  };
+
+  // C major pentatonic = mesmas notas de Am pentatonic, com funções relabeladas (C=1, D=2, E=3, G=5, A=6).
+  const C_MAJOR_INTERVALS = {
+    'C': { interval: '1', role: 'root' },
+    'E': { interval: '3', role: 'third' },
+    'G': { interval: '5', role: 'fifth' },
+    'D': { interval: '2', role: 'neutral' },
+    'A': { interval: '6', role: 'neutral' }
+  };
+  const SHAPE_DEFINITIONS_CMAJOR = Object.fromEntries(
+    Object.entries(SHAPE_DEFINITIONS).map(([k, def]) => [k, {
+      startFret: def.startFret,
+      endFret: def.endFret,
+      notes: def.notes.map(n => ({ ...n, ...(C_MAJOR_INTERVALS[n.note] || {}) }))
+    }])
+  );
+
+  // --- Banco de Acordes CAGED Maiores ---
+  const CHORD_SHAPES_GMAJOR = {
+    1: {
+      cagedForm: 'Forma E (G major)',
+      startFret: 2,
+      endFret: 5,
+      notes: [
+        { string: 6, fret: 3, note: 'G', interval: '1', role: 'root' },
+        { string: 5, fret: 5, note: 'D', interval: '5', role: 'fifth' },
+        { string: 4, fret: 5, note: 'G', interval: '1', role: 'root' },
+        { string: 3, fret: 4, note: 'B', interval: '3', role: 'third' },
+        { string: 2, fret: 3, note: 'D', interval: '5', role: 'fifth' },
+        { string: 1, fret: 3, note: 'G', interval: '1', role: 'root' }
+      ]
+    },
+    2: {
+      cagedForm: 'Forma D (G major)',
+      startFret: 4,
+      endFret: 8,
+      notes: [
+        { string: 4, fret: 5, note: 'G', interval: '1', role: 'root' },
+        { string: 3, fret: 7, note: 'D', interval: '5', role: 'fifth' },
+        { string: 2, fret: 8, note: 'G', interval: '1', role: 'root' },
+        { string: 1, fret: 7, note: 'B', interval: '3', role: 'third' }
+      ]
+    }
+  };
+
+  const CHORD_SHAPES_CMAJOR = {
+    1: {
+      cagedForm: 'Forma A (C major)',
+      startFret: 3,
+      endFret: 5,
+      notes: [
+        { string: 5, fret: 3, note: 'C', interval: '1', role: 'root' },
+        { string: 4, fret: 5, note: 'G', interval: '5', role: 'fifth' },
+        { string: 3, fret: 5, note: 'C', interval: '1', role: 'root' },
+        { string: 2, fret: 5, note: 'E', interval: '3', role: 'third' },
+        { string: 1, fret: 3, note: 'G', interval: '5', role: 'fifth' }
+      ]
+    }
+  };
+
+  function getShapeBank(lessonObj) {
+    const key = (lessonObj?.key || '').toLowerCase();
+    if (key.includes('g major')) return SHAPE_DEFINITIONS_GMAJOR;
+    if (key.includes('c major') && !key.includes('a minor')) return SHAPE_DEFINITIONS_CMAJOR;
+    return SHAPE_DEFINITIONS;
+  }
+
+  function getChordBank(lessonObj) {
+    const key = (lessonObj?.key || '').toLowerCase();
+    if (key.includes('g major')) return CHORD_SHAPES_GMAJOR;
+    if (key.includes('c major') && !key.includes('a minor')) return CHORD_SHAPES_CMAJOR;
+    return CHORD_SHAPES;
+  }
+
   // Frequências para sintetizador de áudio de notas da guitarra
   const OPEN_STRING_FREQS = [329.63, 246.94, 196.00, 146.83, 110.00, 82.41]; // Cordas 1 (e) a 6 (E)
 
@@ -500,14 +613,39 @@
   function renderGraphicalFretboard(shapeNum, lesson) {
     const lessonObj = typeof lesson === 'object' && lesson !== null ? lesson : lessons.find(l => l.id === lesson) || {};
     const lessonId = lessonObj.id || (typeof lesson === 'number' ? lesson : 1);
-    const shapeDef = SHAPE_DEFINITIONS[shapeNum] || SHAPE_DEFINITIONS[1];
-    const startFret = lessonObj.fretboard?.startFret || shapeDef.startFret;
-    const endFret = lessonObj.fretboard?.endFret || shapeDef.endFret;
+    // Suporte a múltiplos shapes simultâneos (ex.: [1, 2]) para diagramas de conexão.
+    const shapeList = Array.isArray(lessonObj.fretboard?.shapes)
+      ? lessonObj.fretboard.shapes
+      : [shapeNum];
+
+    // Combina as notas de todos os shapes, deduplicando por (corda, casa)
+    // e marcando as notas compartilhadas entre shapes (região de sobreposição).
+    const bank = getShapeBank(lessonObj);
+    const combined = [];
+    const byKey = new Map();
+    shapeList.forEach(sn => {
+      const def = bank[sn] || bank[1];
+      (def.notes || []).forEach(n => {
+        const key = n.string + ':' + n.fret;
+        if (byKey.has(key)) {
+          byKey.get(key).shapes.push(sn);
+        } else {
+          const entry = { ...n, shapes: [sn] };
+          byKey.set(key, entry);
+          combined.push(entry);
+        }
+      });
+    });
+
+    const startFret = lessonObj.fretboard?.startFret
+      || Math.min(...shapeList.map(sn => (bank[sn] || bank[1]).startFret));
+    const endFret = lessonObj.fretboard?.endFret
+      || Math.max(...shapeList.map(sn => (bank[sn] || bank[1]).endFret));
     const fretCount = endFret - startFret + 1;
     const frets = Array.from({ length: fretCount }, (_, i) => startFret + i);
 
-    // Usa as notas customizadas da aula se fornecidas; caso contrário, usa o SHAPE_DEFINITIONS
-    const baseNotes = lessonObj.fretboard?.notes || shapeDef.notes;
+    // Usa notas customizadas da aula se fornecidas; caso contrário, usa a combinação dos shapes
+    const baseNotes = lessonObj.fretboard?.notes || combined;
 
     // Ajusta destaques específicos de acordo com o tema da aula.
     // Prioriza o destaque declarativo (fretboard.highlight); caso ausente, usa regras legadas por id.
@@ -544,7 +682,8 @@
         // Aula 19: notas de bend (4->5 e b7->1)
         isFeatured = ['4', '5', 'b7', '1'].includes(n.interval);
       }
-      return { ...n, isFeatured };
+      const shared = Array.isArray(n.shapes) && n.shapes.length > 1;
+      return { ...n, isFeatured, shared };
     });
 
     const stringGauges = [1.5, 2.0, 2.6, 3.2, 3.8, 4.6]; // e até E
@@ -593,11 +732,15 @@
         let noteHtml = '';
         if (noteFound) {
           const featuredClass = noteFound.isFeatured ? 'featured' : 'dimmed-note';
+          const sharedClass = noteFound.shared ? 'shared-note' : '';
+          const sharedLabel = noteFound.shared
+            ? ` - Compartilhada (Shapes ${noteFound.shapes.join(' + ')})`
+            : '';
           noteHtml = `
-            <button class="fret-note-dot role-${noteFound.role} ${featuredClass}"
+            <button class="fret-note-dot role-${noteFound.role} ${featuredClass} ${sharedClass}"
                     data-string="${stringNum}"
                     data-fret="${fret}"
-                    title="Corda ${stringNum}, Casa ${fret}: ${noteFound.note} (Grau ${noteFound.interval}) - Clique para ouvir">
+                    title="Corda ${stringNum}, Casa ${fret}: ${noteFound.note} (Grau ${noteFound.interval})${sharedLabel} - Clique para ouvir">
               <span class="note-interval">${noteFound.interval}</span>
               <span class="note-name">${noteFound.note}</span>
             </button>
@@ -615,13 +758,24 @@
       html += `</div>`;
     }
 
-    const legendItems = lessonObj.fretboard?.legend || [
-      { role: 'root', label: '1 = Tônica (A)' },
-      { role: 'third', label: 'b3 = Terça Menor (C)' },
-      { role: 'fifth', label: '5 = Quinta Justa (E)' },
-      { role: 'four', label: '4 = Quarta Justa (D)' },
-      { role: 'seven', label: 'b7 = Sétima Menor (G)' }
-    ];
+    const isMajor = ((lessonObj.key || '').toLowerCase().includes('major'));
+    const defaultLegend = isMajor
+      ? [
+          { role: 'root', label: '1 = Tônica' },
+          { role: 'third', label: '3 = Terça Maior' },
+          { role: 'fifth', label: '5 = Quinta Justa' },
+          { role: 'neutral', label: '2 e 6 = Cores' }
+        ]
+      : [
+          { role: 'root', label: '1 = Tônica (A)' },
+          { role: 'third', label: 'b3 = Terça Menor (C)' },
+          { role: 'fifth', label: '5 = Quinta Justa (E)' },
+          { role: 'four', label: '4 = Quarta Justa (D)' },
+          { role: 'seven', label: 'b7 = Sétima Menor (G)' }
+        ];
+    const legendItems = lessonObj.fretboard?.legend || defaultLegend;
+
+    const hasShared = notes.some(n => n.shared);
 
     html += `
         </div>
@@ -630,7 +784,7 @@
           ${legendItems.map(item => `
             <span class="legend-item"><i class="legend-circle role-${item.role}"></i> ${esc(item.label)}</span>
           `).join('')}
-          <span class="legend-hint">💡 Dica: Clique nas notas para ouvir o som na guitarra!</span>
+          <span class="legend-hint">💡 Dica: Clique nas notas para ouvir o som na guitarra!${hasShared ? ' · Notas com contorno claro são compartilhadas entre shapes.' : ''}</span>
         </div>
       </div>
     `;
@@ -641,7 +795,8 @@
   // Renderizador gráfico do diagrama de acorde CAGED (chord tones sobrepostos ao shape)
   function renderChordDiagram(shapeNum, lesson) {
     const lessonObj = typeof lesson === 'object' && lesson !== null ? lesson : {};
-    const shapeDef = CHORD_SHAPES[shapeNum] || CHORD_SHAPES[1];
+    const chordBank = getChordBank(lessonObj);
+    const shapeDef = chordBank[shapeNum] || chordBank[1];
     const startFret = lessonObj.chord?.startFret || shapeDef.startFret;
     const endFret = lessonObj.chord?.endFret || shapeDef.endFret;
     const fretCount = endFret - startFret + 1;
@@ -711,11 +866,22 @@
       html += `</div>`;
     }
 
-    const legendItems = [
-      { role: 'root', label: '1 = Tônica (A)' },
-      { role: 'third', label: 'b3 = Terça Menor (C)' },
-      { role: 'fifth', label: '5 = Quinta Justa (E)' }
-    ];
+    const isMajor = ((lessonObj.key || '').toLowerCase().includes('major'));
+    const chordName = lessonObj.chord?.name || (isMajor ? ((lessonObj.key || '').toLowerCase().includes('g major') ? 'G' : 'C') : 'Am');
+    const legendItems = isMajor
+      ? [
+          { role: 'root', label: `1 = Tônica (${chordName})` },
+          { role: 'third', label: '3 = Terça Maior' },
+          { role: 'fifth', label: '5 = Quinta Justa' }
+        ]
+      : [
+          { role: 'root', label: '1 = Tônica (A)' },
+          { role: 'third', label: 'b3 = Terça Menor (C)' },
+          { role: 'fifth', label: '5 = Quinta Justa (E)' }
+        ];
+    const chordHint = isMajor
+      ? `do acorde de ${chordName} (1, 3 e 5)`
+      : 'do acorde de Am (1, b3 e 5)';
 
     html += `
         </div>
@@ -723,7 +889,7 @@
           ${legendItems.map(item => `
             <span class="legend-item"><i class="legend-circle role-${item.role}"></i> ${esc(item.label)}</span>
           `).join('')}
-          <span class="legend-hint">💡 Estes são os <strong>chord tones</strong> do acorde de Am (1, b3 e 5).</span>
+          <span class="legend-hint">💡 Estes são os <strong>chord tones</strong> ${chordHint}.</span>
         </div>
       </div>
     `;
@@ -1043,7 +1209,7 @@
           <div class="section-title-bar">
             <h3>
               <span>Mapa de Intervalos no Braço</span>
-              <span class="badge phase-badge">Shape ${shapeNum} · ${lesson.fretboard?.position || 5}ª Casa</span>
+              <span class="badge phase-badge">${lesson.fretboard?.label || `Shape ${shapeNum} · ${lesson.fretboard?.position || 5}ª Casa`}</span>
             </h3>
             <div class="view-toggle-group">
               <button class="view-toggle-btn active" data-toggle-target="#graphicalFretboard_${lesson.id}" data-toggle-hide="#asciiFretboard_${lesson.id}">

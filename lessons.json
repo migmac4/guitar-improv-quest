@@ -4,11 +4,11 @@
     "title": "Guitar Improvisation Quest",
     "version": "3.0",
     "language": "pt-BR",
-    "phase": 1,
-    "phaseTitle": "Fase 1: Pentatônica Menor + CAGED + Intervalos",
+    "phase": 3,
+    "phaseTitle": "Fase 3: Pentatônica Maior + CAGED",
     "totalLessons": 80,
     "totalPhases": 8,
-    "implementedLessons": 15
+    "implementedLessons": 32
   },
   "lessons": [
     {
@@ -1868,6 +1868,2178 @@
       ],
       "challenge": "Grave os 10 minutos completos do Boss Battle e marque, de 1 a 5, seu desempenho em cada uma das 7 metas de domínio.",
       "mission": "Concluir o Boss Battle e registrar sua autoavaliação nas 7 metas de domínio.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 16,
+      "week": 4,
+      "day": 1,
+      "phase": 2,
+      "title": "Um intervalo, cinco lugares",
+      "subtitle": "A mesma função (1, b3, 4, 5, b7) aparece em vários lugares do braço",
+      "objective": "Abandonar a ideia de 'intervalo = um lugar dentro de um shape' e desenvolver 'intervalo = uma função que aparece em vários lugares do braço'.",
+      "prerequisite": "Fase 1 concluída: os cinco shapes e os intervalos 1, b3, 4, 5 e b7.",
+      "concept": "Cada intervalo da pentatônica aparece várias vezes ao longo do braço. A tônica A, por exemplo, existe na 6ª corda casa 5, na 4ª corda casa 7, na 2ª corda casa 10, na 5ª corda casa 12, na 3ª corda casa 14 e na 6ª corda casa 17. O que muda entre um shape e outro é só a geografia — a função é a mesma. Ao procurar o mesmo intervalo em todos os shapes, você começa a enxergar uma única pentatônica contínua, não cinco desenhos separados.",
+      "key": "A minor",
+      "scale": {
+        "name": "A minor pentatonic",
+        "formula": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "notes": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "G"
+        ]
+      },
+      "chord": {
+        "name": "Am",
+        "notes": [
+          "A",
+          "C",
+          "E"
+        ],
+        "formula": [
+          "1",
+          "b3",
+          "5"
+        ]
+      },
+      "cagedForm": "Cinco formas CAGED — mesma tônica A",
+      "whatToSee": [
+        "Todas as tônicas A ao longo do braço (6ª 5, 4ª 7, 2ª 10, 5ª 12, 3ª 14, 6ª 17).",
+        "Todas as quintas E ao longo do braço.",
+        "Todas as terças menores C ao longo do braço.",
+        "Que o mesmo intervalo muda de corda e de casa, mas mantém a função."
+      ],
+      "chordScaleRelation": "1, b3 e 5 (chord tones) e 4/b7 (tensões) são funções fixas sobre o acorde Am. Cada uma delas se repete em várias regiões — o que torna o braço um mapa contínuo.",
+      "fretboard": {
+        "shape": 1,
+        "position": 5,
+        "label": "Cinco Shapes · Tônicas (1)",
+        "shapes": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "highlight": [
+          "1"
+        ],
+        "intervalMap": "e|--1(5)---b3(8)---4(10)---5(12)---b7(15)---1(17)-\nB|--5(5)---b7(8)---1(10)---b3(13)--4(15)----5(17)-\nG|--b3(5)--4(7)----5(9)----b7(12)--1(14)----b3(17)\nD|--b7(5)--1(7)----b3(10)--4(12)---5(14)----b7(17)\nA|--4(5)---5(7)----b7(10)--1(12)---b3(15)---4(17)-\nE|--1(5)---b3(8)---4(10)---5(12)---b7(15)---1(17)-",
+        "tab": "e|----------------------------|\nB|----------10----------------|\nG|--------------------14------|\nD|------7---------------------|\nA|--------------12------------|\nE|--5----------------------17-|"
+      },
+      "exercises": [
+        "Exercício 1 — Tônica: localizar todas as tônicas A nos cinco shapes e tocá-las de grave a agudo.",
+        "Exercício 2 — Quinta: repetir com a quinta E (5), tocando todas as ocorrências.",
+        "Exercício 3 — Terça menor: repetir com b3 (C), encontrando todas as ocorrências.",
+        "Exercício 4 — Random: gerar shape + intervalo (ex.: Shape 1 + 1, Shape 3 + b3, Shape 5 + 5, Shape 2 + b7, Shape 4 + 4) e localizar cada nota.",
+        "Esconder os nomes das notas: mostrar apenas o grau (1, b3, 4, 5, b7) e encontrar todas as ocorrências."
+      ],
+      "earTraining": {
+        "instruction": "Toque 1 → 5, depois 1 → b3, depois 1 → b7, cantando cada grau. Em seguida, toque uma tônica A e, de ouvido, salte para a quinta, para a terça menor e para a sétima menor em diferentes regiões."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em Am, improvise com a regra: cada frase pode começar em qualquer lugar, mas deve terminar em uma tônica (1) ou quinta (5). Use pelo menos três regiões diferentes."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão dos cinco intervalos (1, b3, 4, 5, b7).",
+        "05–15 min: Localizar o mesmo intervalo em todos os shapes.",
+        "15–20 min: Exercício auditivo 1 → 5, 1 → b3, 1 → b7.",
+        "20–30 min: Improvisação terminando frases em 1 ou 5."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Precisão de salto entre regiões e palhetada alternada",
+        "routine": [
+          "00–10 min: Alternate picking em cada shape (colcheias a 70 BPM).",
+          "10–20 min: Saltos entre shapes tocando apenas tônicas e quintas.",
+          "20–25 min: Bends e vibrato em notas-alvo.",
+          "25–30 min: Técnica aplicada à conexão entre shapes."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em A menor",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Minor Pentatonic: The 5 Patterns",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/minor-pentatonic-the-5-patterns-sc-304",
+        "reason": "Mostra os cinco padrões lado a lado, reforçando que são janelas do mesmo sistema."
+      },
+      "commonMistakes": [
+        "Associar o intervalo a um único lugar no braço.",
+        "Decorar a sequência 1 → 2 → 3 → 4 → 5 sem randomizar.",
+        "Perder a referência da tônica ao pular entre regiões."
+      ],
+      "mastery": {
+        "know": "Sei que cada intervalo aparece em vários lugares e que os shapes são o mesmo mapa.",
+        "play": "Consigo localizar 1, b3, 4, 5 e b7 em qualquer shape.",
+        "use": "Consigo improvisar terminando frases em tônica ou quinta em regiões diferentes."
+      },
+      "review": [
+        "Localizar 1, b3 e 5 nos cinco shapes (Fase 1).",
+        "Localizar 4 e b7 nos cinco shapes (Fase 1)."
+      ],
+      "challenge": "Encontre todas as tônicas A de ponta a ponta do braço em menos de 30 segundos.",
+      "mission": "Gravar todas as tônicas e quintas do braço, nomeando os graus.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 17,
+      "week": 4,
+      "day": 2,
+      "phase": 2,
+      "title": "Enxergando o intervalo, não o shape",
+      "subtitle": "Nota = identidade absoluta; intervalo = função relativa à tônica",
+      "objective": "Fazer o aluno procurar intervalos independentemente do shape, entendendo que nota é identidade e intervalo é função.",
+      "prerequisite": "Aula 16: o mesmo intervalo em vários shapes.",
+      "concept": "A nota C é sempre C — identidade absoluta. Mas ela pode ser a terça menor (b3) sobre A, ou ter outra função sobre outro acorde — por isso intervalo é função relativa à tônica. Você não precisa decorar apenas nomes de notas; precisa saber a função de cada nota sobre Am. Ao procurar um intervalo em qualquer região, você se liberta do desenho e passa a enxergar função em todo o braço.",
+      "key": "A minor",
+      "scale": {
+        "name": "A minor pentatonic",
+        "formula": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "notes": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "G"
+        ]
+      },
+      "chord": {
+        "name": "Am",
+        "notes": [
+          "A",
+          "C",
+          "E"
+        ],
+        "formula": [
+          "1",
+          "b3",
+          "5"
+        ]
+      },
+      "cagedForm": "Cinco formas CAGED — intervalos por função",
+      "whatToSee": [
+        "Um intervalo escolhido (1, b3, 4, 5 ou b7) aparecendo em todos os shapes.",
+        "A diferença entre nota (ex.: C) e função (b3 sobre A).",
+        "As tônicas A como âncora para medir qualquer intervalo.",
+        "Que o intervalo é a distância da nota até a tônica."
+      ],
+      "chordScaleRelation": "Cada nota da pentatônica tem uma função fixa sobre Am: 1, b3, 4, 5 e b7. Localizar o intervalo é medir a distância da nota até a tônica A.",
+      "fretboard": {
+        "shape": 1,
+        "position": 5,
+        "label": "Cinco Shapes · Todos os Intervalos",
+        "shapes": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "highlight": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "intervalMap": "e|--1(5)---b3(8)---4(10)---5(12)---b7(15)---1(17)-\nB|--5(5)---b7(8)---1(10)---b3(13)--4(15)----5(17)-\nG|--b3(5)--4(7)----5(9)----b7(12)--1(14)----b3(17)\nD|--b7(5)--1(7)----b3(10)--4(12)---5(14)----b7(17)\nA|--4(5)---5(7)----b7(10)--1(12)---b3(15)---4(17)-\nE|--1(5)---b3(8)---4(10)---5(12)---b7(15)---1(17)-",
+        "tab": "e|----------------------------|\nB|-----------13---------------|\nG|----5----------------17-----|\nD|--------10------------------|\nA|-------------15-------------|\nE|------8---------------------|"
+      },
+      "exercises": [
+        "Exercício 1: sortear um intervalo (1, b3, 4, 5, b7) e encontrá-lo nos cinco shapes.",
+        "Exercício 2: 'Encontre todas as b3 em uma região de 12 casas' — depois todas as 5, depois todas as 1.",
+        "Exercício 3 — Nota → intervalo: toque uma nota da pentatônica e diga qual intervalo ela é.",
+        "Exercício 3 invertido — Intervalo → nota: diga um intervalo e encontre a nota correspondente.",
+        "Comparar: a mesma nota (ex.: C) é b3 sobre Am — e qual seria sobre outro acorde?"
+      ],
+      "earTraining": {
+        "instruction": "Toque a tônica A e, a partir dela, cante e toque b3, 4, 5 e b7 em ordem e fora de ordem. O objetivo é reconhecer a distância sonora de cada grau em relação à tônica."
+      },
+      "improvisation": {
+        "instruction": "Improvisar sobre Am em três regiões diferentes, pensando primeiro no intervalo e depois na nota. Regra: antes de tocar, diga em voz alta o grau que vai executar."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão de nota vs. função (intervalo).",
+        "05–15 min: Encontrar um intervalo sorteado em todos os shapes.",
+        "15–20 min: Exercício nota → intervalo e intervalo → nota.",
+        "20–30 min: Improvisação verbalizando o grau antes de tocar."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Sincronização e legato na mudança de posição",
+        "routine": [
+          "00–10 min: Alternate picking em cada shape a 75 BPM.",
+          "10–20 min: Legato (hammer-on/pull-off) nas transições entre shapes.",
+          "20–25 min: Bends e vibrato com foco na nota-alvo.",
+          "25–30 min: Técnica aplicada à procura de intervalos pelo braço."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em A menor",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Intervals On The Guitar Neck",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/intervals-on-the-guitar-neck-et-098",
+        "reason": "Ensina a enxergar intervalos no braço independentemente do shape."
+      },
+      "commonMistakes": [
+        "Confundir nome de nota com função (intervalo).",
+        "Procurar intervalos sempre na mesma ordem dos shapes.",
+        "Esquecer a tônica A como referência para medir os graus."
+      ],
+      "mastery": {
+        "know": "Sei a diferença entre nota (identidade) e intervalo (função relativa à tônica).",
+        "play": "Consigo encontrar qualquer intervalo em qualquer shape.",
+        "use": "Consigo improvisar escolhendo o intervalo antes da nota."
+      },
+      "review": [
+        "Mesmo intervalo em vários shapes (Aula 16).",
+        "Localização de 1, b3, 4, 5 e b7 (Fase 1)."
+      ],
+      "challenge": "Sorteie 5 intervalos aleatórios e encontre cada um em uma região diferente em menos de 10 segundos por intervalo.",
+      "mission": "Gravar o exercício nota → intervalo e intervalo → nota em três regiões.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 18,
+      "week": 4,
+      "day": 3,
+      "phase": 2,
+      "title": "Conectando Shape 1 → Shape 2",
+      "subtitle": "Da primeira região para a segunda sem perder a orientação",
+      "objective": "Criar a primeira conexão real entre dois shapes, atravessando a fronteira entre Shape 1 e Shape 2 com slides e notas-alvo.",
+      "prerequisite": "Aulas 16 e 17: intervalos em vários shapes.",
+      "concept": "O Shape 1 (casas 5–8) e o Shape 2 (casas 7–10) se sobrepõem na região das casas 7–8. As notas A (1) na 4ª corda casa 7, C (b3) na 1ª/6ª corda casa 8 e D (4) na 3ª corda casa 7 são compartilhadas pelos dois shapes — são as dobradiças da conexão. Ao deslizar de uma nota comum para a região vizinha, você muda de janela sem sair da mesma escala. O objetivo não é velocidade, é não perder a orientação.",
+      "key": "A minor",
+      "scale": {
+        "name": "A minor pentatonic",
+        "formula": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "notes": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "G"
+        ]
+      },
+      "chord": {
+        "name": "Am",
+        "notes": [
+          "A",
+          "C",
+          "E"
+        ],
+        "formula": [
+          "1",
+          "b3",
+          "5"
+        ]
+      },
+      "cagedForm": "Formas E + D (Shapes 1 + 2)",
+      "whatToSee": [
+        "Shape 1 e Shape 2 desenhados juntos, com a região de sobreposição (casas 7–8).",
+        "As notas compartilhadas: A (4ª corda casa 7), C (1ª/6ª corda casa 8) e D (3ª corda casa 7).",
+        "1, b3, 4, 5 e b7 distribuídos entre os dois shapes.",
+        "A direção da conexão: do grave (Shape 1) para o agudo (Shape 2)."
+      ],
+      "chordScaleRelation": "Am continua sendo o acorde de referência: os chord tones (1, b3, 5) e as tensões (4, b7) são os mesmos nos dois shapes — só mudam de posição.",
+      "fretboard": {
+        "shape": 1,
+        "position": 5,
+        "label": "Shape 1 + Shape 2",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "intervalMap": "e|--1(5)---b3(8)---4(10)--\nB|--5(5)---b7(8)---1(10)--\nG|--b3(5)--4(7)----5(9)---\nD|--b7(5)--1(7)----b3(10)-\nA|--4(5)---5(7)----b7(10)-\nE|--1(5)---b3(8)---4(10)--",
+        "tab": "e|------------------|\nB|------------------|\nG|------------------|\nD|------------------|\nA|------------7-----|\nE|--5---8---10------|"
+      },
+      "exercises": [
+        "Exercício 1: tocar uma frase no Shape 1 e continuá-la no Shape 2 sem parar.",
+        "Exercício 2 — Slide: deslizar de A (4ª corda casa 7) subindo para C (4ª corda casa 10), entrando no Shape 2.",
+        "Exercício 3 — Target note: começar no Shape 1 e escolher um alvo no Shape 2 (ex.: E na 3ª corda casa 9); conduzir uma frase até ele.",
+        "Repetir o slide com notas compartilhadas diferentes (D na 3ª corda casa 7)."
+      ],
+      "earTraining": {
+        "instruction": "Toque uma tônica A no Shape 1 e depois a mesma tônica no Shape 2 (4ª corda casa 7). Perceba que é a mesma nota. Depois cante a direção do slide (subindo) antes de executá-lo."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em Am, começar a improvisar no Shape 1 e, durante a frase, atravessar para o Shape 2 usando um slide. Regra: não perder a orientação da tônica e terminar em chord tone."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão de intervalos e notas compartilhadas entre Shape 1 e 2.",
+        "05–15 min: Exercício de conexão com slide e target note.",
+        "15–20 min: Exercício auditivo (mesma tônica nos dois shapes).",
+        "20–30 min: Improvisação começando no Shape 1 e chegando ao Shape 2."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Slides e precisão na mudança de posição",
+        "routine": [
+          "00–10 min: Alternate picking nos dois shapes a 70 BPM.",
+          "10–20 min: Slides de 1–2 tons entre as notas compartilhadas.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Técnica aplicada à conexão Shape 1 → Shape 2."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em A menor",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Introduction To 5 Pattern Play",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/introduction-to-5-pattern-play-bl-601",
+        "reason": "Mostra como tocar entre os padrões da pentatônica, essencial para a conexão Shape 1 → Shape 2."
+      },
+      "commonMistakes": [
+        "Parar completamente ao mudar de shape.",
+        "Fazer slide sem saber qual nota compartilhada está ligando as regiões.",
+        "Perder a referência da tônica ao atravessar a fronteira."
+      ],
+      "mastery": {
+        "know": "Entendo que Shape 1 e Shape 2 se sobrepõem e compartilham notas.",
+        "play": "Consigo conectar Shape 1 e Shape 2 com slides sem parar.",
+        "use": "Consigo improvisar atravessando os dois shapes mantendo a orientação."
+      },
+      "review": [
+        "Mesmo intervalo em vários shapes (Aula 16).",
+        "Intervalo = função (Aula 17)."
+      ],
+      "challenge": "Crie uma frase que começa no Shape 1, desliza para o Shape 2 e termina em 1 ou 5.",
+      "mission": "Gravar a conexão Shape 1 → Shape 2 com pelo menos 2 slides.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 19,
+      "week": 4,
+      "day": 4,
+      "phase": 2,
+      "title": "Conectando Shape 2 → Shape 3",
+      "subtitle": "Continuando o mapa para a região 9–13",
+      "objective": "Conectar o Shape 2 ao Shape 3 através da região de sobreposição, usando notas comuns, slides e target notes.",
+      "prerequisite": "Aula 18: conexão Shape 1 → Shape 2.",
+      "concept": "O Shape 2 (casas 7–10) e o Shape 3 (casas 9–13) se sobrepõem nas casas 9–10. As notas compartilhadas incluem A (2ª corda casa 10), C (4ª corda casa 10), D (1ª/6ª corda casa 10) e G (5ª corda casa 10). Ao deslizar de uma nota comum para a região vizinha, você continua o mapa sem perder a tônica. O desafio é criar uma frase que atravesse a fronteira e resolva em 1.",
+      "key": "A minor",
+      "scale": {
+        "name": "A minor pentatonic",
+        "formula": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "notes": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "G"
+        ]
+      },
+      "chord": {
+        "name": "Am",
+        "notes": [
+          "A",
+          "C",
+          "E"
+        ],
+        "formula": [
+          "1",
+          "b3",
+          "5"
+        ]
+      },
+      "cagedForm": "Formas D + C (Shapes 2 + 3)",
+      "whatToSee": [
+        "Shape 2 e Shape 3 desenhados juntos, com a região de sobreposição (casas 9–10).",
+        "As notas compartilhadas: A (2ª corda casa 10), C (4ª corda casa 10), D (1ª/6ª corda casa 10) e G (5ª corda casa 10).",
+        "1, b3, 4, 5 e b7 distribuídos entre os dois shapes.",
+        "A direção da conexão: continuar subindo o braço."
+      ],
+      "chordScaleRelation": "O acorde Am permanece a âncora: as notas compartilhadas são chord tones (A, C) e tensões (D, G) que ligam as duas janelas da mesma escala.",
+      "fretboard": {
+        "shape": 2,
+        "position": 7,
+        "label": "Shape 2 + Shape 3",
+        "shapes": [
+          2,
+          3
+        ],
+        "highlight": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "intervalMap": "e|--b3(8)---4(10)---5(12)-\nB|--b7(8)---1(10)---b3(13)\nG|--4(7)----5(9)----b7(12)\nD|--1(7)----b3(10)--4(12)-\nA|--5(7)----b7(10)--1(12)-\nE|--b3(8)---4(10)---5(12)-",
+        "tab": "e|------------------|\nB|------------------|\nG|------------------|\nD|--7---10---12-----|\nA|------------12----|\nE|------------------|"
+      },
+      "exercises": [
+        "Exercício 1: tocar uma frase no Shape 2 e continuá-la no Shape 3 sem parar.",
+        "Exercício 2 — Slide: deslizar de A (2ª corda casa 10) para C (2ª corda casa 13), entrando no Shape 3.",
+        "Exercício 3 — Target note: escolher um alvo no Shape 3 (ex.: A na 5ª corda casa 12) e conduzir uma frase até ele.",
+        "Explorar a sobreposição: tocar as notas compartilhadas nas casas 9–10."
+      ],
+      "earTraining": {
+        "instruction": "Toque a tônica A no Shape 2 (2ª corda casa 10) e a mesma tônica no Shape 3 (5ª corda casa 12). Cante a direção do slide antes de executá-lo, confirmando a continuidade do mapa."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em Am, improvisar começando no Shape 2 e atravessando para o Shape 3 com slides. Regra: usar uma target note e terminar a frase em chord tone."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão de intervalos e notas compartilhadas entre Shape 2 e 3.",
+        "05–15 min: Exercício de conexão com slide e target note.",
+        "15–20 min: Exercício auditivo (mesma tônica nos dois shapes).",
+        "20–30 min: Improvisação atravessando Shape 2 → Shape 3."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Slides e sincronização na mudança de posição",
+        "routine": [
+          "00–10 min: Alternate picking nos dois shapes a 70 BPM.",
+          "10–20 min: Slides entre as notas compartilhadas das casas 9–10.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Técnica aplicada à conexão Shape 2 → Shape 3."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em A menor",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "The Mental Fretboard Development",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/the-mental-fretboard-development-et-303",
+        "reason": "Desenvolve a visualização mental do braço para conectar shapes consecutivos."
+      },
+      "commonMistakes": [
+        "Parar na fronteira entre os shapes.",
+        "Confundir as notas compartilhadas (A, C, D, G na casa 10).",
+        "Perder a tônica A ao subir para a região 9–13."
+      ],
+      "mastery": {
+        "know": "Sei quais notas são compartilhadas entre Shape 2 e Shape 3.",
+        "play": "Consigo conectar Shape 2 e Shape 3 com slides sem parar.",
+        "use": "Consigo improvisar atravessando os dois shapes e resolver em chord tone."
+      },
+      "review": [
+        "Conexão Shape 1 → Shape 2 (Aula 18).",
+        "Intervalo = função (Aula 17)."
+      ],
+      "challenge": "Crie uma frase: Shape 2 → slide → Shape 3 → resolução em 1.",
+      "mission": "Gravar a frase do desafio (Shape 2 → slide → Shape 3 → resolução em 1).",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 20,
+      "week": 4,
+      "day": 5,
+      "phase": 2,
+      "title": "Conectando Shape 3 → Shape 4",
+      "subtitle": "Subindo pelo braço com foco em 1, b3, 5 e b7",
+      "objective": "Conectar o Shape 3 ao Shape 4, com foco em 1, b3, 5 e b7, e depois a resolução 4 → b3.",
+      "prerequisite": "Aula 19: conexão Shape 2 → Shape 3.",
+      "concept": "O Shape 3 (casas 9–13) e o Shape 4 (casas 12–15) se sobrepõem nas casas 12–13. As notas compartilhadas incluem A (5ª corda casa 12), E (6ª/1ª corda casa 12), D (4ª corda casa 12), G (3ª corda casa 12) e C (2ª corda casa 13). Ao subir pelo braço, o espaço entre os trastes diminui, tornando a conexão mais confortável. O foco é 1, b3, 5 e b7, e depois a resolução clássica 4 → b3.",
+      "key": "A minor",
+      "scale": {
+        "name": "A minor pentatonic",
+        "formula": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "notes": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "G"
+        ]
+      },
+      "chord": {
+        "name": "Am",
+        "notes": [
+          "A",
+          "C",
+          "E"
+        ],
+        "formula": [
+          "1",
+          "b3",
+          "5"
+        ]
+      },
+      "cagedForm": "Formas C + A (Shapes 3 + 4)",
+      "whatToSee": [
+        "Shape 3 e Shape 4 desenhados juntos, com a região de sobreposição (casas 12–13).",
+        "As notas compartilhadas: A (5ª casa 12), E (6ª/1ª casa 12), D (4ª casa 12), G (3ª casa 12) e C (2ª casa 13).",
+        "O foco em 1, b3, 5 e b7.",
+        "A resolução 4 → b3 (D → C) dentro da região."
+      ],
+      "chordScaleRelation": "Chord tones (1, b3, 5) e a tensão b7 guiam a subida; a resolução 4 → b3 devolve a frase ao acorde Am.",
+      "fretboard": {
+        "shape": 3,
+        "position": 9,
+        "label": "Shape 3 + Shape 4",
+        "shapes": [
+          3,
+          4
+        ],
+        "highlight": [
+          "1",
+          "b3",
+          "5",
+          "b7"
+        ],
+        "intervalMap": "e|--4(10)---5(12)---b7(15)-\nB|--1(10)---b3(13)--4(15)--\nG|--5(9)----b7(12)--1(14)--\nD|--b3(10)--4(12)---5(14)--\nA|--b7(10)--1(12)---b3(15)-\nE|--4(10)---5(12)---b7(15)-",
+        "tab": "e|------------------|\nB|--------15--13----|\nG|------12--14------|\nD|------------------|\nA|--12--------------|\nE|------------------|"
+      },
+      "exercises": [
+        "Exercício 1: tocar uma frase no Shape 3 e continuá-la no Shape 4 sem parar.",
+        "Exercício 2 — Slide: deslizar de A (5ª corda casa 12) para C (5ª corda casa 15), entrando no Shape 4.",
+        "Exercício 3 — Target note: escolher um alvo no Shape 4 (ex.: E na 4ª corda casa 14) e conduzir até ele.",
+        "Exercício 4 — Resolução: tocar 4 → b3 (D → C) atravessando a região de sobreposição."
+      ],
+      "earTraining": {
+        "instruction": "Toque a tônica A no Shape 3 (5ª corda casa 12) e no Shape 4 (3ª corda casa 14). Depois cante 4 → b3 (D → C) e execute a resolução, sentindo a gravidade de descida."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em Am, improvisar começando no Shape 3 e terminando no Shape 4, usando pelo menos: um slide, uma nota-alvo e uma resolução 4 → b3."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão de intervalos e notas compartilhadas entre Shape 3 e 4.",
+        "05–15 min: Exercício de conexão com slide e target note.",
+        "15–20 min: Exercício auditivo (tônica e resolução 4 → b3).",
+        "20–30 min: Improvisação atravessando Shape 3 → Shape 4."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Slides ascendentes e resolução 4 → b3",
+        "routine": [
+          "00–10 min: Alternate picking nos dois shapes a 75 BPM.",
+          "10–20 min: Slides ascendentes entre as notas compartilhadas.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Técnica aplicada à resolução 4 → b3 na conexão."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em A menor",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Minor Pentatonic Pattern 4",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/minor-pentatonic-pattern-4-bl-605",
+        "reason": "Aprofunda a região do Shape 4, usada na conexão Shape 3 → Shape 4."
+      },
+      "commonMistakes": [
+        "Parar na fronteira entre os shapes.",
+        "Esquecer de aplicar a resolução 4 → b3.",
+        "Perder a referência do acorde Am no registro agudo."
+      ],
+      "mastery": {
+        "know": "Sei as notas compartilhadas entre Shape 3 e Shape 4 e o foco em 1, b3, 5 e b7.",
+        "play": "Consigo conectar Shape 3 e Shape 4 com slide, target note e resolução 4 → b3.",
+        "use": "Consigo improvisar atravessando os dois shapes com musicalidade."
+      },
+      "review": [
+        "Conexão Shape 2 → Shape 3 (Aula 19).",
+        "Resolução 4 → b3 (Fase 1)."
+      ],
+      "challenge": "Frase: Shape 3 → slide → Shape 4 → 4 → b3.",
+      "mission": "Gravar a frase do desafio, cumprindo slide, target note e resolução.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 21,
+      "week": 5,
+      "day": 1,
+      "phase": 2,
+      "title": "Conectando Shape 4 → Shape 5",
+      "subtitle": "Fechando o ciclo dos cinco shapes",
+      "objective": "Conectar o Shape 4 ao Shape 5 e, em seguida, percorrer a sequência completa Shape 1 → 2 → 3 → 4 → 5 sem exigir velocidade.",
+      "prerequisite": "Aula 20: conexão Shape 3 → Shape 4.",
+      "concept": "O Shape 4 (casas 12–15) e o Shape 5 (casas 14–17) se sobrepõem nas casas 14–15. As notas compartilhadas incluem A (3ª corda casa 14), E (4ª corda casa 14), G (6ª/1ª corda casa 15) e C (5ª corda casa 15). Fechando esse ciclo, os cinco shapes formam uma única pentatônica contínua da casa 5 à casa 17. Depois, percorra Shape 1 → 2 → 3 → 4 → 5 sem pressa, só para confirmar que o braço inteiro virou um mapa.",
+      "key": "A minor",
+      "scale": {
+        "name": "A minor pentatonic",
+        "formula": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "notes": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "G"
+        ]
+      },
+      "chord": {
+        "name": "Am",
+        "notes": [
+          "A",
+          "C",
+          "E"
+        ],
+        "formula": [
+          "1",
+          "b3",
+          "5"
+        ]
+      },
+      "cagedForm": "Formas A + G (Shapes 4 + 5)",
+      "whatToSee": [
+        "Shape 4 e Shape 5 desenhados juntos, com a região de sobreposição (casas 14–15).",
+        "As notas compartilhadas: A (3ª casa 14), E (4ª casa 14), G (6ª/1ª casa 15) e C (5ª casa 15).",
+        "As tônicas, b3 e 5 em ambos os shapes.",
+        "O ciclo completo Shape 1 → 2 → 3 → 4 → 5."
+      ],
+      "chordScaleRelation": "Ao fechar o ciclo, o acorde Am aparece em todo o braço: 1, b3 e 5 são os destinos, e 4/b7 as tensões que ligam as janelas da mesma escala.",
+      "fretboard": {
+        "shape": 4,
+        "position": 12,
+        "label": "Shape 4 + Shape 5",
+        "shapes": [
+          4,
+          5
+        ],
+        "highlight": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "intervalMap": "e|--5(12)---b7(15)--1(17)-\nB|--b3(13)--4(15)---5(17)-\nG|--b7(12)--1(14)---b3(17)\nD|--4(12)---5(14)---b7(17)\nA|--1(12)---b3(15)--4(17)-\nE|--5(12)---b7(15)--1(17)-",
+        "tab": "e|------------------|\nB|------------------|\nG|--14---17---------|\nD|----------14------|\nA|------15----------|\nE|----------------17|"
+      },
+      "exercises": [
+        "Exercício 1: localizar as tônicas, b3 e 5 em Shape 4 + Shape 5.",
+        "Exercício 2 — Slide: deslizar de A (3ª corda casa 14) para C (3ª corda casa 17), entrando no Shape 5.",
+        "Exercício 3: criar frases que atravessam os dois shapes.",
+        "Exercício 4: percorrer Shape 1 → 2 → 3 → 4 → 5 sem pressa, mantendo a tônica."
+      ],
+      "earTraining": {
+        "instruction": "Toque a tônica A no Shape 4 (3ª corda casa 14) e no Shape 5 (6ª corda casa 17). Depois percorra os cinco shapes cantando a tônica em cada região."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em Am, improvisar atravessando Shape 4 → Shape 5 e depois o ciclo completo 1 → 2 → 3 → 4 → 5, sem buscar velocidade — apenas orientação."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão de intervalos e notas compartilhadas entre Shape 4 e 5.",
+        "05–15 min: Exercício de conexão com slide.",
+        "15–20 min: Exercício auditivo (tônica nos cinco shapes).",
+        "20–30 min: Improvisação percorrendo o ciclo completo."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Fluência no ciclo completo sem buscar velocidade",
+        "routine": [
+          "00–10 min: Alternate picking nos cinco shapes a 70 BPM.",
+          "10–20 min: Legato nas transições do ciclo 1 → 2 → 3 → 4 → 5.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Técnica aplicada ao ciclo completo."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em A menor",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Minor Pentatonic Pattern 5",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/minor-pentatonic-pattern-5-bl-608",
+        "reason": "Introduz a região do Shape 5, usada no fechamento do ciclo."
+      },
+      "commonMistakes": [
+        "Buscar velocidade em vez de orientação ao percorrer o ciclo.",
+        "Parar entre os shapes.",
+        "Esquecer a tônica ao fechar o ciclo no topo do braço."
+      ],
+      "mastery": {
+        "know": "Entendo que os cinco shapes formam uma única pentatônica contínua.",
+        "play": "Consigo percorrer o ciclo 1 → 2 → 3 → 4 → 5 sem perder a tônica.",
+        "use": "Consigo improvisar atravessando os cinco shapes com orientação musical."
+      },
+      "review": [
+        "Conexão Shape 3 → Shape 4 (Aula 20).",
+        "Todos os intervalos (Aula 17)."
+      ],
+      "challenge": "Percorra o ciclo completo 1 → 2 → 3 → 4 → 5 e de volta, terminando em 1.",
+      "mission": "Gravar o ciclo completo dos cinco shapes, subindo e descendo.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 22,
+      "week": 5,
+      "day": 2,
+      "phase": 2,
+      "title": "Boss Battle da Fase 2: um mapa, cinco regiões",
+      "subtitle": "Avaliação prática da conexão dos cinco shapes",
+      "objective": "Avaliar a capacidade de conectar os cinco shapes e improvisar atravessando o braço como um mapa contínuo, em quatro partes: random interval, conexão, improvisação e braço contínuo.",
+      "prerequisite": "Aulas 16 a 21 concluídas.",
+      "concept": "Esta é a prova da Fase 2. O objetivo é verificar se você deixou de pensar em cinco desenhos separados e passou a enxergar uma única pentatônica contínua. Você deve localizar intervalos sob comando, conectar shapes consecutivos, improvisar atravessando regiões e manter a tonalidade usando chord tones como destinos. Não exija perfeição — o alvo é orientação musical.",
+      "key": "A minor",
+      "scale": {
+        "name": "A minor pentatonic",
+        "formula": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "notes": [
+          "A",
+          "C",
+          "D",
+          "E",
+          "G"
+        ]
+      },
+      "chord": {
+        "name": "Am",
+        "notes": [
+          "A",
+          "C",
+          "E"
+        ],
+        "formula": [
+          "1",
+          "b3",
+          "5"
+        ]
+      },
+      "cagedForm": "Cinco formas CAGED — braço contínuo",
+      "whatToSee": [
+        "Os cinco shapes como um único mapa contínuo da casa 5 à casa 17.",
+        "1, b3, 4, 5 e b7 distribuídos por todo o braço.",
+        "As notas compartilhadas (dobradiças) entre shapes vizinhos.",
+        "A direção horizontal: da casa 5 à casa 17 em uma única corda."
+      ],
+      "chordScaleRelation": "O acorde Am (1, b3, 5) é a âncora de todo o mapa; 4 e b7 são as tensões que ligam as regiões e resolvem de volta ao acorde.",
+      "fretboard": {
+        "shape": 1,
+        "position": 5,
+        "label": "Cinco Shapes · Mapa Completo",
+        "shapes": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "highlight": [
+          "1",
+          "b3",
+          "4",
+          "5",
+          "b7"
+        ],
+        "intervalMap": "e|--1(5)---b3(8)---4(10)---5(12)---b7(15)---1(17)-\nB|--5(5)---b7(8)---1(10)---b3(13)--4(15)----5(17)-\nG|--b3(5)--4(7)----5(9)----b7(12)--1(14)----b3(17)\nD|--b7(5)--1(7)----b3(10)--4(12)---5(14)----b7(17)\nA|--4(5)---5(7)----b7(10)--1(12)---b3(15)---4(17)-\nE|--1(5)---b3(8)---4(10)---5(12)---b7(15)---1(17)-",
+        "tab": "e|--------------------------|\nB|--------------------------|\nG|--------------------------|\nD|--------------------------|\nA|--------------------------|\nE|--5---8---10---12---15---17-|"
+      },
+      "exercises": [
+        "PARTE 1 — Random Interval: sortear shape + intervalo (ex.: Shape 1 + b7, Shape 2 + 5, Shape 4 + b3, Shape 5 + 1) e localizar cada nota.",
+        "PARTE 2 — Conexão: conectar Shape 1 → 2, depois 2 → 3, depois 3 → 4, depois 4 → 5.",
+        "PARTE 3 — Improvisação (5 min): 1 min só Shape 1, 1 min Shape 1 + 2, 1 min Shape 2 + 3, 1 min Shape 3 + 4, 1 min Shape 4 + 5.",
+        "PARTE 4 — Braço contínuo: improvisar livremente usando pelo menos 3 regiões, 2 slides, terminações em 1, b3 e 5, e uma tensão → resolução."
+      ],
+      "earTraining": {
+        "instruction": "Percorra o braço de grave a agudo tocando apenas as tônicas A e cantando Um. Depois repita para b3, 5, 4 e b7, reconhecendo cada função em qualquer região."
+      },
+      "improvisation": {
+        "instruction": "Improvisação final: 5 minutos livres atravessando os cinco shapes, cumprindo as regras da Parte 4 (3 regiões, 2 slides, terminações em 1/b3/5 e uma tensão → resolução). Grave e avalie."
+      },
+      "theoryRoutine": [
+        "00–05 min: Random interval nos cinco shapes.",
+        "05–15 min: Conexões Shape 1 → 2 → 3 → 4 → 5.",
+        "15–20 min: Exercício auditivo de funções no braço.",
+        "20–30 min: Improvisação com gravação para autoavaliação."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Resistência e fluência horizontal nos cinco shapes",
+        "routine": [
+          "00–10 min: Alternate picking nos cinco shapes a 75 BPM.",
+          "10–20 min: Legato e slides nas conexões entre shapes.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Técnica aplicada ao braço contínuo."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em A menor",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Minor Pentatonic: Essential Information",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/minor-pentatonic-essential-information-sc-301",
+        "reason": "Revisão geral da pentatônica para a avaliação da Fase 2."
+      },
+      "commonMistakes": [
+        "Ainda pensar em shapes isolados em vez de um mapa contínuo.",
+        "Perder a orientação ao atravessar mais de dois shapes.",
+        "Exigir perfeição em vez de mirar na orientação musical."
+      ],
+      "mastery": {
+        "know": "Consigo explicar que os cinco shapes pertencem à mesma escala contínua.",
+        "play": "Consigo conectar dois shapes sem parar completamente.",
+        "use": "Consigo improvisar atravessando pelo menos três shapes, mantendo a tonalidade e usando chord tones como destinos."
+      },
+      "review": [
+        "Localizar qualquer intervalo nos cinco shapes.",
+        "Conectar shapes consecutivos (1 → 2, 2 → 3, 3 → 4, 4 → 5).",
+        "Usar slides e target notes na conexão.",
+        "Terminar frases em chord tones (1, b3, 5).",
+        "Usar tensão → resolução atravessando o braço."
+      ],
+      "challenge": "Grave os 5 minutos do Boss Battle e marque, de 1 a 5, seu desempenho em orientação, conexão e musicalidade.",
+      "mission": "Concluir o Boss Battle e registrar sua autoavaliação de orientação musical.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 23,
+      "week": 6,
+      "day": 1,
+      "phase": 3,
+      "title": "Mesmas notas, outro centro",
+      "subtitle": "A minor pentatonic e C major pentatonic são o mesmo material",
+      "objective": "Entender a relação entre A minor pentatonic (1 b3 4 5 b7) e C major pentatonic (1 2 3 5 6), percebendo que as mesmas notas mudam de função quando o centro tonal muda.",
+      "prerequisite": "Fases 1 e 2: pentatônica menor, intervalos e conexão dos shapes.",
+      "concept": "A minor pentatonic usa A, C, D, E e G (1, b3, 4, 5, b7). C major pentatonic usa C, D, E, G e A (1, 2, 3, 5, 6). São exatamente as mesmas cinco notas — o que muda é a nota que funciona como casa. Em Am, A é a casa e C é a terça menor; em C, C é a casa e A é a sexta. Não é 'o mesmo shape': são as mesmas notas assumindo funções diferentes. Você precisa OUVIR essa mudança de centro.",
+      "key": "C major",
+      "scale": {
+        "name": "C major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "C",
+          "D",
+          "E",
+          "G",
+          "A"
+        ]
+      },
+      "chord": {
+        "name": "C",
+        "notes": [
+          "C",
+          "E",
+          "G"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma A (C major) — as mesmas notas de Am",
+      "whatToSee": [
+        "As mesmas cinco notas (A, C, D, E, G) agora lidas a partir de C.",
+        "C = 1 (nova casa), E = 3, G = 5 (chord tones de C).",
+        "D = 2 e A = 6 (as cores da pentatônica maior).",
+        "Que A deixou de ser 1 e virou 6; C deixou de ser b3 e virou 1."
+      ],
+      "chordScaleRelation": "Sobre C major, os chord tones são C, E e G (1, 3, 5). As mesmas notas que em Am eram b3, 5 e b7 agora são 1, 3 e 5.",
+      "fretboard": {
+        "shape": 1,
+        "position": 5,
+        "label": "C major pentatonic · 1 2 3 5 6",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--6(5)-----1(8)---\nB|--3(5)-----5(8)---\nG|--1(5)-----2(7)---\nD|--5(5)-----6(7)---\nA|--2(5)-----3(7)---\nE|--6(5)-----1(8)---",
+        "tab": "e|------------------5-8-|\nB|--------------5-8-----|\nG|----------5-7---------|\nD|------5-7-------------|\nA|--5-7-----------------|\nE|--5-8-----------------|"
+      },
+      "exercises": [
+        "Tocar Am (A, C, E) e depois C (C, E, G) — perceber a mudança de 'casa'.",
+        "Tocar a pentatônica A C D E G sobre Am e depois sobre C.",
+        "Improvisar sobre Am usando as notas A C D E G.",
+        "Improvisar sobre C usando as mesmas notas A C D E G.",
+        "Pergunta central: 'qual nota parece ser a casa em cada backing track?'"
+      ],
+      "earTraining": {
+        "instruction": "Toque o acorde Am e cante A como repouso. Depois toque C e cante C como repouso. Toque a mesma frase de cinco notas sobre os dois acordes e ouça como a sensação de chegada muda de A para C."
+      },
+      "improvisation": {
+        "instruction": "Improvisar 2 minutos sobre Am e 2 minutos sobre C usando exatamente as mesmas notas (A, C, D, E, G). Perceba onde a frase 'quer' parar em cada contexto."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão da pentatônica menor (1 b3 4 5 b7).",
+        "05–15 min: Reler as mesmas notas como C major pentatonic (1 2 3 5 6).",
+        "15–20 min: Ouvido — mudança de centro Am → C.",
+        "20–30 min: Improvisação sobre Am e depois C."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Frases da pentatônica maior com palhetada alternada",
+        "routine": [
+          "00–10 min: Alternate picking na pentatônica em colcheias a 70 BPM.",
+          "10–20 min: Sincronização nas mesmas notas sobre Am e C.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Frases maiores aplicadas à técnica."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em C maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Mixing Major & Minor Pentatonics",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/mixing-major-minor-pentatonics-bl-804",
+        "reason": "Mostra como maior e menor são dois centros do mesmo material."
+      },
+      "commonMistakes": [
+        "Achar que maior e menor são cinco desenhos diferentes e decorar tudo de novo.",
+        "Não ouvir a mudança de centro tonal entre Am e C.",
+        "Achar que C major pentatonic começa necessariamente em C."
+      ],
+      "mastery": {
+        "know": "Consigo explicar que Am e C major pentatonic usam as mesmas notas com centros diferentes.",
+        "play": "Consigo tocar as mesmas cinco notas sobre Am e sobre C.",
+        "use": "Consigo ouvir e usar a mudança de centro ao improvisar sobre Am e C."
+      },
+      "review": [
+        "Pentatônica menor: 1, b3, 4, 5, b7 (Fase 1).",
+        "Localização de intervalos em qualquer shape (Fase 2)."
+      ],
+      "challenge": "Toque a mesma frase sobre Am e depois sobre C, e descreva como a percepção da 'casa' muda.",
+      "mission": "Gravar a mesma frase sobre Am e C e comparar a sensação de repouso.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 24,
+      "week": 6,
+      "day": 2,
+      "phase": 3,
+      "title": "1, 2, 3, 5 e 6",
+      "subtitle": "Os intervalos da pentatônica maior",
+      "objective": "Compreender a fórmula 1 2 3 5 6 e as mudanças b3 → 3, 4 → 2 e b7 → 6 em relação à pentatônica menor.",
+      "prerequisite": "Aula 23: a relação entre Am e C major.",
+      "concept": "A pentatônica menor é 1 b3 4 5 b7; a maior é 1 2 3 5 6. Compare diretamente: b3 vira 3 (a terça sobe meio tom), 4 vira 2 (a quarta 'desce' para a segunda), e b7 vira 6 (a sétima menor vira a sexta). O 1 e o 5 permanecem — são as âncoras estáveis. No mesmo mapa, encontre 1, 2, 3, 5 e 6 e compare com o mapa menor.",
+      "key": "C major",
+      "scale": {
+        "name": "C major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "C",
+          "D",
+          "E",
+          "G",
+          "A"
+        ]
+      },
+      "chord": {
+        "name": "C",
+        "notes": [
+          "C",
+          "E",
+          "G"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma A (C major) — intervalos 1 2 3 5 6",
+      "whatToSee": [
+        "O mapa maior: 1, 2, 3, 5 e 6 sobre as notas C, D, E, G e A.",
+        "1 = C, 2 = D, 3 = E, 5 = G, 6 = A.",
+        "As mudanças em relação ao menor: b3 → 3, 4 → 2, b7 → 6.",
+        "Que 1 e 5 permanecem iguais."
+      ],
+      "chordScaleRelation": "Os chord tones do acorde C são 1, 3 e 5 (C, E, G). As cores 2 (D) e 6 (A) cercam o acorde.",
+      "fretboard": {
+        "shape": 1,
+        "position": 5,
+        "label": "C major pentatonic · 1 2 3 5 6",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "intervalMap": "e|--6(5)-----1(8)---\nB|--3(5)-----5(8)---\nG|--1(5)-----2(7)---\nD|--5(5)-----6(7)---\nA|--2(5)-----3(7)---\nE|--6(5)-----1(8)---",
+        "tab": "e|----------------5-----|\nB|--------5---8---------|\nG|--5---7---------------|\nD|----------------------|\nA|----------------------|\nE|----------------------|"
+      },
+      "exercises": [
+        "No mapa maior, encontrar 1, 2, 3, 5 e 6.",
+        "Comparar com o mapa menor: onde estava b3 agora está 3; onde estava 4 agora está 2; onde estava b7 agora está 6.",
+        "Tocar 1 → b3 (menor) e depois 1 → 3 (maior), ouvindo a diferença.",
+        "Localizar 2 e 6 como cores (não chord tones)."
+      ],
+      "earTraining": {
+        "instruction": "Toque 1 → b3 e cante 'menor'. Depois toque 1 → 3 e cante 'maior'. Repita alternando até reconhecer auditivamente a terça menor versus a terça maior."
+      },
+      "improvisation": {
+        "instruction": "Improvisar sobre C major usando 1 2 3 5 6. Terminar frases em 1, 3 ou 5; usar 2 e 6 como passagem e cor."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão 1 b3 4 5 b7.",
+        "05–15 min: Mapear 1 2 3 5 6 no mesmo braço.",
+        "15–20 min: Ouvido — b3 versus 3.",
+        "20–30 min: Improvisação em C major."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Sincronização e legato nas novas funções intervalares",
+        "routine": [
+          "00–10 min: Alternate picking no padrão 1 2 3 5 6 a 70 BPM.",
+          "10–20 min: Legato nas mudanças b3 → 3 (meio tom).",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Frases maiores com intenção."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em C maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Pentatonic Scale",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-pentatonic-scale-im-153",
+        "reason": "Introduz a fórmula 1 2 3 5 6 da pentatônica maior."
+      },
+      "commonMistakes": [
+        "Pensar que a pentatônica maior é um desenho totalmente novo.",
+        "Não ouvir a diferença entre b3 e 3.",
+        "Confundir 2 com 4 e 6 com b7 ao trocar de centro."
+      ],
+      "mastery": {
+        "know": "Sei a fórmula 1 2 3 5 6 e as mudanças b3 → 3, 4 → 2, b7 → 6.",
+        "play": "Consigo localizar 1, 2, 3, 5 e 6 no mapa maior.",
+        "use": "Consigo improvisar em C major usando 2 e 6 como cores e resolvendo em 1, 3 ou 5."
+      },
+      "review": [
+        "Mesmas notas, outro centro (Aula 23).",
+        "Pentatônica menor (Fase 1)."
+      ],
+      "challenge": "Toque a mesma sequência de notas lendo-a como menor e depois como maior.",
+      "mission": "Gravar 1 → b3 e 1 → 3, mostrando a diferença auditiva.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 25,
+      "week": 6,
+      "day": 3,
+      "phase": 3,
+      "title": "3 — a nota que define o maior",
+      "subtitle": "A terça maior (B em G major) é o que separa maior de menor",
+      "objective": "Compreender profundamente a importância da terça maior (3), contrastando G → B (maior) com G → Bb (menor).",
+      "prerequisite": "Aula 24: intervalos da pentatônica maior.",
+      "concept": "O acorde G major é G, B e D (1, 3, 5). A nota B é a terça maior — o meio tom acima da terça menor Bb. Esse único meio tom define toda a sensação: 3 = maior, b3 = menor. Ao tocar G → B você ouve luz e resolução; G → Bb traz a sombra do menor. Dominar essa diferença é dominar a essência do sistema tonal.",
+      "key": "G major",
+      "scale": {
+        "name": "G major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — tríade G B D",
+      "whatToSee": [
+        "O acorde G (G, B, D) = 1, 3 e 5.",
+        "A terça maior B (3) — 5ª corda casa 2 e 3ª corda casa 4.",
+        "A diferença de meio tom entre Bb (b3) e B (3).",
+        "1 (G) e 5 (D) como âncoras estáveis."
+      ],
+      "chordScaleRelation": "G = 1 (casa), B = 3 (identidade maior), D = 5 (estabilidade). A terça maior B é o chord tone que define o humor.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · 1, 3 e 5",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3"
+        ],
+        "intervalMap": "e|--1(3)---2(5)--\nB|--5(3)---6(5)--\nG|--2(2)---3(4)--\nD|--6(2)---1(5)--\nA|--3(2)---5(5)--\nE|--1(3)---2(5)--",
+        "tab": "e|----------------|\nB|----------------|\nG|----------------|\nD|----------5-----|\nA|--2---5---------|\nE|--3-------------|"
+      },
+      "exercises": [
+        "Tocar G (6ª corda casa 3), B (5ª corda casa 2) e D (5ª corda casa 5).",
+        "Tocar G → B e sentir o som maior.",
+        "Tocar G → Bb (6ª corda casa 6) e sentir o som menor.",
+        "Perguntar: qual soa maior? qual soa menor?",
+        "Localizar todas as terças maiores B na região."
+      ],
+      "earTraining": {
+        "instruction": "Toque G (6ª corda casa 3) e B (5ª corda casa 2), cantando Um e Três. Depois toque G e Bb (5ª corda casa 1), cantando Um e Terça menor. Alterne até reconhecer 3 versus b3 de ouvido."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvise com a regra: as frases devem atingir a terça maior B conscientemente. Terminar em G, B ou D."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão da fórmula 1 2 3 5 6.",
+        "05–15 min: Localizar a terça maior B em G major.",
+        "15–20 min: Ouvido — 3 versus b3.",
+        "20–30 min: Improvisação atingindo B conscientemente."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Precisão no meio tom (b3 → 3) e bends",
+        "routine": [
+          "00–10 min: Alternate picking na pentatônica maior de G a 70 BPM.",
+          "10–20 min: Bend de meio tom mirando a terça maior.",
+          "20–25 min: Vibrato na terça maior como nota-alvo.",
+          "25–30 min: Frases maiores com resolução em 3."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Pentatonic: The Five Patterns",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-pentatonic-the-five-patterns-sc-404",
+        "reason": "Apresenta a pentatônica maior e a centralidade da terça maior."
+      },
+      "commonMistakes": [
+        "Confundir a terça maior B com a terça menor Bb.",
+        "Não ouvir a diferença de meio tom entre 3 e b3.",
+        "Atingir a terça maior por acaso, sem intenção."
+      ],
+      "mastery": {
+        "know": "Sei que 3 (maior) e b3 (menor) diferem por meio tom e definem o humor.",
+        "play": "Consigo localizar e tocar a terça maior B em G major.",
+        "use": "Consigo atingir B conscientemente no improviso e resolver em chord tones."
+      },
+      "review": [
+        "Intervalos 1 2 3 5 6 (Aula 24).",
+        "b3 no contexto menor (Fase 1)."
+      ],
+      "challenge": "Improvisar 2 minutos em G major onde toda frase passa pela terça maior B.",
+      "mission": "Gravar G → B e G → Bb, evidenciando maior versus menor.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 26,
+      "week": 6,
+      "day": 4,
+      "phase": 3,
+      "title": "Acorde maior como âncora",
+      "subtitle": "CAGED + G major pentatonic",
+      "objective": "Ancorar a pentatônica maior de G (G A B D E) no acorde G major (G B D), enxergando 1, 3 e 5 como chord tones.",
+      "prerequisite": "Aula 25: a terça maior.",
+      "concept": "A pentatônica maior de G é G, A, B, D e E (1, 2, 3, 5, 6). O acorde G major (G, B, D) é o esqueleto dentro dela: 1, 3 e 5. Ao enxergar o acorde dentro da escala, você tem os destinos seguros. A (2) e E (6) são as cores ao redor. Tocar G, encontrar G/B/D, depois A/E — esse é o mapa completo da região.",
+      "key": "G major",
+      "scale": {
+        "name": "G major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 1, 3 e 5",
+      "whatToSee": [
+        "O acorde G (G, B, D) = 1, 3, 5 dentro da pentatônica maior.",
+        "G = 1 (6ª casa 3), B = 3 (5ª casa 2), D = 5 (5ª casa 5).",
+        "A (2) e E (6) como cores entre os chord tones.",
+        "A pentatônica completa G A B D E ao redor do acorde."
+      ],
+      "chordScaleRelation": "O acorde G (1, 3, 5) é o esqueleto; a pentatônica maior (1, 2, 3, 5, 6) é o território com as cores 2 e 6.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · acorde + pentatônica",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--1(3)---2(5)--\nB|--5(3)---6(5)--\nG|--2(2)---3(4)--\nD|--6(2)---1(5)--\nA|--3(2)---5(5)--\nE|--1(3)---2(5)--",
+        "tab": "e|------------------3-5-|\nB|--------------3-5-----|\nG|----------2-4---------|\nD|------2-5-------------|\nA|--2-5-----------------|\nE|--3-5-----------------|"
+      },
+      "exercises": [
+        "Tocar o acorde G (G, B, D) e nomear as notas.",
+        "Encontrar G, B e D na região (1, 3 e 5).",
+        "Encontrar A (2) e E (6) na região.",
+        "Alternar chord tone → cor → chord tone.",
+        "Improvisar terminando frases em G, B ou D."
+      ],
+      "earTraining": {
+        "instruction": "Toque o acorde G e cante 1, 3, 5. Depois adicione A (2) e E (6), sentindo que eles pedem resolução de volta a G, B ou D."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar usando G A B D E. Regra: terminar frases em G, B ou D; usar A e E como passagem."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão 1 2 3 5 6.",
+        "05–15 min: Acorde G e localização de 1, 3, 5.",
+        "15–20 min: Ouvido — chord tones versus cores.",
+        "20–30 min: Improvisação em G major."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Arpejo maior e sincronização",
+        "routine": [
+          "00–10 min: Alternate picking na pentatônica maior de G a 70 BPM.",
+          "10–20 min: Arpejo G (1, 3, 5) com palhetada alternada.",
+          "20–25 min: Bends e vibrato nos chord tones.",
+          "25–30 min: Frases maiores com resolução em 1, 3 ou 5."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "The CAGED System",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/modules/caged-system",
+        "reason": "Mostra como o acorde serve de âncora visual dentro da escala."
+      },
+      "commonMistakes": [
+        "Tratar a pentatônica maior como desenho sem reconhecer o acorde dentro dela.",
+        "Não diferenciar chord tones (1, 3, 5) de cores (2, 6).",
+        "Terminar frases em 2 ou 6 sem perceber a falta de repouso."
+      ],
+      "mastery": {
+        "know": "Sei que G major = G, B, D e que 1, 3, 5 são os chord tones.",
+        "play": "Consigo localizar G, B, D, A e E na região.",
+        "use": "Consigo improvisar em G major terminando frases em chord tones."
+      },
+      "review": [
+        "A terça maior (Aula 25).",
+        "Intervalos 1 2 3 5 6 (Aula 24)."
+      ],
+      "challenge": "Improvisar 2 minutos em G major onde toda frase termina em G, B ou D.",
+      "mission": "Gravar o acorde G e depois a pentatônica maior ao redor dele.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 27,
+      "week": 6,
+      "day": 5,
+      "phase": 3,
+      "title": "Cores da pentatônica maior",
+      "subtitle": "2 e 6 como cores, resolvendo em 1, 3 e 5",
+      "objective": "Entender 2 (A) e 6 (E) como notas de cor na pentatônica maior, sem transformá-las em teoria excessiva.",
+      "prerequisite": "Aula 26: acorde G como âncora.",
+      "concept": "Na pentatônica maior de G: 1 (G) é a casa, 3 (B) é a identidade maior, 5 (D) é a estabilidade. O 2 (A) e o 6 (E) são cores — notas que embelezam a melodia mas pedem resolução de volta aos chord tones. Alterne 1 → 2 → 1 e 1 → 6 → 1, e depois 3 → 2 → 1. Simples, mas é isso que dá sabor ao som maior.",
+      "key": "G major",
+      "scale": {
+        "name": "G major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 2 e 6 como cores",
+      "whatToSee": [
+        "2 = A (6ª corda casa 5, 3ª corda casa 2, 1ª corda casa 5).",
+        "6 = E (4ª corda casa 2, 2ª corda casa 5).",
+        "Como 2 e 6 cercam os chord tones 1, 3 e 5.",
+        "As resoluções 2 → 1 e 6 → 5."
+      ],
+      "chordScaleRelation": "As cores 2 (A) e 6 (E) embelezam o acorde G (1, 3, 5) e resolvem de volta a ele.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · cores 2 e 6",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "2",
+          "6"
+        ],
+        "intervalMap": "e|--1(3)---2(5)--\nB|--5(3)---6(5)--\nG|--2(2)---3(4)--\nD|--6(2)---1(5)--\nA|--3(2)---5(5)--\nE|--1(3)---2(5)--",
+        "tab": "e|------------------|\nB|------------------|\nG|------------------|\nD|----2-------------|\nA|------------------|\nE|--3---5---3-------|"
+      },
+      "exercises": [
+        "Alternar 1 → 2 → 1 (G → A → G).",
+        "Alternar 1 → 6 → 1 (G → E → G).",
+        "Fazer 3 → 2 → 1 (B → A → G).",
+        "Improvisar usando 2 e 6 como cores, resolvendo em 1, 3 ou 5."
+      ],
+      "earTraining": {
+        "instruction": "Toque G (1) e depois A (2), cantando Um e Dois — sinta o 2 como uma cor que flutua. Toque G (1) e E (6), cantando Um e Seis — sinta a cor do 6. Em ambos, resolva de volta a G."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar usando 2 e 6 como cores. Regra: cada frase que usar 2 ou 6 deve resolver em 1, 3 ou 5."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão dos chord tones 1, 3, 5.",
+        "05–15 min: Localizar 2 e 6 e alternar com 1.",
+        "15–20 min: Ouvido — 2 e 6 como cores.",
+        "20–30 min: Improvisação com resolução."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Controle rítmico nas cores e resoluções",
+        "routine": [
+          "00–10 min: Alternate picking na pentatônica maior a 75 BPM.",
+          "10–20 min: Células 1 → 2 → 1 e 1 → 6 → 1.",
+          "20–25 min: Bends e vibrato nas notas de chegada.",
+          "25–30 min: Frases maiores com 2 e 6 como cores."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Pentatonic Scale",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-pentatonic-scale-im-153",
+        "reason": "Mostra como 2 e 6 funcionam como cores na pentatônica maior."
+      },
+      "commonMistakes": [
+        "Transformar 2 e 6 em teoria excessiva em vez de ouvi-los como cores.",
+        "Terminar frases em 2 ou 6 sem resolver.",
+        "Não diferenciar cor (2, 6) de repouso (1, 3, 5)."
+      ],
+      "mastery": {
+        "know": "Sei que 2 e 6 são cores que resolvem nos chord tones 1, 3 e 5.",
+        "play": "Consigo alternar 1 → 2 → 1 e 1 → 6 → 1.",
+        "use": "Consigo improvisar usando 2 e 6 como cores com resolução."
+      },
+      "review": [
+        "Acorde G como âncora (Aula 26).",
+        "Intervalos 1 2 3 5 6 (Aula 24)."
+      ],
+      "challenge": "Improvisar 2 minutos usando apenas 1, 2, 5 e 6, resolvendo toda cor.",
+      "mission": "Gravar 1 → 2 → 1 e 1 → 6 → 1 com resolução.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 28,
+      "week": 7,
+      "day": 1,
+      "phase": 3,
+      "title": "Improvisando em G maior",
+      "subtitle": "Motivos, silêncio e pergunta/resposta no som maior",
+      "objective": "Usar a pentatônica maior de G musicalmente, com motivos, silêncio e pergunta/resposta, terminando frases em G, B e D.",
+      "prerequisite": "Aulas 25–27: G major pentatonic, terça maior e cores.",
+      "concept": "Agora a pentatônica maior vira música. Use somente G, A, B, D e E. Termine frases em G (casa), algumas em B (identidade) e algumas em D (estabilidade). Use A como passagem/cor e E como cor. Introduza motivos (repetir uma ideia curta), silêncio (respirar) e pergunta/resposta (frase que sobe e frase que responde). O som maior pede leveza e clareza.",
+      "key": "G major",
+      "scale": {
+        "name": "G major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — improvisação",
+      "whatToSee": [
+        "Os destinos: G (1), B (3) e D (5).",
+        "As cores: A (2) e E (6).",
+        "O motivo como ideia curta repetida.",
+        "O silêncio entre pergunta e resposta."
+      ],
+      "chordScaleRelation": "Sobre o acorde G (1, 3, 5), as frases maiores pousam em G, B ou D, com A e E como passagem.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · improvisação",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "intervalMap": "e|--1(3)---2(5)--\nB|--5(3)---6(5)--\nG|--2(2)---3(4)--\nD|--6(2)---1(5)--\nA|--3(2)---5(5)--\nE|--1(3)---2(5)--",
+        "tab": "e|------------------3-5-|\nB|--------------3-5-----|\nG|----------2-4---------|\nD|------2-5-------------|\nA|--2-5-----------------|\nE|--3-5-----------------|"
+      },
+      "exercises": [
+        "Frase terminando em G (1).",
+        "Frase terminando em B (3).",
+        "Frase terminando em D (5).",
+        "Frase usando A (2) como passagem.",
+        "Frase usando E (6) como cor.",
+        "Criar um motivo de 3 notas e repeti-lo com variação.",
+        "Fazer pergunta (termina em 2 ou 6) e resposta (termina em 1)."
+      ],
+      "earTraining": {
+        "instruction": "Toque um motivo curto e cante-o de volta. Depois toque uma pergunta (terminando em 2 ou 6) e responda cantando a resolução em 1."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar 5 minutos: 2 min com terminações em G/B/D, 2 min usando A e E como cores, 1 min com pergunta/resposta e silêncio."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão de motivos e pergunta/resposta.",
+        "05–15 min: Frases com terminação em G, B e D.",
+        "15–20 min: Ouvido — canto e resposta.",
+        "20–30 min: Improvisação musical em G major."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Fraseado maior com controle rítmico",
+        "routine": [
+          "00–10 min: Alternate picking na pentatônica maior a 75 BPM.",
+          "10–20 min: Motivos rítmicos com acentuação variada.",
+          "20–25 min: Bends e vibrato nas notas de chegada.",
+          "25–30 min: Improviso técnico com respiração entre frases."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Pentatonic In The Blues",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-pentatonic-in-the-blues-bl-801",
+        "reason": "Mostra a pentatônica maior em um contexto musical real."
+      },
+      "commonMistakes": [
+        "Tocar notas maiores sem fraseado (sem motivo, silêncio ou pergunta/resposta).",
+        "Terminar frases em A ou E sem perceber a falta de repouso.",
+        "Ignorar o silêncio e emendar frases sem respiração."
+      ],
+      "mastery": {
+        "know": "Entendo motivos, silêncio e pergunta/resposta na pentatônica maior.",
+        "play": "Consigo terminar frases em G, B e D usando A e E como cores.",
+        "use": "Consigo improvisar musicalmente em G major com fraseado."
+      },
+      "review": [
+        "Cores 2 e 6 (Aula 27).",
+        "Acorde G como âncora (Aula 26)."
+      ],
+      "challenge": "Gravar 2 minutos em G major com pelo menos um motivo, um silêncio e uma pergunta/resposta.",
+      "mission": "Gravar uma improvisação de 3 minutos musicalmente estruturada em G major.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 29,
+      "week": 7,
+      "day": 2,
+      "phase": 3,
+      "title": "Am ou C?",
+      "subtitle": "Relative major/minor na prática",
+      "objective": "Praticar a alternância entre A minor e C major usando o mesmo conjunto de notas, percebendo a mudança de centro tonal.",
+      "prerequisite": "Aula 23: relação Am × C major.",
+      "concept": "A minor (A C D E G) e C major (C D E G A) usam as mesmas notas, mas dois centros. Improvise sobre um backing track em Am e depois sobre um em C — as mesmas notas vão soar diferentes porque a 'casa' muda. Uma mesma frase tocada sobre Am e depois sobre C muda de percepção: em Am ela repousa em A; em C, a mesma nota A vira a sexta (cor). Alternar Am → C e C → Am treina o ouvido a reconhecer o centro.",
+      "key": "C major",
+      "scale": {
+        "name": "C major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "C",
+          "D",
+          "E",
+          "G",
+          "A"
+        ]
+      },
+      "chord": {
+        "name": "C",
+        "notes": [
+          "C",
+          "E",
+          "G"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma A (C major) — centro C versus centro A",
+      "whatToSee": [
+        "As mesmas notas (A, C, D, E, G) com dois centros possíveis.",
+        "Centro Am: A = 1, C = b3, E = 5.",
+        "Centro C: C = 1, E = 3, G = 5.",
+        "A mesma nota A: 1 em Am, 6 em C."
+      ],
+      "chordScaleRelation": "Sobre Am, os chord tones são A, C, E; sobre C, são C, E, G. As mesmas notas reorganizam sua hierarquia conforme o centro.",
+      "fretboard": {
+        "shape": 1,
+        "position": 5,
+        "label": "C major pentatonic · Am ou C?",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--6(5)-----1(8)---\nB|--3(5)-----5(8)---\nG|--1(5)-----2(7)---\nD|--5(5)-----6(7)---\nA|--2(5)-----3(7)---\nE|--6(5)-----1(8)---",
+        "tab": "e|------------------5-8-|\nB|--------------5-8-----|\nG|----------5-7---------|\nD|------5-7-------------|\nA|--5-7-----------------|\nE|--5-8-----------------|"
+      },
+      "exercises": [
+        "Exercício 1: improvisar sobre backing track Am.",
+        "Exercício 2: improvisar sobre backing track C.",
+        "Exercício 3: alternar Am → C → Am → C, percebendo o centro.",
+        "Desafio: tocar a mesma frase sobre Am e depois sobre C e notar a mudança."
+      ],
+      "earTraining": {
+        "instruction": "Toque a mesma frase sobre Am e sobre C. Preste atenção em qual nota 'quer' parar em cada contexto — em Am é A; em C é C. Cante a nota de chegada em cada caso."
+      },
+      "improvisation": {
+        "instruction": "Improvisar alternando backing tracks de Am e C, usando as mesmas notas. Em cada um, identificar e reforçar o centro tonal (A em Am, C em C)."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão das mesmas notas em Am e C.",
+        "05–15 min: Improvisação alternando Am e C.",
+        "15–20 min: Ouvido — centro tonal A versus C.",
+        "20–30 min: Desafio da mesma frase nos dois centros."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Controle de centro tonal e fraseado",
+        "routine": [
+          "00–10 min: Alternate picking nas mesmas notas a 75 BPM.",
+          "10–20 min: Frases com resolução em A (Am) e em C (C).",
+          "20–25 min: Bends e vibrato nas notas de chegada.",
+          "25–30 min: Improviso técnico alternando Am e C."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em C maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Mixing Major & Minor Pentatonics",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/mixing-major-minor-pentatonics-bl-804",
+        "reason": "Ajuda a alternar entre maior e menor com o mesmo material."
+      },
+      "commonMistakes": [
+        "Não perceber que o centro tonal mudou ao trocar de backing track.",
+        "Achar que é preciso mudar as notas ao alternar Am e C.",
+        "Perder a referência da 'casa' em cada contexto."
+      ],
+      "mastery": {
+        "know": "Sei que Am e C major usam as mesmas notas com centros diferentes.",
+        "play": "Consigo alternar a improvisação entre Am e C.",
+        "use": "Consigo perceber e reforçar o centro tonal em cada contexto."
+      },
+      "review": [
+        "Mesmas notas, outro centro (Aula 23).",
+        "Intervalos da pentatônica maior (Aula 24)."
+      ],
+      "challenge": "Gravar a mesma frase sobre Am e C e comparar a percepção.",
+      "mission": "Gravar uma improvisação alternando Am e C sem perder o centro.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 30,
+      "week": 7,
+      "day": 3,
+      "phase": 3,
+      "title": "Mapa completo de uma região maior",
+      "subtitle": "CAGED + major pentatonic + intervalos + chord tones",
+      "objective": "Consolidar o mapa completo da pentatônica maior de G: 1 2 3 5 6, com 1/3/5 como chord tones e 2/6 como cores, usando randomização.",
+      "prerequisite": "Aulas 26–28: G major pentatonic.",
+      "concept": "Este é o mapa completo de uma região maior: CAGED + pentatônica maior + intervalos + chord tones. Em G major, 1 (G), 3 (B) e 5 (D) são os chord tones; 2 (A) e 6 (E) são cores. Randomize 1, 2, 3, 5 e 6 e localize cada um, perguntando sempre: 'é chord tone ou color tone?'. Essa pergunta simples é o coração da orientação no som maior.",
+      "key": "G major",
+      "scale": {
+        "name": "G major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — mapa completo",
+      "whatToSee": [
+        "O mapa completo 1 2 3 5 6 na região.",
+        "Chord tones: 1 (G), 3 (B), 5 (D).",
+        "Color tones: 2 (A), 6 (E).",
+        "A relação entre acorde e escala em G major."
+      ],
+      "chordScaleRelation": "G major (1, 3, 5) é o esqueleto; 2 e 6 são cores. Cada nota do mapa pertence a uma dessas duas famílias.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · mapa completo",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "intervalMap": "e|--1(3)---2(5)--\nB|--5(3)---6(5)--\nG|--2(2)---3(4)--\nD|--6(2)---1(5)--\nA|--3(2)---5(5)--\nE|--1(3)---2(5)--",
+        "tab": "e|------------------3-5-|\nB|--------------3-5-----|\nG|----------2-4---------|\nD|------2-5-------------|\nA|--2-5-----------------|\nE|--3-5-----------------|"
+      },
+      "exercises": [
+        "Randomizar 1, 2, 3, 5 e 6 e localizar cada intervalo.",
+        "Para cada nota, perguntar: 'chord tone ou color tone?'",
+        "Tocar os chord tones G, B, D em ordem e fora de ordem.",
+        "Tocar as cores A e E e resolvê-las nos chord tones."
+      ],
+      "earTraining": {
+        "instruction": "Toque um intervalo aleatório de G major e diga se é chord tone (1, 3, 5) ou color tone (2, 6). Depois cante o intervalo antes de tocar."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar usando o mapa completo, alternando conscientemente chord tones e color tones."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão do mapa 1 2 3 5 6.",
+        "05–15 min: Randomização de intervalos.",
+        "15–20 min: Ouvido — chord tone versus color tone.",
+        "20–30 min: Improvisação com o mapa completo."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Precisão de localização e fraseado maior",
+        "routine": [
+          "00–10 min: Alternate picking no mapa completo a 75 BPM.",
+          "10–20 min: Saltos entre chord tones e color tones.",
+          "20–25 min: Bends e vibrato nas notas de chegada.",
+          "25–30 min: Improviso técnico em G major."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Pentatonic: The Five Patterns",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-pentatonic-the-five-patterns-sc-404",
+        "reason": "Consolida o mapa completo da pentatônica maior."
+      },
+      "commonMistakes": [
+        "Confundir chord tones (1, 3, 5) com color tones (2, 6).",
+        "Randomizar sem perguntar a função de cada nota.",
+        "Perder o acorde G dentro da escala."
+      ],
+      "mastery": {
+        "know": "Sei o mapa completo 1 2 3 5 6 e a divisão chord tone/color tone.",
+        "play": "Consigo randomizar e localizar qualquer intervalo em G major.",
+        "use": "Consigo improvisar alternando conscientemente chord tones e cores."
+      },
+      "review": [
+        "Cores 2 e 6 (Aula 27).",
+        "Acorde G como âncora (Aula 26)."
+      ],
+      "challenge": "Randomize 10 intervalos e classifique cada um como chord tone ou color tone em menos de 3 segundos.",
+      "mission": "Gravar o mapa completo de G major com a classificação de cada nota.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 31,
+      "week": 7,
+      "day": 4,
+      "phase": 3,
+      "title": "Pentatônica maior em movimento",
+      "subtitle": "Conectando duas regiões da pentatônica maior",
+      "objective": "Conectar duas regiões da pentatônica maior de G, com foco em sobreposição, notas compartilhadas, intervalos e chord tones — não em decorar desenhos.",
+      "prerequisite": "Aula 30: mapa completo de G major.",
+      "concept": "A pentatônica maior também se conecta ao longo do braço. A região 1 (casas 2–5) e a região 2 (casas 4–8) se sobrepõem na casa 5, onde estão as notas compartilhadas G (4ª corda casa 5), D (5ª corda casa 5), A (1ª/6ª corda casa 5) e E (2ª corda casa 5). Ao deslizar de uma nota comum, você atravessa para a região vizinha mantendo o acorde G como referência. Use slide, bend e target note — e mantenha a frase musical.",
+      "key": "G major",
+      "scale": {
+        "name": "G major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Formas E + D (G major) — regiões 1 e 2",
+      "whatToSee": [
+        "As duas regiões de G major desenhadas juntas, com a sobreposição na casa 5.",
+        "As notas compartilhadas: G (4ª casa 5), D (5ª casa 5), A (1ª/6ª casa 5) e E (2ª casa 5).",
+        "1, 2, 3, 5 e 6 distribuídos entre as duas regiões.",
+        "A direção da conexão: da casa 2 para a casa 8."
+      ],
+      "chordScaleRelation": "O acorde G (1, 3, 5) é a âncora nas duas regiões; as cores 2 e 6 e os slides ligam as janelas da mesma pentatônica maior.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · regiões 1 + 2",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "intervalMap": "e|--1(3)---2(5)---3(7)--\nB|--5(3)---6(5)---1(8)--\nG|--2(2)---3(4)---5(7)--\nD|--6(2)---1(5)---2(7)--\nA|--3(2)---5(5)---6(7)--\nE|--1(3)---2(5)---3(7)--",
+        "tab": "e|------------------|\nB|------------------|\nG|------------------|\nD|------------------|\nA|------------5---7-|\nE|--3---5---7-------|"
+      },
+      "exercises": [
+        "Começar na região 1 e deslocar para a região 2 mantendo a frase.",
+        "Slide: deslizar de G (6ª corda casa 3) para A (6ª corda casa 5) — nota compartilhada.",
+        "Bend: dobrar em direção a uma nota da região 2.",
+        "Target note: escolher um alvo na região 2 e conduzir a frase até ele.",
+        "Manter a frase musical durante a conexão (não correr)."
+      ],
+      "earTraining": {
+        "instruction": "Toque a tônica G na região 1 (6ª corda casa 3) e na região 2 (4ª corda casa 5). Cante a direção do slide antes de executá-lo, confirmando a continuidade do mapa maior."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar atravessando as duas regiões com slide, bend e target note, mantendo a tonalidade e resolvendo em chord tones."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão das notas compartilhadas entre as regiões.",
+        "05–15 min: Conexão com slide, bend e target note.",
+        "15–20 min: Ouvido — mesma tônica nas duas regiões.",
+        "20–30 min: Improvisação atravessando as duas regiões."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Slides e mudança de posição no som maior",
+        "routine": [
+          "00–10 min: Alternate picking nas duas regiões a 75 BPM.",
+          "10–20 min: Slides entre as notas compartilhadas.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Técnica aplicada à conexão das regiões."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Pentatonic: The Five Patterns",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-pentatonic-the-five-patterns-sc-404",
+        "reason": "Mostra as regiões da pentatônica maior e como conectá-las."
+      },
+      "commonMistakes": [
+        "Decorar as regiões como desenhos novos em vez de conectar o mapa.",
+        "Parar na fronteira entre as regiões.",
+        "Perder o acorde G ao atravessar as regiões."
+      ],
+      "mastery": {
+        "know": "Sei as notas compartilhadas entre as duas regiões de G major.",
+        "play": "Consigo conectar as duas regiões com slide, bend e target note.",
+        "use": "Consigo improvisar atravessando as duas regiões mantendo a tonalidade."
+      },
+      "review": [
+        "Mapa completo de G major (Aula 30).",
+        "Conexão de shapes (Fase 2)."
+      ],
+      "challenge": "Frase: região 1 → slide → região 2 → resolução em chord tone de G.",
+      "mission": "Gravar a conexão das duas regiões de G major com pelo menos 2 slides.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 32,
+      "week": 7,
+      "day": 5,
+      "phase": 3,
+      "title": "Major Pentatonic Boss Battle",
+      "subtitle": "Avaliação da pentatônica maior: intervalos, chord tones, improvisação e major × minor",
+      "objective": "Avaliar o domínio da pentatônica maior em quatro partes: intervalos, chord tones de G, improvisação em G major e alternância major × minor (Am/C).",
+      "prerequisite": "Aulas 23 a 31 concluídas.",
+      "concept": "Prova da Fase 3. O objetivo é verificar se você entende a fórmula 1 2 3 5 6, a diferença para 1 b3 4 5 b7, e se consegue usar a pentatônica maior: reconhecendo a terça maior, usando 2 e 6 como cores e terminando frases em chord tones, sem confundir o centro tonal. Não exija perfeição — o alvo é Consigo usar.",
+      "key": "G major",
+      "scale": {
+        "name": "G major pentatonic",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "D",
+          "E"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — avaliação",
+      "whatToSee": [
+        "O mapa maior 1 2 3 5 6 de G.",
+        "Chord tones G, B, D (1, 3, 5).",
+        "As cores A (2) e E (6).",
+        "A relação Am/C (mesmas notas, centros diferentes)."
+      ],
+      "chordScaleRelation": "G major (1, 3, 5) é o esqueleto; 2 e 6 são cores. E Am/C mostram como as mesmas notas mudam de função conforme o centro.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Boss Battle",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "intervalMap": "e|--1(3)---2(5)--\nB|--5(3)---6(5)--\nG|--2(2)---3(4)--\nD|--6(2)---1(5)--\nA|--3(2)---5(5)--\nE|--1(3)---2(5)--",
+        "tab": "e|--------------------------|\nB|--------------------------|\nG|--------------------------|\nD|--------------------------|\nA|--------------------------|\nE|--3---5---7---10---12---15-|"
+      },
+      "exercises": [
+        "PARTE 1 — Intervalos: randomizar 1, 2, 3, 5 e 6 e encontrar cada um no braço.",
+        "PARTE 2 — Chord Tones: encontrar G, B e D em várias posições.",
+        "PARTE 3 — Improvisação: 2 min livres; 2 min terminando em 1; 2 min terminando em 3; 2 min terminando em 5; 2 min usando 2 e 6 como cores.",
+        "PARTE 4 — Major × Minor: alternar backing tracks de Am e C usando as mesmas notas e perceber o centro."
+      ],
+      "earTraining": {
+        "instruction": "Percorra G major cantando 1, 2, 3, 5 e 6. Depois alterne Am e C, cantando a nota de chegada em cada centro."
+      },
+      "improvisation": {
+        "instruction": "Improvisação final de 10 minutos: 2 min livres em G major, 2 min terminando em 1, 2 min em 3, 2 min em 5, e 2 min alternando Am/C. Grave e avalie."
+      },
+      "theoryRoutine": [
+        "00–05 min: Randomização de intervalos 1 2 3 5 6.",
+        "05–10 min: Localização dos chord tones G, B, D.",
+        "10–20 min: Improvisação cronometrada em G major.",
+        "20–30 min: Alternância major × minor (Am/C)."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Resistência e fluência na pentatônica maior",
+        "routine": [
+          "00–10 min: Alternate picking no mapa maior a 75 BPM.",
+          "10–20 min: Legato e slides na pentatônica maior.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Improviso técnico alternando maior e menor."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Pentatonic Scale",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-pentatonic-scale-im-153",
+        "reason": "Revisão geral da pentatônica maior para a avaliação da Fase 3."
+      },
+      "commonMistakes": [
+        "Confundir o centro tonal entre maior e menor.",
+        "Não reconhecer a terça maior (3).",
+        "Terminar frases em 2 ou 6 sem resolver nos chord tones."
+      ],
+      "mastery": {
+        "know": "Consigo explicar 1 2 3 5 6 e a diferença para 1 b3 4 5 b7.",
+        "play": "Consigo localizar a pentatônica maior e seus intervalos em uma região.",
+        "use": "Consigo improvisar em G major usando chord tones, reconhecendo a 3ª e usando 2/6 como cores."
+      },
+      "review": [
+        "Fórmula 1 2 3 5 6 e as mudanças b3 → 3, 4 → 2, b7 → 6.",
+        "Chord tones G, B, D e cores A, E.",
+        "Relação Am/C (mesmas notas, centros diferentes)."
+      ],
+      "challenge": "Grave os 10 minutos do Boss Battle e avalie, de 1 a 5, seu domínio em intervalos, chord tones, improvisação e centro tonal.",
+      "mission": "Concluir o Boss Battle e registrar sua autoavaliação.",
       "xp": {
         "know": 25,
         "play": 50,
