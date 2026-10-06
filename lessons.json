@@ -4,11 +4,11 @@
     "title": "Guitar Improvisation Quest",
     "version": "3.0",
     "language": "pt-BR",
-    "phase": 3,
-    "phaseTitle": "Fase 3: Pentatônica Maior + CAGED",
+    "phase": 4,
+    "phaseTitle": "Fase 4: Pentatônica Maior → Escala Maior",
     "totalLessons": 80,
     "totalPhases": 8,
-    "implementedLessons": 32
+    "implementedLessons": 43
   },
   "lessons": [
     {
@@ -4039,6 +4039,1446 @@
         "Relação Am/C (mesmas notas, centros diferentes)."
       ],
       "challenge": "Grave os 10 minutos do Boss Battle e avalie, de 1 a 5, seu domínio em intervalos, chord tones, improvisação e centro tonal.",
+      "mission": "Concluir o Boss Battle e registrar sua autoavaliação.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 33,
+      "week": 8,
+      "day": 1,
+      "phase": 4,
+      "title": "De 5 para 7 notas",
+      "subtitle": "A escala maior nasce da pentatônica maior que você já conhece",
+      "objective": "Mostrar que a escala maior deriva diretamente da pentatônica maior, adicionando apenas 4 e 7.",
+      "prerequisite": "Fase 3: pentatônica maior de G (1 2 3 5 6).",
+      "concept": "A pentatônica maior de G é G, A, B, D e E (1, 2, 3, 5, 6). A escala maior completa é G, A, B, C, D, E e F# (1, 2, 3, 4, 5, 6, 7). Falta apenas acrescentar C (4) e F# (7). Você não vai decorar uma escala nova — vai expandir o mapa que já conhece. Toque a pentatônica, depois adicione só C, depois só F#, e por fim a escala completa.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — pentatônica + 4 + 7",
+      "whatToSee": [
+        "A pentatônica maior: G A B D E (1 2 3 5 6).",
+        "A nota C (4) adicionada ao mapa.",
+        "A nota F# (7) adicionada ao mapa.",
+        "O resultado: escala completa G A B C D E F# (1 2 3 4 5 6 7)."
+      ],
+      "chordScaleRelation": "O acorde G (1, 3, 5) permanece o esqueleto; 4 (C) e 7 (F#) são as tensões novas que a escala maior acrescenta à pentatônica.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior de G · 7 notas",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|--------------------------|\nB|--------------------------|\nG|--------------------------|\nD|--------------------------|\nA|--------------------------|\nE|--3--5--7--8--10--12--14--15-|"
+      },
+      "exercises": [
+        "Tocar a pentatônica maior de G (G A B D E).",
+        "Adicionar somente C (4) e tocar de novo.",
+        "Adicionar somente F# (7) e tocar de novo.",
+        "Tocar a escala completa (G A B C D E F#)."
+      ],
+      "earTraining": {
+        "instruction": "Toque a pentatônica maior e cante. Depois acrescente C (4) e ouça a tensão; acrescente F# (7) e ouça a vontade de voltar a G. Compare com a escala completa."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar em etapas: 1 min só pentatônica; 1 min pentatônica + 4; 1 min pentatônica + 7; 1 min escala completa. Perceba auditivamente o que cada nota acrescenta."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão da pentatônica maior 1 2 3 5 6.",
+        "05–10 min: Adicionar 4 (C) e 7 (F#) ao mapa.",
+        "10–15 min: Ouvido — pentatônica vs escala completa.",
+        "15–30 min: Improvisação em etapas."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Alternate picking na escala maior",
+        "routine": [
+          "00–10 min: Alternate picking na pentatônica maior a 75 BPM.",
+          "10–20 min: Legato ao adicionar C e F#.",
+          "20–25 min: Bends e vibrato nas notas de chegada.",
+          "25–30 min: Frases da escala maior aplicadas à técnica."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Scale: Essential Information",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-scale-essential-information-sc-201",
+        "reason": "Introduz a escala maior e sua relação com a pentatônica."
+      },
+      "commonMistakes": [
+        "Achar que a escala maior é sete desenhos novos para decorar.",
+        "Não perceber que 4 e 7 são apenas duas notas adicionais.",
+        "Abandonar a pentatônica ao aprender a escala maior."
+      ],
+      "mastery": {
+        "know": "Sei que a escala maior = pentatônica maior (1 2 3 5 6) + 4 + 7.",
+        "play": "Consigo tocar a pentatônica e depois a escala completa adicionando C e F#.",
+        "use": "Consigo improvisar em etapas ouvindo o que 4 e 7 acrescentam."
+      },
+      "review": [
+        "Pentatônica maior 1 2 3 5 6 (Fase 3).",
+        "Chord tones G, B, D (Fase 3)."
+      ],
+      "challenge": "Grave 30 segundos de pentatônica, 30 de pentatônica + 4, 30 de pentatônica + 7 e 30 de escala completa.",
+      "mission": "Gravar a evolução de 5 para 7 notas em G major.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 34,
+      "week": 8,
+      "day": 2,
+      "phase": 4,
+      "title": "4 — a primeira nova tensão",
+      "subtitle": "C = 4 em G major",
+      "objective": "Entender o grau 4 (C) como a primeira tensão característica da escala maior, localizando todos os C na região e tocando C → B (4 → 3).",
+      "prerequisite": "Aula 33: a escala maior como pentatônica + 4 + 7.",
+      "concept": "Em G major, C é o grau 4. A quarta justa traz uma sensação de suspensão — ela flutua acima da terça e quer descer. Toque G → C e sinta a tensão; depois C → B → G e sinta a resolução. O 4 é uma das duas notas novas da escala maior, e sua gravidade natural é resolver em 3 (B).",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — a quarta C",
+      "whatToSee": [
+        "Todos os C (4) na região: 5ª corda casa 3, 3ª corda casa 5.",
+        "A tônica G (1) e a terça B (3) como contexto.",
+        "A resolução 4 → 3 (C → B)."
+      ],
+      "chordScaleRelation": "O 4 (C) é uma tensão que resolve no chord tone 3 (B). G (1) e B (3) são as referências estáveis.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · a quarta (4)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "4",
+          "3"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|------------------|\nB|------------------|\nG|------------------|\nD|------------------|\nA|------3---2-------|\nE|--3-----------3---|"
+      },
+      "exercises": [
+        "Encontrar todos os C (4) dentro da região.",
+        "Tocar G → C e sentir a tensão.",
+        "Tocar C → B (4 → 3) e sentir a resolução.",
+        "Tocar C → B → G (4 → 3 → 1)."
+      ],
+      "earTraining": {
+        "instruction": "Toque G (6ª corda casa 3) e C (5ª corda casa 3), cantando Um e Quatro — sinta a suspensão. Depois toque C → B → G, sentindo a tensão se resolver."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, usar C (4) como tensão. Regra: toda frase que enfatizar C deve eventualmente resolver em B (3) ou outra nota estável."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão da escala maior (7 notas).",
+        "05–15 min: Localizar C (4) e tocar 4 → 3.",
+        "15–20 min: Ouvido — G → C → B → G.",
+        "20–30 min: Improvisação usando 4 como tensão."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Precisão na resolução 4 → 3",
+        "routine": [
+          "00–10 min: Alternate picking na escala maior a 75 BPM.",
+          "10–20 min: Célula 4 → 3 com acento na chegada.",
+          "20–25 min: Bends e vibrato na resolução.",
+          "25–30 min: Frases da escala maior com 4 → 3."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Scale: Essential Information",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-scale-essential-information-sc-201",
+        "reason": "Explica os graus da escala maior, incluindo a quarta."
+      },
+      "commonMistakes": [
+        "Tratar 4 como nota de repouso em vez de tensão.",
+        "Não resolver 4 → 3, deixando a tensão no ar.",
+        "Confundir C (4) com C# (que não pertence a G major)."
+      ],
+      "mastery": {
+        "know": "Sei que C é o grau 4 de G major e que ele tende a resolver em 3.",
+        "play": "Consigo localizar todos os C na região e tocar 4 → 3.",
+        "use": "Consigo usar 4 como tensão e resolver conscientemente."
+      },
+      "review": [
+        "Escala maior = pentatônica + 4 + 7 (Aula 33).",
+        "Pentatônica maior (Fase 3)."
+      ],
+      "challenge": "Improvisar 2 minutos onde toda ênfase em C resolve em B.",
+      "mission": "Gravar G → C → B → G com clareza de tensão e resolução.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 35,
+      "week": 8,
+      "day": 3,
+      "phase": 4,
+      "title": "Resolvendo a quarta",
+      "subtitle": "4 → 3 como linguagem musical",
+      "objective": "Transformar o 4 → 3 em linguagem musical, variando ritmo, duração, slide, bend, hammer-on e pull-off.",
+      "prerequisite": "Aula 34: o grau 4.",
+      "concept": "O 4 → 3 (C → B) é um dos movimentos mais expressivos da escala maior. Você pode variá-lo: em ritmo, em duração, com slide, bend, hammer-on ou pull-off. Se usar bend, a nota-alvo deve ser realmente B — verifique a afinação. O importante é que o 4 sempre se resolva no 3 de forma consciente e musical.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — resolução 4 → 3",
+      "whatToSee": [
+        "C (4) na 5ª corda casa 3 e 3ª corda casa 5.",
+        "B (3) na 5ª corda casa 2 e 3ª corda casa 4.",
+        "O caminho 4 → 3 nas duas cordas."
+      ],
+      "chordScaleRelation": "4 (C) resolve em 3 (B), um chord tone de G major (G, B, D).",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · 4 → 3",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "4",
+          "3"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|------------------|\nB|------------------|\nG|------5---4-------|\nD|------------------|\nA|------------------|\nE|------------------|"
+      },
+      "exercises": [
+        "Tocar C → B (4 → 3) com ritmo variado.",
+        "Tocar C → B com slide descendo.",
+        "Tocar C → B com bend (mirando B).",
+        "Tocar C → B com hammer-on.",
+        "Tocar C → B com pull-off."
+      ],
+      "earTraining": {
+        "instruction": "Toque C e cante Quatro, depois dobre ou deslize até B cantando Três. Ouça a resolução em cada variação técnica."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar com a regra: cada frase deve conter pelo menos um 4 → 3. Depois liberar a improvisação, mantendo a resolução consciente."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão do 4 → 3.",
+        "05–15 min: Variações técnicas do 4 → 3.",
+        "15–20 min: Ouvido — a resolução em cada variação.",
+        "20–30 min: Improvisação com 4 → 3 obrigatório."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Bend, slide, hammer-on e pull-off no 4 → 3",
+        "routine": [
+          "00–10 min: Alternate picking na escala maior a 75 BPM.",
+          "10–20 min: Bend e slide mirando B.",
+          "20–25 min: Hammer-on e pull-off no 4 → 3.",
+          "25–30 min: Frases com 4 → 3 variado."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Scale Basic Improvisation",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-scale-basic-improvisation-im-123",
+        "reason": "Mostra como usar resoluções da escala maior no improviso."
+      },
+      "commonMistakes": [
+        "Bend sem afinar a nota-alvo B.",
+        "Tratar 4 → 3 como movimento mecânico sem intenção.",
+        "Deixar o 4 sem resolver."
+      ],
+      "mastery": {
+        "know": "Entendo o 4 → 3 como movimento musical expressivo.",
+        "play": "Consigo variar o 4 → 3 com slide, bend, hammer-on e pull-off.",
+        "use": "Consigo usar 4 → 3 conscientemente no improviso."
+      },
+      "review": [
+        "O grau 4 (Aula 34).",
+        "Escala maior = pentatônica + 4 + 7 (Aula 33)."
+      ],
+      "challenge": "Gravar 4 variações diferentes do 4 → 3 (slide, bend, hammer-on, pull-off).",
+      "mission": "Gravar uma frase com 4 → 3 usando pelo menos duas técnicas.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 36,
+      "week": 8,
+      "day": 4,
+      "phase": 4,
+      "title": "7 — a nota que quer voltar para casa",
+      "subtitle": "F# = 7 em G major",
+      "objective": "Entender o grau 7 (F#) como a nota que tende à tônica, localizando todos os F# na região e tocando F# → G (7 → 1).",
+      "prerequisite": "Aula 33: escala maior = pentatônica + 4 + 7.",
+      "concept": "Em G major, F# é o grau 7 — o leading tone (sensível). Ele fica a meio tom da tônica e cria uma forte atração de volta para casa. Toque F# → G repetidamente e sinta a resolução; depois G → F# e sinta a instabilidade. O 7 é a segunda nota nova da escala maior, e sua função é impulsionar a melodia de volta a G.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — o sétimo grau F#",
+      "whatToSee": [
+        "Todos os F# (7) na região: 6ª corda casa 2, 4ª corda casa 4, 1ª corda casa 2.",
+        "A tônica G (1) como alvo.",
+        "A resolução 7 → 1 (F# → G)."
+      ],
+      "chordScaleRelation": "O 7 (F#) resolve no chord tone 1 (G). É a tensão mais forte da escala maior, a meio tom da casa.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · o sétimo grau (7)",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "7",
+          "1"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|------------------|\nB|------------------|\nG|------------------|\nD|------------------|\nA|------------------|\nE|--2---3-----------|"
+      },
+      "exercises": [
+        "Localizar todos os F# (7) na região.",
+        "Tocar F# → G (7 → 1) e sentir a resolução.",
+        "Tocar G → F# e sentir a instabilidade.",
+        "Comparar a estabilidade de F# → G com G → F#."
+      ],
+      "earTraining": {
+        "instruction": "Toque F# (6ª corda casa 2) e cante Sétima, depois G (6ª corda casa 3) cantando Um. Repita até sentir a forte atração do 7 para a tônica."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, usar F# (7) como tensão e resolver em G (1). Regra: toda ênfase em F# resolve em G."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão da escala maior (7 notas).",
+        "05–15 min: Localizar F# (7) e tocar 7 → 1.",
+        "15–20 min: Ouvido — 7 → 1 versus 1 → 7.",
+        "20–30 min: Improvisação usando 7 como tensão."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Precisão no meio tom 7 → 1",
+        "routine": [
+          "00–10 min: Alternate picking na escala maior a 75 BPM.",
+          "10–20 min: Célula 7 → 1 com acento na chegada.",
+          "20–25 min: Bends e vibrato na resolução.",
+          "25–30 min: Frases da escala maior com 7 → 1."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "The Major Scale: Why and How",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/the-major-scale-why-and-how-sc-202",
+        "reason": "Explica a função dos graus da escala maior, incluindo o leading tone (7)."
+      },
+      "commonMistakes": [
+        "Confundir F# (7) com F (que não pertence a G major).",
+        "Não resolver 7 → 1, perdendo a atração do leading tone.",
+        "Tratar 7 como nota de repouso."
+      ],
+      "mastery": {
+        "know": "Sei que F# é o grau 7 (leading tone) de G major e que ele tende à tônica.",
+        "play": "Consigo localizar todos os F# na região e tocar 7 → 1.",
+        "use": "Consigo usar 7 como tensão e resolver conscientemente em 1."
+      },
+      "review": [
+        "Escala maior = pentatônica + 4 + 7 (Aula 33).",
+        "O grau 4 (Aula 34)."
+      ],
+      "challenge": "Improvisar 2 minutos onde toda ênfase em F# resolve em G.",
+      "mission": "Gravar F# → G e G → F#, mostrando a diferença de estabilidade.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 37,
+      "week": 8,
+      "day": 5,
+      "phase": 4,
+      "title": "Resolução para a tônica",
+      "subtitle": "Internalizando o 7 → 1",
+      "objective": "Internalizar o movimento 7 → 1, criando frases curtas como F# → G, A → F# → G, D → F# → G e B → F# → G.",
+      "prerequisite": "Aula 36: o sétimo grau.",
+      "concept": "O 7 → 1 (F# → G) é a resolução mais forte da tonalidade maior. Construa frases curtas que conduzam a esse movimento: F# → G; A → F# → G; D → F# → G; B → F# → G. Use F# conscientemente e resolva em G. Depois experimente atrasar a resolução para criar expectativa.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — resolução 7 → 1",
+      "whatToSee": [
+        "F# (7) na 6ª corda casa 2, 4ª corda casa 4 e 1ª corda casa 2.",
+        "G (1) como alvo da resolução.",
+        "As frases A → F# → G, D → F# → G e B → F# → G."
+      ],
+      "chordScaleRelation": "7 (F#) resolve em 1 (G), a casa do acorde G major.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · 7 → 1",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "7",
+          "1"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|------------------|\nB|------------------|\nG|------------------|\nD|--------4---5-----|\nA|------------------|\nE|--2---3-----------|"
+      },
+      "exercises": [
+        "Frase curta: F# → G (7 → 1).",
+        "Frase: A → F# → G.",
+        "Frase: D → F# → G.",
+        "Frase: B → F# → G.",
+        "Atrasar a resolução de F# → G para criar expectativa."
+      ],
+      "earTraining": {
+        "instruction": "Toque cada frase (F# → G, A → F# → G, D → F# → G, B → F# → G) e cante a chegada em G. Sinta o 7 impulsionando a melodia de volta à casa."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, usar F# conscientemente e resolver em G. Depois permitir resolução atrasada, criando tensão antes da chegada."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão do 7 → 1.",
+        "05–15 min: Frases curtas conduzindo ao 7 → 1.",
+        "15–20 min: Ouvido — a chegada em G.",
+        "20–30 min: Improvisação com 7 → 1 e resolução atrasada."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Fluência nas frases com 7 → 1",
+        "routine": [
+          "00–10 min: Alternate picking na escala maior a 75 BPM.",
+          "10–20 min: Frases A → F# → G e D → F# → G.",
+          "20–25 min: Bends e vibrato na chegada em G.",
+          "25–30 min: Frases da escala maior com 7 → 1."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Scale Basic Improvisation",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-scale-basic-improvisation-im-123",
+        "reason": "Aplica resoluções da escala maior (como 7 → 1) no improviso."
+      },
+      "commonMistakes": [
+        "Deixar o F# sem resolver em G.",
+        "Usar F# como nota de repouso.",
+        "Esquecer de sentir a atração do leading tone."
+      ],
+      "mastery": {
+        "know": "Entendo o 7 → 1 como a resolução mais forte da tonalidade maior.",
+        "play": "Consigo construir frases A → F# → G, D → F# → G e B → F# → G.",
+        "use": "Consigo usar 7 → 1 conscientemente e atrasar a resolução."
+      },
+      "review": [
+        "O sétimo grau (Aula 36).",
+        "O 4 → 3 (Aula 35)."
+      ],
+      "challenge": "Gravar 4 frases diferentes que conduzam ao 7 → 1.",
+      "mission": "Gravar uma frase com resolução atrasada de F# → G.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 38,
+      "week": 9,
+      "day": 1,
+      "phase": 4,
+      "title": "Cada nota tem uma função",
+      "subtitle": "1 casa, 2/6 cores, 3 identidade, 4 tensão, 5 estabilidade, 7 leading tone",
+      "objective": "Associar cada grau da escala maior a uma função musical simples, sem memorização acadêmica.",
+      "prerequisite": "Aulas 34–37: 4 e 7 como tensões.",
+      "concept": "Na escala maior de G: 1 (G) é a casa; 2 (A) é cor; 3 (B) é a identidade maior; 4 (C) é a tensão característica; 5 (D) é a estabilidade; 6 (E) é cor; 7 (F#) é a tensão forte (leading tone). Você não precisa decorar explicações acadêmicas — apenas criar uma associação musical: ao tocar cada grau, sentir o que ele faz. Randomize 1 a 7 e, para cada um, localize, nomeie, toque e diga sua função.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — funções dos sete graus",
+      "whatToSee": [
+        "1 (G) = casa, 3 (B) = identidade maior, 5 (D) = estabilidade (chord tones).",
+        "2 (A) e 6 (E) = cores.",
+        "4 (C) = tensão característica, 7 (F#) = leading tone.",
+        "Os sete graus com suas cores no braço."
+      ],
+      "chordScaleRelation": "Os chord tones (1, 3, 5) são a estrutura; 2/6 são cores; 4/7 são tensões que resolvem de volta.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · funções dos graus",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------------|\nB|----------------------|\nG|----------------------|\nD|------2---4---5-------|\nA|--2---3---5-----------|\nE|--3---5---------------|"
+      },
+      "exercises": [
+        "Apresentar aleatoriamente 1, 2, 3, 4, 5, 6, 7.",
+        "Para cada um: localizar, dizer o nome do intervalo, tocar e explicar brevemente a função.",
+        "Associar cada grau a uma sensação (casa, cor, identidade, tensão, estabilidade, cor, leading tone)."
+      ],
+      "earTraining": {
+        "instruction": "Percorra a escala maior cantando cada grau e sua função: Um (casa), Dois (cor), Três (identidade), Quatro (tensão), Cinco (estabilidade), Seis (cor), Sete (leading tone)."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar usando os sete graus, escolhendo conscientemente a função de cada nota que toca."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão dos sete graus.",
+        "05–15 min: Randomização 1 a 7 com função de cada grau.",
+        "15–20 min: Ouvido — cantar a função de cada grau.",
+        "20–30 min: Improvisação escolhendo funções."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Alternate picking nos sete graus",
+        "routine": [
+          "00–10 min: Alternate picking na escala maior a 75 BPM.",
+          "10–20 min: Legato subindo e descendo os sete graus.",
+          "20–25 min: Bends e vibrato nas notas de chegada.",
+          "25–30 min: Frases da escala maior com funções variadas."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Scale: Essential Information",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-scale-essential-information-sc-201",
+        "reason": "Apresenta a função de cada grau da escala maior."
+      },
+      "commonMistakes": [
+        "Tentar memorizar explicações acadêmicas em vez de criar associações musicais.",
+        "Confundir a função de 4 (tensão) com 2/6 (cores).",
+        "Não associar o som à função ao tocar."
+      ],
+      "mastery": {
+        "know": "Associo cada grau (1 a 7) a uma função musical simples.",
+        "play": "Consigo localizar e tocar qualquer grau sob comando.",
+        "use": "Consigo escolher conscientemente a função de cada nota no improviso."
+      },
+      "review": [
+        "4 e 7 como tensões (Aulas 34–37).",
+        "Chord tones G, B, D (Fase 3)."
+      ],
+      "challenge": "Sorteie 7 graus aleatórios e descreva a função de cada um em menos de 5 segundos.",
+      "mission": "Gravar os sete graus com a função de cada um.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 39,
+      "week": 9,
+      "day": 2,
+      "phase": 4,
+      "title": "1, 3 e 5 são o esqueleto",
+      "subtitle": "Escala = território, chord tones = estrutura",
+      "objective": "Entender que 1, 3 e 5 (G, B, D) são os chord tones do acorde G major, enquanto 2, 4, 6 e 7 são as demais notas do território.",
+      "prerequisite": "Aula 38: funções dos sete graus.",
+      "concept": "G major = G, B, D (1, 3, 5). Esses três são o esqueleto — as notas mais estáveis. As outras (2, 4, 6, 7) pertencem ao território da escala. Uma frase memorável: escala = território; chord tones = estrutura; target note = destino. Improvise só com 1, 3, 5; depois adicione 2 e 6; depois 4 e 7.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — chord tones 1, 3, 5",
+      "whatToSee": [
+        "Os chord tones G (1), B (3) e D (5).",
+        "As demais notas: A (2), C (4), E (6) e F# (7).",
+        "Escala = território; chord tones = estrutura; target note = destino."
+      ],
+      "chordScaleRelation": "1, 3 e 5 são a estrutura (acorde G); 2, 4, 6 e 7 são o território ao redor.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · chord tones",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|----------------|\nB|----------------|\nG|----------------|\nD|----------5-----|\nA|--2---5---------|\nE|--3-------------|"
+      },
+      "exercises": [
+        "Improvisar usando somente 1, 3 e 5.",
+        "Adicionar 2 e 6.",
+        "Adicionar 4 e 7.",
+        "Tocar os chord tones G, B, D e nomear cada um."
+      ],
+      "earTraining": {
+        "instruction": "Toque G, B e D e cante Um, Três e Cinco — sinta a estabilidade. Depois toque A, C, E e F#, sentindo que pedem resolução de volta aos chord tones."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar em camadas: só 1/3/5, depois +2/6, depois +4/7. Terminar frases em chord tones."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão dos chord tones 1, 3, 5.",
+        "05–15 min: Improvisação só com chord tones.",
+        "15–20 min: Ouvido — estrutura versus território.",
+        "20–30 min: Improvisação em camadas."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Arpejo maior e alvos de frase",
+        "routine": [
+          "00–10 min: Alternate picking na escala maior a 75 BPM.",
+          "10–20 min: Arpejo G (1, 3, 5).",
+          "20–25 min: Bends e vibrato nos chord tones.",
+          "25–30 min: Frases terminando em target notes."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Notes & Chord Relationships",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/notes-chord-relationships-sc-160",
+        "reason": "Conecta notas da escala às notas do acorde (chord tones)."
+      },
+      "commonMistakes": [
+        "Tratar todas as notas da escala com o mesmo peso.",
+        "Não reconhecer 1, 3 e 5 como a estrutura.",
+        "Terminar frases em 4 ou 7 sem resolver."
+      ],
+      "mastery": {
+        "know": "Sei que 1, 3 e 5 são o esqueleto (chord tones) e o resto é território.",
+        "play": "Consigo improvisar só com 1/3/5 e depois adicionar 2/6 e 4/7.",
+        "use": "Consigo usar chord tones como target notes e as demais como passagem."
+      },
+      "review": [
+        "Funções dos sete graus (Aula 38).",
+        "Chord tones na pentatônica (Fase 3)."
+      ],
+      "challenge": "Improvisar 2 minutos usando só 1, 3 e 5, e depois 2 minutos adicionando 4 e 7.",
+      "mission": "Gravar a improvisação em camadas (1/3/5 → +2/6 → +4/7).",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 40,
+      "week": 9,
+      "day": 3,
+      "phase": 4,
+      "title": "A ponte entre pentatônica e escala maior",
+      "subtitle": "Três estados: pentatônica, + 4, + 7",
+      "objective": "Ouvir a diferença causada pelas duas notas adicionais, tocando os três estados: 1 2 3 5 6, 1 2 3 4 5 6 e 1 2 3 4 5 6 7.",
+      "prerequisite": "Aulas 33–39: escala maior e suas notas.",
+      "concept": "A ponte entre pentatônica e escala maior tem três estados: ESTADO 1 = 1 2 3 5 6 (pentatônica); ESTADO 2 = 1 2 3 4 5 6 (pentatônica + 4); ESTADO 3 = 1 2 3 4 5 6 7 (escala completa). Toque cada estado e ouça o que muda: o 4 traz a tensão suspensiva; o 7 traz a atração à tônica. Improvise 30 segundos em cada estado.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — os três estados",
+      "whatToSee": [
+        "Estado 1: 1 2 3 5 6 (pentatônica).",
+        "Estado 2: 1 2 3 4 5 6 (pentatônica + 4).",
+        "Estado 3: 1 2 3 4 5 6 7 (escala completa).",
+        "As notas C (4) e F# (7) como o acréscimo."
+      ],
+      "chordScaleRelation": "Os três estados são o mesmo acorde G (1, 3, 5) com diferentes níveis de território: pentatônica, +4, +7.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · pentatônica + 4 + 7",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|------------------3-5-|\nB|--------------3-5-----|\nG|----------2-4-5-------|\nD|------2-4-5-----------|\nA|--2-3-5---------------|\nE|--2-3-5---------------|"
+      },
+      "exercises": [
+        "Tocar o Estado 1 (pentatônica): 1 2 3 5 6.",
+        "Tocar o Estado 2 (pentatônica + 4): 1 2 3 4 5 6.",
+        "Tocar o Estado 3 (escala completa): 1 2 3 4 5 6 7.",
+        "Improvisar 30 segundos em cada estado e repetir."
+      ],
+      "earTraining": {
+        "instruction": "Improvisar em cada estado e descrever auditivamente o que muda: sem 4 e 7, a frase soa mais aberta; com 4, surge a suspensão; com 7, surge a atração à tônica."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar em ciclos: 30 s pentatônica, 30 s + 4, 30 s + 7, 30 s escala completa. Repetir e ouvir as diferenças."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão dos três estados.",
+        "05–15 min: Tocar os três estados.",
+        "15–20 min: Ouvido — as diferenças entre os estados.",
+        "20–30 min: Improvisação em ciclos."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Fluência nos três estados",
+        "routine": [
+          "00–10 min: Alternate picking na pentatônica maior a 75 BPM.",
+          "10–20 min: Legato adicionando 4 e 7.",
+          "20–25 min: Bends e vibrato nas notas de chegada.",
+          "25–30 min: Frases transitando entre os três estados."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "The Major Scale: Why and How",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/the-major-scale-why-and-how-sc-202",
+        "reason": "Explica por que adicionar 4 e 7 transforma a pentatônica em escala maior."
+      },
+      "commonMistakes": [
+        "Não ouvir a diferença entre os três estados.",
+        "Adicionar 4 e 7 sem perceber a mudança de caráter.",
+        "Pular direto para a escala completa sem ouvir a transição."
+      ],
+      "mastery": {
+        "know": "Sei os três estados: pentatônica, +4 e escala completa.",
+        "play": "Consigo tocar e improvisar em cada estado.",
+        "use": "Consigo ouvir e usar a diferença que 4 e 7 causam."
+      },
+      "review": [
+        "Escala maior = pentatônica + 4 + 7 (Aula 33).",
+        "4 e 7 como tensões (Aulas 34–37)."
+      ],
+      "challenge": "Gravar um ciclo completo: 30 s pentatônica, 30 s +4, 30 s +7, 30 s escala completa.",
+      "mission": "Gravar a transição entre os três estados.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 41,
+      "week": 9,
+      "day": 4,
+      "phase": 4,
+      "title": "Uma região, sete graus",
+      "subtitle": "A escala maior como expansão do mapa conhecido",
+      "objective": "Consolidar a escala maior completa em uma região já conhecida, enxergando-a como expansão da pentatônica (e não como um novo desenho).",
+      "prerequisite": "Aulas 33–40: escala maior.",
+      "concept": "Escolha uma região que você já conhece da pentatônica maior (casas 2–5). Ela já continha 1, 2, 3, 5 e 6. Agora, nessa mesma região, você enxerga também 4 (C) e 7 (F#) — a escala maior completa. Não é um desenho novo: é o mesmo mapa com duas casas a mais. Encontre 1, 3, 5 (chord tones), depois 2 e 6 (cores), depois 4 e 7 (tensões), e depois qualquer intervalo aleatório.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — região 2–5",
+      "whatToSee": [
+        "A pentatônica maior (1 2 3 5 6) já presente na região.",
+        "O 4 (C) e o 7 (F#) preenchendo a região.",
+        "A escala maior completa 1 2 3 4 5 6 7.",
+        "Chord tones (1, 3, 5) versus tensões (4, 7)."
+      ],
+      "chordScaleRelation": "Na região 2–5, o acorde G (1, 3, 5) é a estrutura; 2/6 são cores; 4/7 são tensões — tudo dentro do mesmo mapa da pentatônica.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · região completa",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|------------------2-3-5-|\nB|--------------3-5-------|\nG|----------2-4-5---------|\nD|------2-4-5-------------|\nA|--2-3-5-----------------|\nE|--2-3-5-----------------|"
+      },
+      "exercises": [
+        "Encontrar 1, 3 e 5 (chord tones) na região.",
+        "Encontrar 2 e 6 (cores) na região.",
+        "Encontrar 4 e 7 (tensões) na região.",
+        "Encontrar qualquer intervalo aleatório na região."
+      ],
+      "earTraining": {
+        "instruction": "Percorra a região tocando os sete graus e cantando a função de cada um. Feche os olhos e encontre um grau aleatório apenas pelo som."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar na região usando pelo menos: 1 chord tone, 1 color tone e 1 tension note por frase."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão do mapa da região.",
+        "05–15 min: Localizar chord tones, cores e tensões.",
+        "15–20 min: Ouvido — função de cada grau.",
+        "20–30 min: Improvisação com os sete graus."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Fluência na região completa",
+        "routine": [
+          "00–10 min: Alternate picking nos sete graus a 75 BPM.",
+          "10–20 min: Legato subindo e descendo a região.",
+          "20–25 min: Bends e vibrato nas notas de chegada.",
+          "25–30 min: Frases da escala maior na região."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "The Major Scale: Pattern 1",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/the-major-scale-pattern-1-sc-251",
+        "reason": "Mostra a escala maior em uma região como expansão do mapa conhecido."
+      },
+      "commonMistakes": [
+        "Ver a escala maior como um desenho novo em vez de expansão da pentatônica.",
+        "Perder o acorde G dentro da região.",
+        "Não distinguir chord tones de tensões."
+      ],
+      "mastery": {
+        "know": "Sei que a escala maior da região é a pentatônica + 4 + 7.",
+        "play": "Consigo localizar os sete graus na região.",
+        "use": "Consigo improvisar usando chord tones, cores e tensões."
+      },
+      "review": [
+        "Os três estados (Aula 40).",
+        "Chord tones 1, 3, 5 (Aula 39)."
+      ],
+      "challenge": "Encontrar qualquer grau da escala maior na região em menos de 3 segundos.",
+      "mission": "Gravar uma improvisação na região com chord tone, color tone e tension note.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 42,
+      "week": 9,
+      "day": 5,
+      "phase": 4,
+      "title": "Conectando a escala maior",
+      "subtitle": "Duas regiões, sem decorar desenhos novos",
+      "objective": "Conectar duas regiões da escala maior de G usando os pontos de conexão já conhecidos, com foco em notas compartilhadas, chord tones e tensões.",
+      "prerequisite": "Aula 41: escala maior em uma região.",
+      "concept": "Você já tem os mapas da pentatônica e da escala maior em regiões vizinhas. Agora conecte a região A (casas 2–5) à região B (casas 4–8) usando os pontos de conexão. As notas compartilhadas incluem A (1ª/6ª casa 5), D (5ª casa 5), E (2ª casa 5) e G (4ª casa 5). Ao deslizar de uma nota comum, você atravessa mantendo o acorde G como referência. Faça a frase na primeira região, continue na segunda com slide e resolva em chord tone.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Formas E + D (G major) — regiões 1 e 2",
+      "whatToSee": [
+        "As duas regiões da escala maior desenhadas juntas.",
+        "As notas compartilhadas: G (4ª casa 5), D (5ª casa 5), A (1ª/6ª casa 5), E (2ª casa 5).",
+        "1, 3, 5 (chord tones) e 4, 7 (tensões) nas duas regiões.",
+        "A direção da conexão: da casa 2 à casa 8."
+      ],
+      "chordScaleRelation": "O acorde G (1, 3, 5) é a âncora nas duas regiões; as tensões 4 e 7 e as cores 2 e 6 ligam as janelas da mesma escala maior.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · regiões 1 + 2",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5",
+          "4",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--------\nB|--5(3)---6(5)---------------\nG|--2(2)---3(4)---4(5)---5(7)-\nD|--6(2)---7(4)---1(5)---2(7)-\nA|--3(2)---4(3)---5(5)---6(7)-\nE|--7(2)---1(3)---2(5)---3(7)-",
+        "tab": "e|------------------|\nB|------------------|\nG|------------------|\nD|------------------|\nA|------------5---7-|\nE|--3---5---7-------|"
+      },
+      "exercises": [
+        "Frase na região A e continuação na região B.",
+        "Slide: deslizar de G (6ª corda casa 3) para A (6ª corda casa 5).",
+        "Notas compartilhadas entre as regiões.",
+        "Frase atravessando as regiões e resolvendo em chord tone."
+      ],
+      "earTraining": {
+        "instruction": "Toque a tônica G na região A (6ª corda casa 3) e na região B (4ª corda casa 5). Cante a direção do slide e confirme a continuidade do mapa maior."
+      },
+      "improvisation": {
+        "instruction": "Com backing track em G major, improvisar começando na região grave e terminando na aguda, com slide e resolução em chord tone."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisão das notas compartilhadas.",
+        "05–15 min: Conexão das duas regiões com slide.",
+        "15–20 min: Ouvido — mesma tônica nas duas regiões.",
+        "20–30 min: Improvisação atravessando as regiões."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Slides e mudança de posição na escala maior",
+        "routine": [
+          "00–10 min: Alternate picking nas duas regiões a 75 BPM.",
+          "10–20 min: Slides entre as notas compartilhadas.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Frases atravessando as regiões."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "The Major Scale: Pattern 2",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/the-major-scale-pattern-2-sc-252",
+        "reason": "Mostra a segunda região da escala maior e como conectá-la à primeira."
+      },
+      "commonMistakes": [
+        "Decorar as duas regiões como desenhos separados.",
+        "Parar na fronteira entre as regiões.",
+        "Perder o acorde G ao atravessar as regiões."
+      ],
+      "mastery": {
+        "know": "Sei as notas compartilhadas entre as duas regiões da escala maior.",
+        "play": "Consigo conectar as duas regiões com slide e target note.",
+        "use": "Consigo improvisar atravessando as regiões mantendo a tonalidade."
+      },
+      "review": [
+        "Escala maior em uma região (Aula 41).",
+        "Conexão de shapes (Fase 2)."
+      ],
+      "challenge": "Frase: região A → slide → região B → resolução em chord tone de G.",
+      "mission": "Gravar a conexão das duas regiões com pelo menos 2 slides.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 43,
+      "week": 10,
+      "day": 1,
+      "phase": 4,
+      "title": "Major Scale Boss Battle",
+      "subtitle": "Avaliação da escala maior em G",
+      "objective": "Avaliar o domínio da escala maior em seis partes: pentatônica, 4, 7, escala completa, chord tones e improvisação livre.",
+      "prerequisite": "Aulas 33 a 42 concluídas.",
+      "concept": "Prova da Fase 4. O objetivo é verificar se você entende que a escala maior nasce da pentatônica + 4 + 7, e se consegue usar 4 → 3 e 7 → 1 conscientemente, com chord tones como destinos. Nesta fase você ainda não precisa dominar chord-tone targeting para cada acorde — o foco é integrar escala, intervalos, tensão e resolução.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — avaliação",
+      "whatToSee": [
+        "A pentatônica maior (1 2 3 5 6).",
+        "O 4 (C) e o 7 (F#) como as notas adicionadas.",
+        "A escala completa 1 2 3 4 5 6 7.",
+        "Chord tones G, B, D (1, 3, 5) como target notes."
+      ],
+      "chordScaleRelation": "Escala = território; chord tones (1, 3, 5) = estrutura; 4 e 7 = tensões que resolvem em 3 e 1.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "Escala Maior · Boss Battle",
+        "shapes": [
+          1
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)--\nB|--5(3)---6(5)---------\nG|--2(2)---3(4)---4(5)--\nD|--6(2)---7(4)---1(5)--\nA|--3(2)---4(3)---5(5)--\nE|--7(2)---1(3)---2(5)--",
+        "tab": "e|--------------------------|\nB|--------------------------|\nG|--------------------------|\nD|--------------------------|\nA|--------------------------|\nE|--3--5--7--8--10--12--14--15-|"
+      },
+      "exercises": [
+        "PARTE 1 — Pentatônica: improvisar usando 1 2 3 5 6.",
+        "PARTE 2 — 4: adicionar 4, com obrigação de usar 4 → 3.",
+        "PARTE 3 — 7: adicionar 7, com obrigação de usar 7 → 1.",
+        "PARTE 4 — Escala completa: usar 1 2 3 4 5 6 7.",
+        "PARTE 5 — Chord tones: usar 1, 3 e 5 como target notes.",
+        "PARTE 6 — Improvisação livre: integrar escala, intervalos, tensão e resolução sobre G → C → D → G."
+      ],
+      "earTraining": {
+        "instruction": "Percorra a escala maior cantando cada grau. Depois alterne 4 → 3 e 7 → 1, ouvindo as duas resoluções características da tonalidade maior."
+      },
+      "improvisation": {
+        "instruction": "Improvisação final em G major, passando por cada parte do Boss Battle e terminando com improvisação livre integrando tudo."
+      },
+      "theoryRoutine": [
+        "00–05 min: Pentatônica (1 2 3 5 6).",
+        "05–10 min: Adicionar 4 (com 4 → 3).",
+        "10–15 min: Adicionar 7 (com 7 → 1).",
+        "15–25 min: Escala completa e chord tones.",
+        "25–30 min: Improvisação livre."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Resistência e fluência na escala maior",
+        "routine": [
+          "00–10 min: Alternate picking na escala maior a 75 BPM.",
+          "10–20 min: Legato e slides nas resoluções 4 → 3 e 7 → 1.",
+          "20–25 min: Bends e vibrato nas notas-alvo.",
+          "25–30 min: Improviso técnico integrando a escala maior."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Scale Basic Improvisation",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-scale-basic-improvisation-im-123",
+        "reason": "Revisão geral da improvisação na escala maior para a avaliação."
+      },
+      "commonMistakes": [
+        "Achar que a escala maior é uma coisa completamente nova.",
+        "Não usar 4 → 3 e 7 → 1 conscientemente.",
+        "Perder os chord tones como destinos no improviso."
+      ],
+      "mastery": {
+        "know": "Consigo explicar pentatônica maior (1 2 3 5 6) e escala maior (1 2 3 4 5 6 7).",
+        "play": "Consigo localizar 4 e 7 em uma região conhecida.",
+        "use": "Consigo improvisar usando 1, 3, 5, 4 e 7 com 4 → 3 e 7 → 1 conscientes."
+      },
+      "review": [
+        "Pentatônica maior 1 2 3 5 6.",
+        "4 (C) e 7 (F#) como tensões.",
+        "4 → 3 e 7 → 1 como resoluções.",
+        "Chord tones 1, 3, 5 como target notes."
+      ],
+      "challenge": "Grave o Boss Battle completo e avalie, de 1 a 5, seu domínio em escala, intervalos, tensão e resolução.",
       "mission": "Concluir o Boss Battle e registrar sua autoavaliação.",
       "xp": {
         "know": 25,

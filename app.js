@@ -505,6 +505,54 @@
     }
   };
 
+  // --- Banco de Formatos da Escala Maior (G major diatônica: G A B C D E F# = 1 2 3 4 5 6 7) ---
+  // É a pentatônica maior (1 2 3 5 6) + 4 (C) + 7 (F#).
+  const SHAPE_DEFINITIONS_GMAJOR_SCALE = {
+    1: {
+      startFret: 2,
+      endFret: 5,
+      notes: [
+        { string: 6, fret: 2, note: 'F#', interval: '7', role: 'seven' },
+        { string: 6, fret: 3, note: 'G', interval: '1', role: 'root' },
+        { string: 6, fret: 5, note: 'A', interval: '2', role: 'neutral' },
+        { string: 5, fret: 2, note: 'B', interval: '3', role: 'third' },
+        { string: 5, fret: 3, note: 'C', interval: '4', role: 'four' },
+        { string: 5, fret: 5, note: 'D', interval: '5', role: 'fifth' },
+        { string: 4, fret: 2, note: 'E', interval: '6', role: 'neutral' },
+        { string: 4, fret: 4, note: 'F#', interval: '7', role: 'seven' },
+        { string: 4, fret: 5, note: 'G', interval: '1', role: 'root' },
+        { string: 3, fret: 2, note: 'A', interval: '2', role: 'neutral' },
+        { string: 3, fret: 4, note: 'B', interval: '3', role: 'third' },
+        { string: 3, fret: 5, note: 'C', interval: '4', role: 'four' },
+        { string: 2, fret: 3, note: 'D', interval: '5', role: 'fifth' },
+        { string: 2, fret: 5, note: 'E', interval: '6', role: 'neutral' },
+        { string: 1, fret: 2, note: 'F#', interval: '7', role: 'seven' },
+        { string: 1, fret: 3, note: 'G', interval: '1', role: 'root' },
+        { string: 1, fret: 5, note: 'A', interval: '2', role: 'neutral' }
+      ]
+    },
+    2: {
+      startFret: 4,
+      endFret: 8,
+      notes: [
+        { string: 6, fret: 5, note: 'A', interval: '2', role: 'neutral' },
+        { string: 6, fret: 7, note: 'B', interval: '3', role: 'third' },
+        { string: 5, fret: 5, note: 'D', interval: '5', role: 'fifth' },
+        { string: 5, fret: 7, note: 'E', interval: '6', role: 'neutral' },
+        { string: 4, fret: 4, note: 'F#', interval: '7', role: 'seven' },
+        { string: 4, fret: 5, note: 'G', interval: '1', role: 'root' },
+        { string: 4, fret: 7, note: 'A', interval: '2', role: 'neutral' },
+        { string: 3, fret: 4, note: 'B', interval: '3', role: 'third' },
+        { string: 3, fret: 5, note: 'C', interval: '4', role: 'four' },
+        { string: 3, fret: 7, note: 'D', interval: '5', role: 'fifth' },
+        { string: 2, fret: 5, note: 'E', interval: '6', role: 'neutral' },
+        { string: 2, fret: 8, note: 'G', interval: '1', role: 'root' },
+        { string: 1, fret: 5, note: 'A', interval: '2', role: 'neutral' },
+        { string: 1, fret: 7, note: 'B', interval: '3', role: 'third' }
+      ]
+    }
+  };
+
   // C major pentatonic = mesmas notas de Am pentatonic, com funções relabeladas (C=1, D=2, E=3, G=5, A=6).
   const C_MAJOR_INTERVALS = {
     'C': { interval: '1', role: 'root' },
@@ -566,7 +614,13 @@
 
   function getShapeBank(lessonObj) {
     const key = (lessonObj?.key || '').toLowerCase();
-    if (key.includes('g major')) return SHAPE_DEFINITIONS_GMAJOR;
+    const scaleName = (lessonObj?.scale?.name || '').toLowerCase();
+    if (key.includes('g major')) {
+      if (scaleName.includes('scale') && !scaleName.includes('pentatonic')) {
+        return SHAPE_DEFINITIONS_GMAJOR_SCALE;
+      }
+      return SHAPE_DEFINITIONS_GMAJOR;
+    }
     if (key.includes('c major') && !key.includes('a minor')) return SHAPE_DEFINITIONS_CMAJOR;
     return SHAPE_DEFINITIONS;
   }
@@ -758,21 +812,33 @@
       html += `</div>`;
     }
 
-    const isMajor = ((lessonObj.key || '').toLowerCase().includes('major'));
-    const defaultLegend = isMajor
+    const keyLower = (lessonObj.key || '').toLowerCase();
+    const scaleNameLower = (lessonObj.scale?.name || '').toLowerCase();
+    const isMajor = keyLower.includes('major');
+    const isDiatonicMajor = isMajor && scaleNameLower.includes('scale') && !scaleNameLower.includes('pentatonic');
+    const defaultLegend = isDiatonicMajor
       ? [
-          { role: 'root', label: '1 = Tônica' },
-          { role: 'third', label: '3 = Terça Maior' },
-          { role: 'fifth', label: '5 = Quinta Justa' },
-          { role: 'neutral', label: '2 e 6 = Cores' }
+          { role: 'root', label: '1 = Tônica (G)' },
+          { role: 'third', label: '3 = Terça Maior (B)' },
+          { role: 'fifth', label: '5 = Quinta Justa (D)' },
+          { role: 'four', label: '4 = Quarta (C)' },
+          { role: 'seven', label: '7 = Sétima (F#)' },
+          { role: 'neutral', label: '2 e 6 = Cores (A, E)' }
         ]
-      : [
-          { role: 'root', label: '1 = Tônica (A)' },
-          { role: 'third', label: 'b3 = Terça Menor (C)' },
-          { role: 'fifth', label: '5 = Quinta Justa (E)' },
-          { role: 'four', label: '4 = Quarta Justa (D)' },
-          { role: 'seven', label: 'b7 = Sétima Menor (G)' }
-        ];
+      : isMajor
+        ? [
+            { role: 'root', label: '1 = Tônica' },
+            { role: 'third', label: '3 = Terça Maior' },
+            { role: 'fifth', label: '5 = Quinta Justa' },
+            { role: 'neutral', label: '2 e 6 = Cores' }
+          ]
+        : [
+            { role: 'root', label: '1 = Tônica (A)' },
+            { role: 'third', label: 'b3 = Terça Menor (C)' },
+            { role: 'fifth', label: '5 = Quinta Justa (E)' },
+            { role: 'four', label: '4 = Quarta Justa (D)' },
+            { role: 'seven', label: 'b7 = Sétima Menor (G)' }
+          ];
     const legendItems = lessonObj.fretboard?.legend || defaultLegend;
 
     const hasShared = notes.some(n => n.shared);
