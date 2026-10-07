@@ -575,6 +575,60 @@
     }
   };
 
+  // --- Banco de Padrões 3NPS (G major, 3 notas por corda) ---
+  // Organiza a mesma escala de G maior em grupos de 3 notas por corda,
+  // dando continuidade longitudinal e base para alternate picking.
+  const SHAPE_DEFINITIONS_GMAJOR_3NPS = {
+    1: {
+      startFret: 3,
+      endFret: 8,
+      notes: [
+        { string: 6, fret: 3, note: 'G', interval: '1', role: 'root' },
+        { string: 6, fret: 5, note: 'A', interval: '2', role: 'neutral' },
+        { string: 6, fret: 7, note: 'B', interval: '3', role: 'third' },
+        { string: 5, fret: 3, note: 'C', interval: '4', role: 'four' },
+        { string: 5, fret: 5, note: 'D', interval: '5', role: 'fifth' },
+        { string: 5, fret: 7, note: 'E', interval: '6', role: 'neutral' },
+        { string: 4, fret: 4, note: 'F#', interval: '7', role: 'seven' },
+        { string: 4, fret: 5, note: 'G', interval: '1', role: 'root' },
+        { string: 4, fret: 7, note: 'A', interval: '2', role: 'neutral' },
+        { string: 3, fret: 4, note: 'B', interval: '3', role: 'third' },
+        { string: 3, fret: 5, note: 'C', interval: '4', role: 'four' },
+        { string: 3, fret: 7, note: 'D', interval: '5', role: 'fifth' },
+        { string: 2, fret: 5, note: 'E', interval: '6', role: 'neutral' },
+        { string: 2, fret: 7, note: 'F#', interval: '7', role: 'seven' },
+        { string: 2, fret: 8, note: 'G', interval: '1', role: 'root' },
+        { string: 1, fret: 5, note: 'A', interval: '2', role: 'neutral' },
+        { string: 1, fret: 7, note: 'B', interval: '3', role: 'third' },
+        { string: 1, fret: 8, note: 'C', interval: '4', role: 'four' }
+      ]
+    },
+    2: {
+      startFret: 5,
+      endFret: 10,
+      notes: [
+        { string: 6, fret: 5, note: 'A', interval: '2', role: 'neutral' },
+        { string: 6, fret: 7, note: 'B', interval: '3', role: 'third' },
+        { string: 6, fret: 8, note: 'C', interval: '4', role: 'four' },
+        { string: 5, fret: 5, note: 'D', interval: '5', role: 'fifth' },
+        { string: 5, fret: 7, note: 'E', interval: '6', role: 'neutral' },
+        { string: 5, fret: 9, note: 'F#', interval: '7', role: 'seven' },
+        { string: 4, fret: 5, note: 'G', interval: '1', role: 'root' },
+        { string: 4, fret: 7, note: 'A', interval: '2', role: 'neutral' },
+        { string: 4, fret: 9, note: 'B', interval: '3', role: 'third' },
+        { string: 3, fret: 5, note: 'C', interval: '4', role: 'four' },
+        { string: 3, fret: 7, note: 'D', interval: '5', role: 'fifth' },
+        { string: 3, fret: 9, note: 'E', interval: '6', role: 'neutral' },
+        { string: 2, fret: 7, note: 'F#', interval: '7', role: 'seven' },
+        { string: 2, fret: 8, note: 'G', interval: '1', role: 'root' },
+        { string: 2, fret: 10, note: 'A', interval: '2', role: 'neutral' },
+        { string: 1, fret: 7, note: 'B', interval: '3', role: 'third' },
+        { string: 1, fret: 8, note: 'C', interval: '4', role: 'four' },
+        { string: 1, fret: 10, note: 'D', interval: '5', role: 'fifth' }
+      ]
+    }
+  };
+
   // C major pentatonic = mesmas notas de Am pentatonic, com funções relabeladas (C=1, D=2, E=3, G=5, A=6).
   const C_MAJOR_INTERVALS = {
     'C': { interval: '1', role: 'root' },
@@ -654,6 +708,7 @@
     const key = (lessonObj?.key || '').toLowerCase();
     const scaleName = (lessonObj?.scale?.name || '').toLowerCase();
     if (key.includes('g major')) {
+      if (scaleName.includes('3nps')) return SHAPE_DEFINITIONS_GMAJOR_3NPS;
       if (scaleName.includes('scale') && !scaleName.includes('pentatonic')) {
         return SHAPE_DEFINITIONS_GMAJOR_SCALE;
       }
