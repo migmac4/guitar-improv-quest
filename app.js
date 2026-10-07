@@ -1584,7 +1584,7 @@
         }
         ${nextLesson
           ? `<button class="next-btn active" data-target="${nextLesson.id}">Próxima: Aula ${nextLesson.id} →</button>`
-          : `<button class="active" style="background:var(--cyan); color:#031415;">🏆 Fase 1 Concluída!</button>`
+          : `<button class="active" style="background:var(--cyan); color:#031415;">🏆 Curso Concluído!</button>`
         }
       </div>
     `;
