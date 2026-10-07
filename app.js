@@ -196,6 +196,12 @@
     if (masteryStatsEl) {
       masteryStatsEl.textContent = `${masteredCount} dominadas (Consigo usar) · ${inProgressCount} em progresso`;
     }
+
+    // Indicação de conclusão do curso principal (todas as aulas no nível "Consigo usar")
+    const completeBanner = $('#courseCompleteBanner');
+    if (completeBanner) {
+      completeBanner.style.display = (total > 0 && masteredCount >= total) ? '' : 'none';
+    }
   }
 
   // --- Renderização da Navegação e Semanas ---

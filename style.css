@@ -130,6 +130,16 @@ h1 span {
   margin-top: 20px;
 }
 
+.course-complete-banner {
+  margin: 10px 0 14px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, var(--panel));
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
 .progress-head {
   display: flex;
   justify-content: space-between;

@@ -4,11 +4,11 @@
     "title": "Guitar Improvisation Quest",
     "version": "3.0",
     "language": "pt-BR",
-    "phase": 7,
-    "phaseTitle": "Fase 7: 3NPS — Navegação, Velocidade e Continuidade",
+    "phase": 8,
+    "phaseTitle": "Fase 8: Integração, Técnica, Repertório e Improvisação",
     "totalLessons": 80,
     "totalPhases": 8,
-    "implementedLessons": 74
+    "implementedLessons": 80
   },
   "lessons": [
     {
@@ -9759,6 +9759,806 @@
       ],
       "challenge": "Grave o Boss Battle completo e avalie, de 1 a 5, seu domínio de 3NPS, velocidade controlada e musicalidade.",
       "mission": "Concluir o Boss Battle e registrar sua autoavaliação.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 75,
+      "week": 16,
+      "day": 3,
+      "phase": 8,
+      "title": "Do acorde à improvisação",
+      "subtitle": "Toda a metodologia em um só caminho",
+      "objective": "Consolidar o caminho completo: acorde → CAGED → root/3ª/5ª → escala → pentatônica → target notes → frase → improvisação.",
+      "prerequisite": "Fases 1–7 concluídas.",
+      "concept": "Primeiro vejo o acorde. Depois vejo a escala. Depois escolho as notas. Finalmente faço música. Em G maior, o caminho é: tocar o acorde G (forma E); identificar 1, 3 e 5 (G, B, D); tocar a pentatônica; adicionar as notas da escala; improvisar; terminar frases em chord tones. Se você consegue olhar para uma região e identificar acorde, tônica, 3ª, 5ª, escala e target notes, já não está mais perdido no braço.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "O acorde G (forma E) na 3ª casa.",
+        "A tônica G (1), a terça B (3) e a quinta D (5).",
+        "A pentatônica maior (1 2 3 5 6) ao redor do acorde.",
+        "A escala completa (1–7) como território.",
+        "Os chord tones como target notes."
+      ],
+      "chordScaleRelation": "Acorde = estrutura (G B D); pentatônica = núcleo melódico; escala = território completo; target notes = destinos. Tudo parte do acorde.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Do acorde à improvisação (casa 2–8)",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)--\nB|--5(3)---6(5)---1(8)---------\nG|--2(2)---3(4)---4(5)---5(7)--\nD|--6(2)---7(4)---1(5)---2(7)--\nA|--3(2)---4(3)---5(5)---6(7)--\nE|--7(2)---1(3)---2(5)---3(7)--",
+        "tab": "e|----------------3-|\nB|--------------3---|\nG|------------4-----|\nD|----------5-------|\nA|--------5---------|\nE|------3-----------|"
+      },
+      "exercises": [
+        "Tocar o acorde G (forma E, 3ª casa).",
+        "Tocar 1–3–5 (G, B, D) a partir do acorde.",
+        "Tocar a pentatônica maior ao redor do acorde.",
+        "Adicionar as notas da escala (4 e 7) ao redor.",
+        "Improvisar terminando todas as frases em chord tone."
+      ],
+      "earTraining": {
+        "instruction": "Toque o acorde G, depois arpeje 1–3–5 cantando cada grau. Depois improvise e cante a nota de chegada antes de tocar."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise seguindo o caminho: acorde → 1-3-5 → pentatônica → escala → frase → resolução em chord tone."
+      },
+      "theoryRoutine": [
+        "00–05 min: Tocar o acorde e nomear 1, 3, 5.",
+        "05–15 min: Pentatônica + escala ao redor do acorde.",
+        "15–20 min: Ouvido — cantar a nota de chegada.",
+        "20–30 min: Improvisar terminando em chord tone."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Integração acorde → arpejo → escala",
+        "routine": [
+          "00–10 min: Escala de G maior a 70 BPM.",
+          "10–20 min: Acorde → arpejo 1-3-5 → escala.",
+          "20–25 min: Frases curtas com resolução.",
+          "25–30 min: Improviso integrando todas as camadas."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Major Scale Basic Improvisation",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/major-scale-basic-improvisation-im-123",
+        "reason": "Revisão da improvisação na escala maior, ponto de partida da integração."
+      },
+      "commonMistakes": [
+        "Pular direto para a escala sem ver o acorde.",
+        "Não identificar 1, 3 e 5 como target notes.",
+        "Improvisar sem terminar frases em chord tone."
+      ],
+      "mastery": {
+        "know": "Consigo descrever o caminho acorde → escala → improvisação.",
+        "play": "Consigo tocar acorde, 1-3-5, pentatônica e escala em sequência.",
+        "use": "Consigo improvisar integrando acorde, escala e target notes."
+      },
+      "review": [
+        "Fases 1–5: acorde, escala e chord tones.",
+        "Fase 7: 3NPS."
+      ],
+      "challenge": "Grave 1 minuto mostrando o caminho completo (acorde → 1-3-5 → pentatônica → escala → improvisação).",
+      "mission": "Gravar o caminho completo nomeando cada camada.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 76,
+      "week": 16,
+      "day": 4,
+      "phase": 8,
+      "title": "Pentatônica + escala maior + 3NPS",
+      "subtitle": "Três linguagens, um só mapa",
+      "objective": "Entender quando usar pentatônica, escala maior e 3NPS como linguagens complementares — não concorrentes.",
+      "prerequisite": "Aula 75 e as Fases 3, 4 e 7.",
+      "concept": "Você não precisa escolher uma única linguagem. Pentatônica maior (1 2 3 5 6) = núcleo melódico simples e vocal. Escala maior (1 2 3 4 5 6 7) = território completo. 3NPS = as mesmas sete notas em três por corda, para navegação e velocidade. CAGED = mapa harmônico. Use pentatônica para frases simples, a escala maior para conectar ideias, o 3NPS para movimento rápido e os chord tones para resolver. Nenhuma é melhor — cada uma tem um papel.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "A pentatônica maior (1 2 3 5 6) destacada dentro da escala.",
+        "A escala maior completa (1–7) como território.",
+        "Que o 3NPS organiza essas mesmas 7 notas em 3 por corda.",
+        "Os chord tones (1, 3, 5) como pontos de resolução."
+      ],
+      "chordScaleRelation": "Pentatônica = 5 notas (núcleo); escala maior = 7 notas (território); 3NPS = organização; CAGED = harmonia. Todos compartilham os mesmos chord tones.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Pentatônica (1 2 3 5 6) dentro da escala (casa 2–8)",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "2",
+          "3",
+          "5",
+          "6"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)--\nB|--5(3)---6(5)---1(8)---------\nG|--2(2)---3(4)---4(5)---5(7)--\nD|--6(2)---7(4)---1(5)---2(7)--\nA|--3(2)---4(3)---5(5)---6(7)--\nE|--7(2)---1(3)---2(5)---3(7)--",
+        "tab": "e|--3--5--------|\nB|--3--5--------|\nG|--2--4--------|\nD|--2--5--------|\nA|--2--5--------|\nE|--3--5--------|"
+      },
+      "exercises": [
+        "Improvisar uma frase simples e vocal usando só a pentatônica.",
+        "Adicionar 4 e 7 para conectar ideias com a escala maior.",
+        "Usar o 3NPS para um movimento rápido entre regiões.",
+        "Resolver sempre em chord tone (G, B ou D).",
+        "Alternar as três linguagens dentro de uma mesma improvisação."
+      ],
+      "earTraining": {
+        "instruction": "Toque a pentatônica e depois adicione o 4 e o 7. Ouça como cada nota muda a cor. Identifique de ouvido quando uma frase é pentatônica e quando usa a escala completa."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise alternando pentatônica (frase simples), escala maior (conexão) e 3NPS (movimento), terminando em chord tones."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar as três linguagens.",
+        "05–15 min: Pentatônica → escala → 3NPS em sequência.",
+        "15–20 min: Ouvido — cor de cada linguagem.",
+        "20–30 min: Improvisar alternando as três."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Troca fluida entre as três linguagens",
+        "routine": [
+          "00–10 min: Pentatônica e escala a 70 BPM.",
+          "10–20 min: 3NPS com alternate picking.",
+          "20–25 min: Alternar linguagens em frases curtas.",
+          "25–30 min: Improviso integrando as três."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Mixing Major & Minor Pentatonics",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/mixing-major-minor-pentatonics-bl-804",
+        "reason": "Mostra como misturar linguagens melódicas na improvisação."
+      },
+      "commonMistakes": [
+        "Achar que uma linguagem é melhor que as outras.",
+        "Usar só pentatônica ou só 3NPS o tempo todo.",
+        "Esquecer os chord tones ao alternar linguagens."
+      ],
+      "mastery": {
+        "know": "Sei quando usar pentatônica, escala maior e 3NPS.",
+        "play": "Consigo alternar as três linguagens em uma improvisação.",
+        "use": "Consigo escolher a linguagem certa para cada frase."
+      },
+      "review": [
+        "Fases 3, 4 e 7.",
+        "Aula 75: integração."
+      ],
+      "challenge": "Improvisar 3 minutos alternando as três linguagens, com pelo menos 2 resoluções em chord tone.",
+      "mission": "Gravar uma improvisação que use pentatônica, escala maior e 3NPS.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 77,
+      "week": 16,
+      "day": 5,
+      "phase": 8,
+      "title": "Fraseado, dinâmica e espaço",
+      "subtitle": "Improvisar não é tocar muitas notas",
+      "objective": "Desenvolver fraseado com pausas, duração, dinâmica, vibrato, bends, slides, repetição e pergunta/resposta.",
+      "prerequisite": "Aula 76 e o fraseado das Fases 1 e 6.",
+      "concept": "Uma boa improvisação também é saber não tocar. Use pausas, notas longas e curtas, dinâmica (mais forte/menos forte), vibrato, bends e slides. Desenvolva um motivo: toque A, repita A, altere só a última nota (A'), responda com B. O exercício clássico: tocar uma frase de 3–5 notas, repetir, alterar a última nota e responder com outra frase.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "O motivo A: G → A → B (1 → 2 → 3).",
+        "A repetição e a variação (A').",
+        "A resposta B terminando em chord tone.",
+        "As pausas como parte da frase."
+      ],
+      "chordScaleRelation": "O fraseado dá vida aos intervalos: uma nota longa em um chord tone soa como chegada; uma pausa cria expectativa; a dinâmica enfatiza o destino.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Fraseado (casa 2–8)",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)--\nB|--5(3)---6(5)---1(8)---------\nG|--2(2)---3(4)---4(5)---5(7)--\nD|--6(2)---7(4)---1(5)---2(7)--\nA|--3(2)---4(3)---5(5)---6(7)--\nE|--7(2)---1(3)---2(5)---3(7)--",
+        "tab": "e|----------------------|\nB|----------------------|\nG|----------------------|\nD|----------------------|\nA|----------------------|\nE|--3--5--7--5--3-------|"
+      },
+      "exercises": [
+        "Tocar uma frase de 3–5 notas (motivo A).",
+        "Repetir o motivo A idêntico.",
+        "Alterar apenas a última nota (A').",
+        "Responder com outra frase (B), terminando em chord tone.",
+        "Usar pelo menos uma pausa, uma nota longa e uma dinâmica."
+      ],
+      "earTraining": {
+        "instruction": "Toque o motivo G → A → B (1 → 2 → 3) e depois B → A → G (3 → 2 → 1) como resposta. Ouça a pergunta e a resposta."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing track em G maior, improvise com motivos, repetição, variação e pergunta/resposta. Deixe espaço — a música também acontece no silêncio."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar o motivo A.",
+        "05–15 min: Repetição, variação e resposta.",
+        "15–20 min: Ouvido — pergunta e resposta.",
+        "20–30 min: Improvisar com fraseado e espaço."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Dinâmica, vibrato e controle de espaço",
+        "routine": [
+          "00–10 min: Frases curtas com pausas.",
+          "10–20 min: Vibrato e bends nas notas de chegada.",
+          "20–25 min: Dinâmica (forte/fraco) em cada frase.",
+          "25–30 min: Motivo → variação → resposta."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "The Pause",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/the-pause-tr-104",
+        "reason": "Ensina o uso do silêncio e do espaço no fraseado."
+      },
+      "commonMistakes": [
+        "Tocar muitas notas sem respiro.",
+        "Não desenvolver um motivo.",
+        "Ignorar dinâmica e espaço."
+      ],
+      "mastery": {
+        "know": "Entendo os elementos do fraseado (pausa, dinâmica, motivo).",
+        "play": "Consigo tocar um motivo com repetição e variação.",
+        "use": "Consigo improvisar com fraseado musical e espaço."
+      },
+      "review": [
+        "Aula 76: três linguagens.",
+        "Fraseado (Fases 1 e 6)."
+      ],
+      "challenge": "Criar um solo de 30 segundos com motivo, variação, pergunta/resposta e pelo menos 2 pausas.",
+      "mission": "Gravar um motivo desenvolvido (A → A' → A'' → B).",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 78,
+      "week": 17,
+      "day": 1,
+      "phase": 8,
+      "title": "Improvisação sobre progressões reais",
+      "subtitle": "Além de G → C → D → G",
+      "objective": "Aplicar a metodologia a progressões comuns, entendendo como a harmonia muda dentro da mesma escala.",
+      "prerequisite": "Aula 75–77 e as progressões da Fase 5.",
+      "concept": "Você já improvisa sobre G → C → D → G. Agora amplie para progressões comuns: (1) G → C → D → G; (2) Am → F → C → G; (3) Em → C → G → D; (4) Dm → Bb → F → C. O ponto não é 'qual escala usar' — é 'como a harmonia muda dentro da mesma escala'. Em G maior, G → C → D muda os targets: G = G/B/D, C = C/E/G, D = D/F#/A. Ouça e visualize a mudança em vez de trocar de escala mecanicamente.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "A progressão G → C → D em G maior (mesmo território).",
+        "Targets de G: G, B, D.",
+        "Targets de C: C, E, G.",
+        "Targets de D: D, F#, A.",
+        "Que a escala permanece; o alvo muda."
+      ],
+      "chordScaleRelation": "Escala = território fixo; acordes mudam os targets. Ouvir e visualizar essa mudança é a chave para progressões reais.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Targets de G, C e D (casa 2–8)",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)--\nB|--5(3)---6(5)---1(8)---------\nG|--2(2)---3(4)---4(5)---5(7)--\nD|--6(2)---7(4)---1(5)---2(7)--\nA|--3(2)---4(3)---5(5)---6(7)--\nE|--7(2)---1(3)---2(5)---3(7)--",
+        "tab": "e|----------------3-|\nB|------------------|\nG|------------------|\nD|----2---4---5-----|\nA|--2---3-----------|\nE|--3---------------|"
+      },
+      "exercises": [
+        "Progressão 1 (G → C → D → G): mudar o alvo a cada acorde.",
+        "Progressão 2 (Am → F → C → G): explorar targets de cada acorde.",
+        "Progressão 3 (Em → C → G → D): manter a escala e mudar os alvos.",
+        "Progressão 4 (Dm → Bb → F → C): aplicar a mesma lógica em outro território.",
+        "Para cada progressão, identificar tonalidade, chord tones e regiões."
+      ],
+      "earTraining": {
+        "instruction": "Ouça G → C → D e cante os alvos de cada acorde (G-B-D, C-E-G, D-F#-A). Depois improvise cantando e toque o que cantou."
+      },
+      "improvisation": {
+        "instruction": "Sobre backing tracks das progressões, improvise mudando os targets a cada acorde. Comece pela progressão 1 e avance para as demais."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar targets de G, C e D.",
+        "05–15 min: Improvisar sobre G → C → D → G.",
+        "15–20 min: Ouvido — cantar os alvos.",
+        "20–30 min: Explorar as progressões 2, 3 e 4."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Voice leading e targeting em progressões",
+        "routine": [
+          "00–10 min: Escala de G maior a 75 BPM.",
+          "10–20 min: Arpejos G, C e D em sequência.",
+          "20–25 min: Voice leading entre os acordes.",
+          "25–30 min: Frases sobre as progressões."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Chords, Scales & Arpeggios",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/chords-scales-arpeggios-mt-206",
+        "reason": "Mostra acordes, escalas e arpejos como uma só estrutura para progressões."
+      },
+      "commonMistakes": [
+        "Trocar de escala a cada acorde sem necessidade.",
+        "Não ouvir a mudança harmônica.",
+        "Não mudar os targets quando o acorde muda."
+      ],
+      "mastery": {
+        "know": "Sei como a harmonia muda dentro da mesma escala.",
+        "play": "Consigo improvisar sobre G → C → D mudando os alvos.",
+        "use": "Consigo aplicar a metodologia a progressões novas."
+      },
+      "review": [
+        "Aula 75: integração.",
+        "Chord tones e progressões (Fase 5)."
+      ],
+      "challenge": "Improvisar sobre uma progressão desconhecida, identificando targets por acorde.",
+      "mission": "Gravar a improvisação sobre duas progressões diferentes.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 79,
+      "week": 17,
+      "day": 2,
+      "phase": 8,
+      "title": "Repertório, transcrição e criação",
+      "subtitle": "Do curso para a música real",
+      "objective": "Aprender um processo simples de transcrição e criar frases próprias inspiradas em músicas reais.",
+      "prerequisite": "Aulas 75–78.",
+      "concept": "O processo de transcrição: escolher uma frase de uma música; ouvir várias vezes; cantar a frase; encontrar a nota inicial; descobrir o movimento; localizar no braço; identificar intervalos; tocar devagar; memorizar; transpor; modificar; criar uma frase própria inspirada nela. Não é teoria pesada — é aprender a ouvir e reproduzir. Use apenas pequenos exemplos didáticos ou material original, nunca transcrições extensas protegidas por copyright.",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — 3ª casa",
+      "whatToSee": [
+        "Uma frase curta original de exemplo (2–4 notas).",
+        "A nota inicial e o movimento da frase.",
+        "Os intervalos e chord tones da frase.",
+        "O processo: ouvir → cantar → localizar → tocar → criar."
+      ],
+      "chordScaleRelation": "Transcrever conecta o ouvido ao braço: você identifica o intervalo, encontra a nota e reconhece se é chord tone. Depois cria algo novo com a mesma ideia rítmica.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Transcrição e criação (casa 2–8)",
+        "shapes": [
+          1,
+          2
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)--\nB|--5(3)---6(5)---1(8)---------\nG|--2(2)---3(4)---4(5)---5(7)--\nD|--6(2)---7(4)---1(5)---2(7)--\nA|--3(2)---4(3)---5(5)---6(7)--\nE|--7(2)---1(3)---2(5)---3(7)--",
+        "tab": "e|----------------|\nB|----------------|\nG|----------------|\nD|----------5-----|\nA|----5---7-------|\nE|--3-------------|"
+      },
+      "exercises": [
+        "Transcrever 2–4 compassos de um solo que você goste.",
+        "Identificar pelo menos 3 intervalos da frase.",
+        "Descobrir quais notas são chord tones.",
+        "Tocar a frase devagar e memorizar.",
+        "Criar uma nova frase usando a mesma ideia rítmica."
+      ],
+      "earTraining": {
+        "instruction": "Ouça uma frase curta, cante, e só então encontre no braço. Identifique o intervalo inicial e resolva para uma nota estável."
+      },
+      "improvisation": {
+        "instruction": "Crie uma frase inspirada na transcrição e improvise sobre G maior, usando a ideia rítmica da frase original."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar o processo de transcrição.",
+        "05–15 min: Transcrever uma frase curta.",
+        "15–20 min: Ouvido — cantar antes de tocar.",
+        "20–30 min: Criar uma frase própria inspirada."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Transcrição e reprodução fiel",
+        "routine": [
+          "00–10 min: Tocar a frase transcrita devagar.",
+          "10–20 min: Reproduzir o ritmo e as notas com precisão.",
+          "20–25 min: Transpor a frase para outra região.",
+          "25–30 min: Criar variações da frase."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "4 Easy Steps to Transcribing Songs",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/4-easy-steps-to-transcribing-songs-for-beginners-bg-1508",
+        "reason": "Método simples de transcrição, base da ponte entre o curso e o repertório."
+      },
+      "commonMistakes": [
+        "Tentar transcrever muito de uma vez.",
+        "Não cantar a frase antes de tocar.",
+        "Copiar sem identificar intervalos."
+      ],
+      "mastery": {
+        "know": "Sei o processo de transcrição.",
+        "play": "Consigo transcrever uma frase curta no braço.",
+        "use": "Consigo criar frases próprias inspiradas em músicas."
+      },
+      "review": [
+        "Aula 77: fraseado.",
+        "Intervalos e chord tones (Fases 4–5)."
+      ],
+      "challenge": "Transcreva 2 compassos e crie 2 variações próprias.",
+      "mission": "Registrar uma música: tonalidade, BPM, frase favorita e técnica utilizada.",
+      "xp": {
+        "know": 25,
+        "play": 50,
+        "use": 100
+      }
+    },
+    {
+      "id": 80,
+      "week": 17,
+      "day": 3,
+      "phase": 8,
+      "title": "Final Boss — Improvisação completa",
+      "subtitle": "A prova final de musicalidade",
+      "objective": "Avaliar a independência musical: pegar uma progressão, encontrar a região, identificar chord tones, escolher a linguagem e criar frases sem depender de sequência decorada.",
+      "prerequisite": "Aulas 75 a 79 concluídas.",
+      "concept": "Prova final do curso principal. Não é um teste de memória — é uma prova prática de musicalidade. Nove desafios: fretboard, escala, chord tones, navegação, fraseado, target notes, técnica, improvisação e criação. A frase final do curso: 'Não estou mais procurando notas. Estou escolhendo o que quero dizer.'",
+      "key": "G major",
+      "scale": {
+        "name": "G major scale",
+        "formula": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "notes": [
+          "G",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F#"
+        ]
+      },
+      "chord": {
+        "name": "G",
+        "notes": [
+          "G",
+          "B",
+          "D"
+        ],
+        "formula": [
+          "1",
+          "3",
+          "5"
+        ]
+      },
+      "cagedForm": "Forma E (G major) — avaliação",
+      "whatToSee": [
+        "O mapa completo de G maior (casa 2–10).",
+        "Tônicas, terças, quintas e sétimas.",
+        "Os chord tones de G, C e D.",
+        "As três linguagens: pentatônica, escala maior e 3NPS."
+      ],
+      "chordScaleRelation": "Tudo integrado: acorde → escala → intervalos → chord tones → target notes → frase → improvisação. O aluno escolhe a ferramenta certa para cada frase.",
+      "fretboard": {
+        "shape": 1,
+        "position": 2,
+        "label": "G major · Final Boss (casa 2–10)",
+        "shapes": [
+          1,
+          2,
+          3
+        ],
+        "highlight": [
+          "1",
+          "3",
+          "5",
+          "7"
+        ],
+        "intervalMap": "e|--7(2)---1(3)---2(5)---3(7)---4(8)---5(10)--\nB|--5(3)---6(5)---1(8)---2(10)----------------\nG|--2(2)---3(4)---4(5)---5(7)---6(9)----------\nD|--6(2)---7(4)---1(5)---2(7)---3(9)---4(10)--\nA|--3(2)---4(3)---5(5)---6(7)---7(9)---1(10)--\nE|--7(2)---1(3)---2(5)---3(7)---4(8)---5(10)--",
+        "tab": "e|--------------------3-|\nB|--------------5---8---|\nG|----------4---5-------|\nD|------5---7-----------|\nA|----5-----------------|\nE|--3---5---7-----------|"
+      },
+      "exercises": [
+        "DESAFIO 1 (Fretboard): localizar todas as 3as maiores de G.",
+        "DESAFIO 2 (Escala): tocar pentatônica, escala maior e 3NPS.",
+        "DESAFIO 3 (Chord tones): identificar 1, 3 e 5 de cada acorde de G → C → D → G.",
+        "DESAFIO 4 (Navegação): começar no grave e terminar no agudo usando 3 regiões.",
+        "DESAFIO 5 (Fraseado): criar uma frase de 4–8 notas com pausa, nota longa e recurso expressivo.",
+        "DESAFIO 6 (Target notes): terminar frases em 3ª, 5ª e 1ª.",
+        "DESAFIO 7 (Técnica): executar uma passagem com alternate picking, legato, slide ou bend limpo.",
+        "DESAFIO 8 (Improvisação): improvisar ~3 minutos com duas regiões, pentatônica, escala, 3NPS, target notes, pausas, dinâmica e um motivo.",
+        "DESAFIO 9 (Criação): criar um solo original de 30–60s com começo, desenvolvimento, clímax e resolução."
+      ],
+      "earTraining": {
+        "instruction": "Cante antes de tocar: ouça uma nota, cante, encontre no braço, identifique o intervalo e resolva para uma nota estável. Improvise 2 minutos sem olhar os intervalos destacados."
+      },
+      "improvisation": {
+        "instruction": "Improvisação final de ~3 minutos sobre G → C → D → G, integrando todas as ferramentas do curso e demonstrando intenção musical."
+      },
+      "theoryRoutine": [
+        "00–05 min: Revisar o mapa completo.",
+        "05–15 min: Desafios 1–4 (fretboard, escala, chord tones, navegação).",
+        "15–25 min: Desafios 5–7 (fraseado, target notes, técnica).",
+        "25–30 min: Desafios 8–9 (improvisação e criação)."
+      ],
+      "technicalPractice": {
+        "duration": "30 minutos",
+        "focus": "Técnica integrada e musicalidade",
+        "routine": [
+          "00–10 min: Escala e 3NPS com alternate picking a 70 BPM.",
+          "10–20 min: Legato, bends, vibrato e slides.",
+          "20–25 min: Fraseado com dinâmica e espaço.",
+          "25–30 min: Improviso completo integrando técnica e música."
+        ]
+      },
+      "backingTrack": {
+        "title": "Backing track em G maior",
+        "url": null,
+        "type": "search-required"
+      },
+      "video": {
+        "title": "Meet The Musician In You",
+        "channel": "JustinGuitar",
+        "url": "https://www.justinguitar.com/guitar-lessons/meet-the-musician-in-you-bg-1706",
+        "reason": "Reflexão final sobre musicalidade, ideal para encerrar o curso."
+      },
+      "commonMistakes": [
+        "Improvisar como se fosse um exercício de escala.",
+        "Depender de uma sequência decorada.",
+        "Esquecer de ouvir e escolher as notas com intenção."
+      ],
+      "mastery": {
+        "know": "Consigo descrever todas as ferramentas do curso.",
+        "play": "Consigo executar as ferramentas com precisão.",
+        "use": "Consigo improvisar com intenção sobre uma progressão desconhecida."
+      },
+      "review": [
+        "Pentatônicas e CAGED (Fases 1–3).",
+        "Escala maior (Fase 4).",
+        "Chord tones e progressões (Fase 5).",
+        "Navegação horizontal (Fase 6).",
+        "3NPS (Fase 7).",
+        "Integração e fraseado (Aulas 75–79)."
+      ],
+      "challenge": "Avalie-se de 0 a 3 em 12 categorias (fretboard, intervalos, escalas, chord tones, target notes, navegação, técnica, fraseado, ritmo, ouvido, musicalidade, improvisação).",
+      "mission": "Concluir o Final Boss e registrar sua autoavaliação final.",
       "xp": {
         "know": 25,
         "play": 50,
